@@ -3,7 +3,7 @@ company website development by wordpress and erp automation
 
 All code file are covered by MIT LICENSE
 
-This repo contain all custom code file I wrote for my internship company website(built by wordpress)
+This repo contain all custom code file I wrote for company website(built by wordpress)
 For reference of the website: https://sociobridge.world
 
 /chinese-ver-web, this contain same code of fiancial-stimulator and loan-calculator but in chinese.

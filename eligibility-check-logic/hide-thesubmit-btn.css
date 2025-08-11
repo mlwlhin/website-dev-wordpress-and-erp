@@ -1,0 +1,10 @@
+/**
+ * For the Accordion Template, this is a helper script
+ * 
+ * For support, please visit: https://www.facebook.com/groups/wpformsvip
+ */
+
+   /* CSS hide submit button for any calculator only forms */
+button.tight-eligibility-form {
+		visibility: hidden;
+    }

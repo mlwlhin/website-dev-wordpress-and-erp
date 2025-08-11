@@ -1,0 +1,16 @@
+/* --- Custom Animation CSS --- */
+
+/* Apply this class to each individual item you want to animate (e.g., your Info Box blocks) */
+.animated-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    /* transition-delay will be set by JS */
+    transition-delay: 0s;
+}
+
+/* When the 'is-visible' class is added, animate them into view */
+.animated-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

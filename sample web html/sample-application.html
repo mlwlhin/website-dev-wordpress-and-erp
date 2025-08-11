@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application - SocioBridge</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .application-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .application-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .application-header h1 {
+            color: #333;
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0;
+        }
+        .progress-bar-container {
+            margin-bottom: 25px;
+        }
+        .progress-title {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            height: 8px;
+        }
+        .progress-fill {
+            background-color: #1a237e;
+            border-radius: 5px;
+            height: 100%;
+            width: 16.66%; /* 1 out of 6 steps */
+        }
+        .application-form h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .form-row .form-group {
+            flex: 1;
+        }
+        .form-group .sublabel {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+        }
+        .app-btn {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .app-btn:hover {
+            background-color: #0d1242;
+        }
+    </style>
+</head>
+<body>
+    <div class="application-container">
+        <div class="application-header">
+            <h1>Application</h1>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-title">Step 1 of 6</div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+        <form class="application-form">
+            <h2>Personal Particulars</h2>
+            <div class="form-group">
+                <label for="title">Title *</label>
+                <select id="title" name="title">
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="preferred-name">Preferred Name *</label>
+                <input type="text" id="preferred-name" name="preferred-name" required>
+            </div>
+            <div class="form-group">
+                <label for="legal-name-first">Legal Name in English *</label>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="legal-name-first" name="legal-name-first" value="{user_first_name}" required>
+                        <div class="sublabel">First</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="legal-name-last" name="legal-name-last" value="{user_last_name}" required>
+                        <div class="sublabel">Last</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nationality">Nationality *</label>
+                <input type="text" id="nationality" name="nationality" required>
+            </div>
+            <button type="submit" class="app-btn">Next</button>
+        </form>
+    </div>
+</body>
+</html>

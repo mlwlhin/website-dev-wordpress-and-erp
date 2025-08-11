@@ -1,0 +1,70 @@
+/* Main container for the buttons */
+#pathway-toggles {
+    display: flex !important; /* Force flex display to control alignment */
+    justify-content: center !important; /* This centers the buttons */
+    width: fit-content !important; /* This makes the container only as wide as the buttons */
+    margin: 0 auto !important; /* This centers the container on the page */
+}
+
+/* Container directly around the buttons */
+.pathway-toggles-container {
+    padding: 0.375rem;
+    background-color: #efecee;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+@media (min-width: 640px) {
+    .pathway-toggles-container {
+        flex-direction: row;
+    }
+}
+
+/* Styling for the individual buttons */
+.pathway-btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    color: #002e5d;
+    background-color: #efecee !important; /* This forces a light gray background on non-active buttons */
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.pathway-btn:hover {
+    background-color: #002e5d !important; /* Sets the new hover background color */
+    border-color: #002e5d !important; /* Sets the new hover border color */
+    color: #ffffff !important;
+}
+.active-pathway {
+    background-color: #002e5d !important; /* Forces the active button to be blue */
+    color: #ffffff !important;
+    border-color: #002e5d !important;
+}
+
+/* Parent container */
+.content-tabs-container {
+    position: relative;
+    /* The JS now handles height, but min-height is a good fallback */
+    min-height: 200px; 
+    /* Add a transition for smooth height changes */
+    transition: height 0.4s ease-in-out;
+}
+
+/* Individual content blocks */
+.content-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* The active/visible block */
+.content-block.is-active {
+    opacity: 1;
+    pointer-events: auto;
+}

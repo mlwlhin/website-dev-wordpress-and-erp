@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocioBridge | Financial Simulation Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Corporate Blue Harmony -->
+    <!-- Application Structure Plan: A multi-step narrative calculator. 1. Goals (Education/Career): User defines their ambition. 2. Resources: User inputs their financial reality. 3. Loan Plan: The application calculates and visualizes the loan obligations (timeline, DSR), establishing a clear baseline. 4. Optimization: A revealable section shows the power of refinancing, transforming the user from a passive borrower to an active financial planner by demonstrating significant potential savings. This structure is designed to build confidence by moving from the abstract (dream) to the concrete (plan) and finally to the optimized (smarter plan). -->
+    <!-- Visualization & Content Choices: The application uses multiple, targeted visualizations. A dynamic bar chart shows the full repayment timeline, making the 10-year journey understandable. Color-coded DSR gauges provide an instant 'health check' on affordability. The refinancing section uses a side-by-side comparison to visually contrast the two repayment paths, culminating in a large, clear display of the percentage of interest saved—the key psychological reward for the user's engagement. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #333333; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .bg-dark-blue { background-color: #002e5d; }
+        .text-dark-blue { color: #002e5d; }
+        .bg-dark-grey { background-color: #333333; }
+        .text-dark-grey { color: #333333; }
+        .bg-light-grey { background-color: #efecee; }
+        .bg-sharp-yellow { background-color: #ffd700; }
+        .bg-soft-amber { background-color: #FFEFE1; }
+        .border-dark-blue { border-color: #002e5d; }
+        .ring-dark-blue:focus { --tw-ring-color: #002e5d; }
+        .dsr-gauge-bg { background-color: #e0e0e0; }
+        .dsr-gauge-fill { transition: width 0.5s ease-in-out; }
+        .custom-dropdown { position: relative; }
+        .custom-dropdown-list { position: absolute; background-color: white; border: 1px solid #ccc; border-top: none; z-index: 10; width: 100%; max-height: 200px; overflow-y: auto; }
+        .custom-dropdown-item { padding: 8px 12px; cursor: pointer; }
+        .custom-dropdown-item:hover { background-color: #efecee; }
+        .refi-section { max-height: 0; overflow: hidden; transition: max-height 0.7s ease-in-out, padding 0.7s ease-in-out, margin 0.7s ease-in-out; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="bg-light-grey min-h-screen p-4 sm:p-8">
+        <div class="max-w-7xl mx-auto">
+            <header class="text-center mb-10">
+                <h1 class="text-4xl md:text-5xl font-bold font-serif text-dark-blue">Financial Simulation Calculator</h1>
+                <p class="mt-2 text-lg text-dark-grey">Plan your journey to success. All figures in HKD.</p>
+            </header>
+
+            <div id="main-container" class="grid grid-cols-1 gap-8">
+                <!-- Input Column -->
+                <div id="input-column" class="space-y-8 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-8">
+                    <!-- Section 1: Education & Career Goals -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold font-serif text-dark-blue border-b pb-2 mb-4">1. Your Goals</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <label for="studyDestination" class="block text-sm font-medium">Study Destination</label>
+                                <select id="studyDestination" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm focus:ring-dark-blue focus:border-dark-blue">
+                                    <option>United Kingdom</option>
+                                    <option>United States</option>
+                                    <option>Australia</option>
+                                    <option>Canada</option>
+                                </select>
+                            </div>
+                            <div class="custom-dropdown">
+                                <label for="university" class="block text-sm font-medium">University</label>
+                                <input type="text" id="university" placeholder="Search for a university..." class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm focus:ring-dark-blue focus:border-dark-blue">
+                                <div id="university-list" class="custom-dropdown-list hidden"></div>
+                            </div>
+                            <div>
+                                <label for="tuition" class="block text-sm font-medium">Annual Tuition (HKD)</label>
+                                <input type="number" id="tuition" value="350000" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                            <div>
+                                <label for="living" class="block text-sm font-medium">Monthly Living Expenses (HKD)</label>
+                                <input type="number" id="living" value="12000" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                            <div>
+                                <label for="studyPeriod" class="block text-sm font-medium">Study Period (Years)</label>
+                                <input type="number" id="studyPeriod" value="3" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                            <div>
+                                <label for="expectedSalary" class="block text-sm font-medium">Expected Monthly Salary After Graduation (HKD)</label>
+                                <input type="range" id="expectedSalary" min="15000" max="80000" value="35000" step="1000" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer mt-2">
+                                <div class="text-center font-semibold text-dark-blue mt-1" id="expectedSalaryValue">HK$35,000</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Financial Resources -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold font-serif text-dark-blue border-b pb-2 mb-4">2. Your Resources</h2>
+                        <div class="space-y-4">
+                             <div>
+                                <label for="householdSavings" class="block text-sm font-medium">Household Savings for Education</label>
+                                <input type="number" id="householdSavings" value="100000" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                            <div>
+                                <label for="householdSupport" class="block text-sm font-medium">Monthly Household Support</label>
+                                <input type="number" id="householdSupport" value="3000" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                            <div>
+                                <label for="dadSalary" class="block text-sm font-medium">Dad's Monthly Salary</label>
+                                <input type="number" id="dadSalary" value="40000" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                            <div>
+                                <label for="mumSalary" class="block text-sm font-medium">Mum's Monthly Salary</label>
+                                <input type="number" id="mumSalary" value="30000" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                             <div>
+                                <label for="partTimeHours" class="block text-sm font-medium">Part-time Hours per Week (max 20)</label>
+                                <input type="number" id="partTimeHours" value="10" max="20" min="0" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2">
+                        <button id="calculateBtn" class="w-full bg-dark-blue text-white font-bold py-4 px-4 rounded-lg shadow-lg hover:bg-opacity-90 transition-transform transform hover:scale-105">Calculate My Financial Plan</button>
+                    </div>
+                </div>
+
+                <!-- Output Column -->
+                <div id="output-column" class="space-y-8 hidden">
+                    <!-- Section 3: Loan Plan -->
+                    <div id="resultsPanel" class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold font-serif text-dark-blue border-b pb-2 mb-4">3. Your Loan Plan</h2>
+                        <div class="text-center bg-light-grey p-4 rounded-lg">
+                            <p class="text-sm text-dark-grey">Required Loan Amount</p>
+                            <p id="loanAmount" class="text-4xl font-bold text-dark-blue">HK$0</p>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-center font-semibold mb-2">Repayment Timeline</p>
+                            <div class="h-64"><canvas id="repaymentChart"></canvas></div>
+                        </div>
+                        <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                            <div class="bg-light-grey p-3 rounded">
+                                <p class="text-sm">Payment (During Study)</p>
+                                <p id="studyPayment" class="font-bold text-lg text-dark-blue">HK$0/mo</p>
+                            </div>
+                             <div class="bg-light-grey p-3 rounded">
+                                <p class="text-sm">Payment (After Grad)</p>
+                                <p id="gradPayment" class="font-bold text-lg text-dark-blue">HK$0/mo</p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                             <p class="text-center font-semibold mb-2">Debt Servicing Ratio (Repayment Period)</p>
+                             <div class="space-y-3">
+                                 <div>
+                                     <div class="flex justify-between text-sm mb-1"><span>Student</span><span id="studentDSRValue">0%</span></div>
+                                     <div class="w-full dsr-gauge-bg rounded-full h-2.5"><div id="studentDSRFill" class="h-2.5 rounded-full dsr-gauge-fill"></div></div>
+                                 </div>
+                                 <div>
+                                     <div class="flex justify-between text-sm mb-1"><span>Household</span><span id="householdDSRValue">0%</span></div>
+                                     <div class="w-full dsr-gauge-bg rounded-full h-2.5"><div id="householdDSRFill" class="h-2.5 rounded-full dsr-gauge-fill"></div></div>
+                                 </div>
+                             </div>
+                        </div>
+                        <button id="showRefiBtn" class="mt-8 w-full bg-sharp-yellow text-dark-blue font-bold py-3 px-4 rounded-lg shadow-lg hover:bg-opacity-90 transition-transform transform hover:scale-105">
+                            Unlock >30% Interest Savings with Refinancing!
+                        </button>
+                    </div>
+
+                    <!-- Section 4: Refinance -->
+                    <div id="refi-section" class="bg-white rounded-lg shadow-md refi-section">
+                        <div class="p-6">
+                            <h2 class="text-2xl font-bold font-serif text-dark-blue border-b pb-2 mb-4">4. The Refinancing Advantage</h2>
+                            <p class="text-sm text-dark-grey mb-4">After you graduate, you become a prime client for banks. By refinancing a portion of your SocioBridge loan, you can save significantly. Adjust the potential bank interest rate to see how.</p>
+                            <div>
+                                <label for="bankRate" class="block text-sm font-medium">Bank Interest Rate</label>
+                                <input type="range" id="bankRate" min="4" max="9" value="6" step="0.1" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer mt-2">
+                                <div class="text-center font-semibold text-dark-blue mt-1" id="bankRateValue">6.0%</div>
+                            </div>
+                            <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
+                                <div class="bg-light-grey p-4 rounded-lg">
+                                    <p class="font-bold">Your Two Futures</p>
+                                    <p class="text-xs mb-2">(Monthly Payment After Grad)</p>
+                                    <div class="h-40 relative"><canvas id="refiChart"></canvas></div>
+                                </div>
+                                <div class="bg-soft-amber p-4 rounded-lg flex flex-col items-center justify-center">
+                                    <p class="text-lg font-semibold text-dark-grey">Potential Interest Savings</p>
+                                    <p id="interestSaved" class="text-5xl font-bold text-dark-blue">0%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- DOM ELEMENTS ---
+            const mainContainer = document.getElementById('main-container');
+            const inputColumn = document.getElementById('input-column');
+            const outputColumn = document.getElementById('output-column');
+            const universityInput = document.getElementById('university');
+            const universityList = document.getElementById('university-list');
+            const expectedSalarySlider = document.getElementById('expectedSalary');
+            const expectedSalaryValue = document.getElementById('expectedSalaryValue');
+            const calculateBtn = document.getElementById('calculateBtn');
+            const resultsPanel = document.getElementById('resultsPanel');
+            const showRefiBtn = document.getElementById('showRefiBtn');
+            const refiSection = document.getElementById('refi-section');
+            const bankRateSlider = document.getElementById('bankRate');
+            const bankRateValue = document.getElementById('bankRateValue');
+
+            // --- DATA & STATE ---
+            let repaymentChart, refiChart;
+            let calculatedData = {};
+            const universityData = {
+                "United Kingdom": ["University of Oxford", "University of Cambridge", "Imperial College London", "UCL"],
+                "United States": ["Harvard University", "Stanford University", "MIT", "Caltech"],
+                "Australia": ["The University of Melbourne", "The University of Sydney", "The University of Queensland"],
+                "Canada": ["University of Toronto", "McGill University", "University of British Columbia"]
+            };
+
+            // --- UTILITY FUNCTIONS ---
+            const formatHKD = (num) => `HK$${Math.round(num).toLocaleString()}`;
+            const pmt = (rate, nper, pv) => {
+                if (rate === 0) return -(pv / nper);
+                return -(pv * rate * Math.pow(1 + rate, nper)) / (Math.pow(1 + rate, nper) - 1);
+            };
+
+            // --- UI LOGIC ---
+            const updateDSRGauge = (elementId, value) => {
+                const el = document.getElementById(elementId);
+                const percentage = Math.min(100, Math.max(0, value * 100));
+                el.style.width = `${percentage}%`;
+                if (percentage > 50) el.style.backgroundColor = '#ef4444'; // red-500
+                else if (percentage > 30) el.style.backgroundColor = '#f59e0b'; // amber-500
+                else el.style.backgroundColor = '#10b981'; // emerald-500
+            };
+
+            // --- EVENT LISTENERS ---
+            expectedSalarySlider.addEventListener('input', (e) => {
+                expectedSalaryValue.textContent = formatHKD(Number(e.target.value));
+            });
+
+            bankRateSlider.addEventListener('input', (e) => {
+                bankRateValue.textContent = `${Number(e.target.value).toFixed(1)}%`;
+                if (Object.keys(calculatedData).length > 0) {
+                    calculateAndDisplayRefi();
+                }
+            });
+
+            calculateBtn.addEventListener('click', () => {
+                // --- 1. GATHER INPUTS ---
+                const tui = Number(document.getElementById('tuition').value);
+                const liv = Number(document.getElementById('living').value);
+                const sp = Number(document.getElementById('studyPeriod').value);
+                const sal_stud = Number(document.getElementById('expectedSalary').value);
+                const pt = Number(document.getElementById('partTimeHours').value);
+                const saving_hh = Number(document.getElementById('householdSavings').value);
+                const sal_hh_avail = Number(document.getElementById('householdSupport').value);
+                const dad_sal = Number(document.getElementById('dadSalary').value);
+                const mum_sal = Number(document.getElementById('mumSalary').value);
+                const wage = 110;
+
+                // --- 2. CALCULATE COSTS & RESOURCES ---
+                const edu_tot = (tui + (liv * 12)) * sp;
+                const fin_tot = (pt * wage * 52 * sp) + saving_hh + (sal_hh_avail * 12 * sp);
+                const sf = edu_tot - fin_tot;
+                
+                // --- 3. CALCULATE LOAN ---
+                const int_rate_sb = 0.1498;
+                const amt = sf > 0 ? sf / (1 + (int_rate_sb * sp)) : 0;
+                
+                // --- 4. CALCULATE REPAYMENTS ---
+                const mth_SP = (amt * int_rate_sb) / 12;
+                const mth_RP = amt > 0 ? -pmt(int_rate_sb / 12, 120, amt) : 0;
+
+                // --- 5. CALCULATE DSR ---
+                const sal_hh = dad_sal + mum_sal;
+                const student_dsr_repay = sal_stud > 0 ? mth_RP / sal_stud : 0;
+                const household_dsr_repay = (sal_hh + sal_stud) > 0 ? mth_RP / (sal_hh + sal_stud) : 0;
+                
+                // --- STORE & DISPLAY ---
+                calculatedData = { amt, mth_RP, sal_stud, sp, mth_SP };
+                
+                // --- DYNAMIC LAYOUT CHANGE ---
+                mainContainer.classList.add('lg:grid-cols-2');
+                inputColumn.classList.remove('lg:grid-cols-2');
+                inputColumn.classList.add('lg:col-span-1');
+                outputColumn.classList.remove('hidden');
+                resultsPanel.classList.remove('hidden'); // Ensure results panel is visible
+                
+                refiSection.style.maxHeight = '0px';
+                refiSection.style.paddingTop = '0';
+                refiSection.style.paddingBottom = '0';
+                refiSection.style.marginTop = '0';
+
+
+                document.getElementById('loanAmount').textContent = formatHKD(amt);
+                document.getElementById('studyPayment').textContent = `${formatHKD(mth_SP)}/mo`;
+                document.getElementById('gradPayment').textContent = `${formatHKD(mth_RP)}/mo`;
+                document.getElementById('studentDSRValue').textContent = `${(student_dsr_repay * 100).toFixed(1)}%`;
+                document.getElementById('householdDSRValue').textContent = `${(household_dsr_repay * 100).toFixed(1)}%`;
+                
+                updateDSRGauge('studentDSRFill', student_dsr_repay);
+                updateDSRGauge('householdDSRFill', household_dsr_repay);
+                
+                drawRepaymentChart(sp, mth_SP, mth_RP);
+            });
+            
+            showRefiBtn.addEventListener('click', () => {
+                 if (refiSection.style.maxHeight === '0px' || !refiSection.style.maxHeight) {
+                    refiSection.style.paddingTop = '1.5rem';
+                    refiSection.style.paddingBottom = '1.5rem';
+                    refiSection.style.marginTop = '2rem';
+                    refiSection.style.maxHeight = refiSection.scrollHeight + "px";
+                    calculateAndDisplayRefi();
+                } else {
+                    refiSection.style.maxHeight = '0px';
+                    refiSection.style.paddingTop = '0';
+                    refiSection.style.paddingBottom = '0';
+                    refiSection.style.marginTop = '0';
+                }
+            });
+
+            const calculateAndDisplayRefi = () => {
+                const { amt, mth_RP, sal_stud } = calculatedData;
+                const bank_i = Number(bankRateSlider.value) / 100;
+                const bank_t = 60;
+                const bank_amt = sal_stud * 12;
+                const bank_pmt = bank_amt > 0 ? -pmt(bank_i / 12, bank_t, bank_amt) : 0;
+                
+                const amt_sb_rem = Math.max(0, amt - bank_amt);
+                const sb_pmt_rem = amt_sb_rem > 0 ? -pmt(0.1498 / 12, 120, amt_sb_rem) : 0;
+
+                const mth_tot_refi_first60 = bank_pmt + sb_pmt_rem;
+                const mth_tot_refi_last60 = sb_pmt_rem;
+
+                const int_exp_tot = mth_RP * 120 - amt;
+                const int_exp_tot_refin = (bank_pmt * bank_t) + (sb_pmt_rem * 120) - amt;
+                const int_saving = int_exp_tot - int_exp_tot_refin;
+                const int_saving_pct = int_exp_tot > 0 ? (int_saving / int_exp_tot) * 100 : 0;
+
+                document.getElementById('interestSaved').textContent = `${Math.round(int_saving_pct)}%`;
+                drawRefiChart(mth_RP, mth_tot_refi_first60, mth_tot_refi_last60);
+            };
+
+            const drawRepaymentChart = (sp, mth_SP, mth_RP) => {
+                const ctx = document.getElementById('repaymentChart').getContext('2d');
+                const labels = [...Array(sp).fill('Study'), 'Grace', ...Array(10).fill(0).map((_, i) => `Year ${i+1}`)];
+                const data = [...Array(sp + 1).fill(mth_SP), ...Array(10).fill(mth_RP)];
+                
+                if (repaymentChart) repaymentChart.destroy();
+                repaymentChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels,
+                        datasets: [{
+                            label: 'Monthly Payment (HKD)',
+                            data,
+                            backgroundColor: (context) => context.dataIndex <= sp ? '#FFEFE1' : '#002e5d',
+                            borderColor: (context) => context.dataIndex <= sp ? '#FFEFE1' : '#002e5d',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { ticks: { callback: (v) => formatHKD(v) } } } }
+                });
+            };
+
+            const drawRefiChart = (mth_RP, mth_tot_refi_first60, mth_tot_refi_last60) => {
+                const ctx = document.getElementById('refiChart').getContext('2d');
+                if (refiChart) refiChart.destroy();
+                refiChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Without Refi', 'With Refi (Yrs 1-5)', 'With Refi (Yrs 6-10)'],
+                        datasets: [{
+                            label: 'Monthly Payment',
+                            data: [mth_RP, mth_tot_refi_first60, mth_tot_refi_last60],
+                            backgroundColor: ['#333333', '#002e5d', '#002e5d']
+                        }]
+                    },
+                    options: { responsive: true, maintainAspectRatio: false, indexAxis: 'y', plugins: { legend: { display: false } }, scales: { x: { ticks: { callback: (v) => formatHKD(v) } } } }
+                });
+            };
+            
+             // --- Searchable Dropdown ---
+            const setupSearchableDropdown = (inputEl, listEl, data) => {
+                inputEl.addEventListener('input', () => {
+                    const filter = inputEl.value.toLowerCase();
+                    const filteredData = data.filter(item => item.toLowerCase().includes(filter));
+                    listEl.innerHTML = '';
+                    if (filteredData.length > 0 && filter.length > 0) {
+                        listEl.classList.remove('hidden');
+                        filteredData.forEach(item => {
+                            const div = document.createElement('div');
+                            div.textContent = item;
+                            div.className = 'custom-dropdown-item';
+                            div.onclick = () => {
+                                inputEl.value = item;
+                                listEl.classList.add('hidden');
+                            };
+                            listEl.appendChild(div);
+                        });
+                    } else {
+                        listEl.classList.add('hidden');
+                    }
+                });
+            };
+            
+            document.getElementById('studyDestination').addEventListener('change', (e) => {
+                universityInput.value = '';
+                const universities = universityData[e.target.value] || [];
+                setupSearchableDropdown(universityInput, universityList, universities);
+            });
+            
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.custom-dropdown')) {
+                    universityList.classList.add('hidden');
+                }
+            });
+
+            // Initial setup
+            document.getElementById('studyDestination').dispatchEvent(new Event('change'));
+            expectedSalaryValue.textContent = formatHKD(Number(expectedSalarySlider.value));
+            bankRateValue.textContent = `${Number(bankRateSlider.value).toFixed(1)}%`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - SocioBridge</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .registration-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 550px; /* Wider container for the registration form */
+            text-align: center;
+        }
+        .registration-container h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .registration-container p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        .registration-form .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .registration-form label {
+            display: block;
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .registration-form input[type="text"],
+        .registration-form input[type="email"],
+        .registration-form input[type="tel"],
+        .registration-form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .registration-form .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .registration-form .form-row .form-group {
+            flex: 1;
+        }
+        .registration-form .form-row .form-group .sublabel {
+            color: #999;
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 4px;
+        }
+        .registration-btn {
+            background-color: #1a237e;
+            color: #ffffff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .registration-btn:hover {
+            background-color: #0d1242;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Welcome!</h1>
+        <p>Please register to create your account</p>
+        <form class="registration-form">
+            <div class="form-group">
+                <label for="legal-name-first">Legal Name *</label>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="legal-name-first" name="legal-name-first" required>
+                        <div class="sublabel">First</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="legal-name-last" name="legal-name-last" required>
+                        <div class="sublabel">Last</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="username">Username *</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <div class="sublabel">Email</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="confirm-email" name="confirm-email" required>
+                        <div class="sublabel">Confirm Email</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="password" id="password" name="password" required>
+                        <div class="sublabel">Password</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <div class="sublabel">Confirm Password</div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="registration-btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>

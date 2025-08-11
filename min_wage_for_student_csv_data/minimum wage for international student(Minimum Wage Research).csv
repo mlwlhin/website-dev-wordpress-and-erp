@@ -1,0 +1,8 @@
+Country,Regulation Level,Minimum Hourly Wage(2025),Max Hours/Week (Term Time),Variables
+UK,National,"£7.5 (ages 16-17, Apprentices for all ages) , £10 (ages 18-20 ), £12.21 (21+)",20 per week,"Age, apprenticeship status"
+US,Federal/State,"$7.25 (federal)-> suppose this is the minimum one, many state have a higher minimum wages, varies (e.g., $16.00 CA)",20 per week,"State/city, job type, age"
+Australia,National,AUD 24.95,48 hours per two week,"Employment type, industry"
+Canada,Provincial,"CAD 16.6 (Ontario for students), general minimum wages is 17.6, varies",20 hours per week,"Province, age (<18 is allowed to work in certain jobs)"
+Singapore,Sector-specific,"no legal minimum wage for students, typical 10-12",16 per week,"Industry, approval status"
+Hong Kong,City,HKD 42.10,20 hours per week,internship  exemption
+China,Provincial/City,"CNY 24 (Shanghai), varies",8 hours per week,"City/province , approval status"

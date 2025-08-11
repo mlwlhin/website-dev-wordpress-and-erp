@@ -1,0 +1,1139 @@
+{
+  "Cambridge": {
+    "hourly_minimum_salary_hk": 157.5
+  },
+  "London": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Stanford": {
+    "hourly_minimum_salary_hk": 142.87
+  },
+  "Oxford": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Singapore": {
+    "hourly_minimum_salary_hk": 61.0
+  },
+  "Pasadena": {
+    "hourly_minimum_salary_hk": 141.614
+  },
+  "Hong Kong SAR": {
+    "hourly_minimum_salary_hk": 42.1
+  },
+  "Chicago": {
+    "hourly_minimum_salary_hk": 130.31
+  },
+  "Beijing": {
+    "hourly_minimum_salary_hk": 15.125
+  },
+  "Philadelphia": {
+    "hourly_minimum_salary_hk": 121.675
+  },
+  "Ithaca": {
+    "hourly_minimum_salary_hk": 121.675
+  },
+  "Berkeley": {
+    "hourly_minimum_salary_hk": 150.563
+  },
+  "Parkville": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Sydney": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "New Haven": {
+    "hourly_minimum_salary_hk": 128.3475
+  },
+  "Baltimore": {
+    "hourly_minimum_salary_hk": 128.3475
+  },
+  "Princeton": {
+    "hourly_minimum_salary_hk": 128.3475
+  },
+  "Montreal": {
+    "hourly_minimum_salary_hk": 91.77
+  },
+  "Toronto": {
+    "hourly_minimum_salary_hk": 98.04
+  },
+  "Shanghai": {
+    "hourly_minimum_salary_hk": 17.125
+  },
+  "Canberra": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Edinburgh": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Manchester": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Melbourne": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "New York City": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Vancouver": {
+    "hourly_minimum_salary_hk": 101.745
+  },
+  "Evanston": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Brisbane City": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Hong Kong": {
+    "hourly_minimum_salary_hk": 42.1
+  },
+  "Ann Arbor": {
+    "hourly_minimum_salary_hk": 97.968
+  },
+  "Los Angeles": {
+    "hourly_minimum_salary_hk": 140.2795
+  },
+  "Hangzhou": {
+    "hourly_minimum_salary_hk": 14.25
+  },
+  "Bristol": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Pittsburgh": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Durham": {
+    "hourly_minimum_salary_hk": 95.8485
+  },
+  "Kowloon": {
+    "hourly_minimum_salary_hk": 42.1
+  },
+  "San Diego": {
+    "hourly_minimum_salary_hk": 135.4125
+  },
+  "Austin": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Providence": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Champaign": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Coventry": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Birmingham": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Perth": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Glasgow": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Seattle": {
+    "hourly_minimum_salary_hk": 162.966
+  },
+  "Adelaide": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "University Park": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Leeds": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Southampton": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Boston": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "West Lafayette": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Sheffield": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Edmonton": {
+    "hourly_minimum_salary_hk": 85.5
+  },
+  "Haymarket": {
+    "hourly_minimum_salary_hk": 122.91
+  },
+  "Nottingham": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Nanjing": {
+    "hourly_minimum_salary_hk": 15.5625
+  },
+  "Madison": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "St. Andrews": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Davis": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Houston": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Waterloo": {
+    "hourly_minimum_salary_hk": 92.34
+  },
+  "Atlanta": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Bath": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Hefei": {
+    "hourly_minimum_salary_hk": 12.875
+  },
+  "Newcastle upon Tyne": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Chapel Hill": {
+    "hourly_minimum_salary_hk": 107.9375
+  },
+  "College Station": {
+    "hourly_minimum_salary_hk": 115.395
+  },
+  "Liverpool": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Exeter": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Lancaster": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "East Lansing": {
+    "hourly_minimum_salary_hk": 97.968
+  },
+  "St. Louis": {
+    "hourly_minimum_salary_hk": 107.9375
+  },
+  "York": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Tempe": {
+    "hourly_minimum_salary_hk": 115.395
+  },
+  "Hamilton": {
+    "hourly_minimum_salary_hk": 92.34
+  },
+  "Santa Barbara": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Cardiff": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Wollongong": {
+    "hourly_minimum_salary_hk": 122.91
+  },
+  "Wuhan": {
+    "hourly_minimum_salary_hk": 13.125
+  },
+  "Columbus": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Kingston": {
+    "hourly_minimum_salary_hk": 92.34
+  },
+  "Reading": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Belfast": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Burwood": {
+    "hourly_minimum_salary_hk": 122.91
+  },
+  "College Park": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Minneapolis": {
+    "hourly_minimum_salary_hk": 122.2245
+  },
+  "Calgary": {
+    "hourly_minimum_salary_hk": 85.5
+  },
+  "Gainesville": {
+    "hourly_minimum_salary_hk": 94.2
+  },
+  "Ottawa": {
+    "hourly_minimum_salary_hk": 94.905
+  },
+  "Loughborough": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Brisbane": {
+    "hourly_minimum_salary_hk": 122.91
+  },
+  "Callaghan": {
+    "hourly_minimum_salary_hk": 122.91
+  },
+  "Rochester": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Hanover": {
+    "hourly_minimum_salary_hk": 97.4185
+  },
+  "Amherst": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Nashville": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Harbin": {
+    "hourly_minimum_salary_hk": 11.75
+  },
+  "Tianjin": {
+    "hourly_minimum_salary_hk": 14.6875
+  },
+  "Aberdeen": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Guildford": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Nathan": {
+    "hourly_minimum_salary_hk": 87.72
+  },
+  "Raleigh": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Charlottesville": {
+    "hourly_minimum_salary_hk": 97.4185
+  },
+  "Guangzhou": {
+    "hourly_minimum_salary_hk": 15.625
+  },
+  "Brighton": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Nova Scotia": {
+    "hourly_minimum_salary_hk": 89.49
+  },
+  "Washington D.C.": {
+    "hourly_minimum_salary_hk": 140.9075
+  },
+  "Macau": {
+    "hourly_minimum_salary_hk": 7072.0
+  },
+  "Tucson": {
+    "hourly_minimum_salary_hk": 115.395
+  },
+  "Swansea": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Irvine": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Cleveland": {
+    "hourly_minimum_salary_hk": 83.995
+  },
+  "Notre Dame": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Boulder": {
+    "hourly_minimum_salary_hk": 116.2585
+  },
+  "Xi'an": {
+    "hourly_minimum_salary_hk": 13.75
+  },
+  "Bloomington": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Burnaby": {
+    "hourly_minimum_salary_hk": 101.745
+  },
+  "Miami": {
+    "hourly_minimum_salary_hk": 102.05
+  },
+  "Hobart": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Chengdu": {
+    "hourly_minimum_salary_hk": 14.5625
+  },
+  "Leicester": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "New Brunswick": {
+    "hourly_minimum_salary_hk": 122.8525
+  },
+  "Medford": {
+    "hourly_minimum_salary_hk": 118.1425
+  },
+  "Jinan": {
+    "hourly_minimum_salary_hk": 15.5625
+  },
+  "Xiamen": {
+    "hourly_minimum_salary_hk": 14.15625
+  },
+  "Shenzhen": {
+    "hourly_minimum_salary_hk": 15.75
+  },
+  "Victoria": {
+    "hourly_minimum_salary_hk": 101.745
+  },
+  "Blacksburg": {
+    "hourly_minimum_salary_hk": 97.4185
+  },
+  "Saskatoon": {
+    "hourly_minimum_salary_hk": 85.5
+  },
+  "Norwich": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Canterbury": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Milperra": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Buffalo": {
+    "hourly_minimum_salary_hk": 121.675
+  },
+  "Toowoomba": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Murdoch": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Pullman": {
+    "hourly_minimum_salary_hk": 130.781
+  },
+  "Dundee": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Townsville": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Riverside": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Ames": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Stony Brook": {
+    "hourly_minimum_salary_hk": 121.675
+  },
+  "Colchester": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Fort Collins": {
+    "hourly_minimum_salary_hk": 116.2585
+  },
+  "Santa Cruz": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Egham": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Lawrence": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Québec": {
+    "hourly_minimum_salary_hk": 91.77
+  },
+  "Changchun": {
+    "hourly_minimum_salary_hk": 13.125
+  },
+  "Dalian": {
+    "hourly_minimum_salary_hk": 13.125
+  },
+  "Joondalup": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Changsha": {
+    "hourly_minimum_salary_hk": 13.125
+  },
+  "Bruce": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Norman Gardens": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Chongqing": {
+    "hourly_minimum_salary_hk": 14.5625
+  },
+  "Guelph": {
+    "hourly_minimum_salary_hk": 98.04
+  },
+  "Bradford": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Stirling": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Huddersfield": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Athens": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Chestnut": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Hull": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Iowa City": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Storrs": {
+    "hourly_minimum_salary_hk": 123.1665
+  },
+  "Salt Lake City": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Honolulu": {
+    "hourly_minimum_salary_hk": 109.9
+  },
+  "Windsor": {
+    "hourly_minimum_salary_hk": 98.04
+  },
+  "Tallahassee": {
+    "hourly_minimum_salary_hk": 102.05
+  },
+  "Newark": {
+    "hourly_minimum_salary_hk": 118.7705
+  },
+  "Bangor": {
+    "hourly_minimum_salary_hk": 148.575
+  },
+  "Golden": {
+    "hourly_minimum_salary_hk": 113.197
+  },
+  "Casuarina": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Gold Coast": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "New Orleans": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Richardson": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Knoxville": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Coleraine": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Plymouth": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Zhengzhou": {
+    "hourly_minimum_salary_hk": 13.125
+  },
+  "Fredericton": {
+    "hourly_minimum_salary_hk": 89.205
+  },
+  "Corvallis": {
+    "hourly_minimum_salary_hk": 111.47
+  },
+  "Rolla": {
+    "hourly_minimum_salary_hk": 96.555
+  },
+  "Columbia": {
+    "hourly_minimum_salary_hk": 96.555
+  },
+  "Portsmouth": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Lismore": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Winnipeg": {
+    "hourly_minimum_salary_hk": 90.06
+  },
+  "Xuzhou": {
+    "hourly_minimum_salary_hk": 14.125
+  },
+  "Tampa": {
+    "hourly_minimum_salary_hk": 102.05
+  },
+  "Kingston upon Thames": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "St. John's": {
+    "hourly_minimum_salary_hk": 91.2
+  },
+  "Norman": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Bethlehem": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Hoboken": {
+    "hourly_minimum_salary_hk": 118.7705
+  },
+  "Troy": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Orlando": {
+    "hourly_minimum_salary_hk": 102.05
+  },
+  "Lincoln": {
+    "hourly_minimum_salary_hk": 94.2
+  },
+  "Cincinnati": {
+    "hourly_minimum_salary_hk": 82.0325
+  },
+  "Lubbock": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Aberystwyth": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Waltham": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Syracuse": {
+    "hourly_minimum_salary_hk": 121.675
+  },
+  "Albuquerque": {
+    "hourly_minimum_salary_hk": 94.2
+  },
+  "Eugene": {
+    "hourly_minimum_salary_hk": 115.395
+  },
+  "Lexington": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Detroit": {
+    "hourly_minimum_salary_hk": 97.968
+  },
+  "Lanzhou": {
+    "hourly_minimum_salary_hk": 12.5
+  },
+  "Winston-Salem": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Poole": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Keele": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Yangling": {
+    "hourly_minimum_salary_hk": 13.75
+  },
+  "Qingdao": {
+    "hourly_minimum_salary_hk": 15.0
+  },
+  "Suzhou": {
+    "hourly_minimum_salary_hk": 15.5625
+  },
+  "New York": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Greenwich": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Auburn": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Wuxi": {
+    "hourly_minimum_salary_hk": 15.5625
+  },
+  "Baton Rouge": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Stillwater": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Denver": {
+    "hourly_minimum_salary_hk": 116.2585
+  },
+  "Worcester": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Manhattan": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Houghton": {
+    "hourly_minimum_salary_hk": 97.968
+  },
+  "Sherbrooke": {
+    "hourly_minimum_salary_hk": 91.77
+  },
+  "Albany": {
+    "hourly_minimum_salary_hk": 121.675
+  },
+  "Tuscaloosa": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Fairbanks": {
+    "hourly_minimum_salary_hk": 93.4935
+  },
+  "Hatfield": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Denton": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Salford": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Richmond": {
+    "hourly_minimum_salary_hk": 105.975
+  },
+  "Bathurst": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Potsdam": {
+    "hourly_minimum_salary_hk": 121.675
+  },
+  "Clemson": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Fairfax": {
+    "hourly_minimum_salary_hk": 105.975
+  },
+  "Waco": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Binghamton": {
+    "hourly_minimum_salary_hk": 121.675
+  },
+  "Provo": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Boca Raton": {
+    "hourly_minimum_salary_hk": 102.05
+  },
+  "Indianapolis": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Kent": {
+    "hourly_minimum_salary_hk": 83.995
+  },
+  "Starkville": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Flagstaff": {
+    "hourly_minimum_salary_hk": 115.395
+  },
+  "Dallas": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Fayetteville": {
+    "hourly_minimum_salary_hk": 86.35
+  },
+  "Preston": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Moscow": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Louisville": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Kansas City": {
+    "hourly_minimum_salary_hk": 107.9375
+  },
+  "Reno": {
+    "hourly_minimum_salary_hk": 94.2
+  },
+  "Armidale": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Charlotte": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Regina": {
+    "hourly_minimum_salary_hk": 79.8
+  },
+  "Arlington": {
+    "hourly_minimum_salary_hk": 105.975
+  },
+  "San Antonio": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Toledo": {
+    "hourly_minimum_salary_hk": 83.995
+  },
+  "Tulsa": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Burlington": {
+    "hourly_minimum_salary_hk": 109.9785
+  },
+  "Telford": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Laramie": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Logan": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Morgantown": {
+    "hourly_minimum_salary_hk": 68.6875
+  },
+  "Williamsburg": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "St. Catharines": {
+    "hourly_minimum_salary_hk": 98.04
+  },
+  "San Luis Obispo": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Milwaukee": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Las Cruces": {
+    "hourly_minimum_salary_hk": 94.2
+  },
+  "Portland": {
+    "hourly_minimum_salary_hk": 125.2075
+  },
+  "Musselburgh": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Northampton": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Chippendale": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Derby": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Memphis": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Greensboro": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "San Francisco": {
+    "hourly_minimum_salary_hk": 146.5595
+  },
+  "Mobile": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "El Paso": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Kalamazoo": {
+    "hourly_minimum_salary_hk": 97.968
+  },
+  "Mount Pleasant": {
+    "hourly_minimum_salary_hk": 97.968
+  },
+  "Newport": {
+    "hourly_minimum_salary_hk": 157.5
+  },
+  "Hilo": {
+    "hourly_minimum_salary_hk": 109.9
+  },
+  "Stockton": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Stanford(CA)": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Ann Arbor (MI)": {
+    "hourly_minimum_salary_hk": 97.968
+  },
+  "Philadelphia (PA)": {
+    "hourly_minimum_salary_hk": 130.31
+  },
+  "Los Angeles (CA)": {
+    "hourly_minimum_salary_hk": 140.2795
+  },
+  "Cambridge (MA)": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "London (ON)": {
+    "hourly_minimum_salary_hk": 98.04
+  },
+  "Kingston (ON)": {
+    "hourly_minimum_salary_hk": 98.04
+  },
+  "New York (NY)": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Evanston (IL)": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Berkeley (CA)": {
+    "hourly_minimum_salary_hk": 150.563
+  },
+  "New Haven (CT)": {
+    "hourly_minimum_salary_hk": 128.3475
+  },
+  "Edmonton (AB)": {
+    "hourly_minimum_salary_hk": 85.5
+  },
+  "Durham (NC)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Chicago (IL)": {
+    "hourly_minimum_salary_hk": 130.31
+  },
+  "Seattle (WA)": {
+    "hourly_minimum_salary_hk": 162.966
+  },
+  "Pittsburgh (PA)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Austin (TX)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Bedford": {
+    "hourly_minimum_salary_hk": 157.5
+  },
+  "Ithaca (NY)": {
+    "hourly_minimum_salary_hk": 121.675
+  },
+  "Boston (MA)": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Minneapolis (MN)": {
+    "hourly_minimum_salary_hk": 125.3645
+  },
+  "Bloomington (IN)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Madison (WI)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Atlanta (GA)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Washington, D.C": {
+    "hourly_minimum_salary_hk": 140.9075
+  },
+  "Hanover (NH)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Gainesville (FL)": {
+    "hourly_minimum_salary_hk": 102.05
+  },
+  "Wellesley (MA)": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Charlottesville (VA)": {
+    "hourly_minimum_salary_hk": 97.4185
+  },
+  "Tempe (AZ)": {
+    "hourly_minimum_salary_hk": 115.395
+  },
+  "College Station (TX),": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "College Park (MD)": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "East Lansing (MI)": {
+    "hourly_minimum_salary_hk": 97.968
+  },
+  "Vancouver (BC)": {
+    "hourly_minimum_salary_hk": 101.745
+  },
+  "Newcastle": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Houston (TX)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Chapel Hill (NC)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Wollongong, Dubai": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Notre Dame (IN)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Raleigh (NC)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Tucson (AZ)": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Pittsburg (PA)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Irvine (CA)": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Auburn (AL)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Waco (TX)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Provo (UT)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Fort Collins (CO)": {
+    "hourly_minimum_salary_hk": 116.2585
+  },
+  "Columbia (MO)": {
+    "hourly_minimum_salary_hk": 107.9375
+  },
+  "Eugene (OR)": {
+    "hourly_minimum_salary_hk": 118.1425
+  },
+  "San Francisco (CA)": {
+    "hourly_minimum_salary_hk": 150.563
+  },
+  "Dallas (TX)": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Tampa (FL)": {
+    "hourly_minimum_salary_hk": 102.05
+  },
+  "Buffalo (NY)": {
+    "hourly_minimum_salary_hk": 121.675
+  },
+  "Waltham (MA)": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Cleveland (OH)": {
+    "hourly_minimum_salary_hk": 83.995
+  },
+  "Cincinnati (OH)": {
+    "hourly_minimum_salary_hk": 83.995
+  },
+  "Mansfield (CT)": {
+    "hourly_minimum_salary_hk": 128.3475
+  },
+  "Halifax": {
+    "hourly_minimum_salary_hk": 89.49
+  },
+  "Denver (CO)": {
+    "hourly_minimum_salary_hk": 147.6585
+  },
+  "Malibu": {
+    "hourly_minimum_salary_hk": 135.5695
+  },
+  "Fort Worth": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Salem": {
+    "hourly_minimum_salary_hk": 118.1425
+  },
+  "Long Beach": {
+    "hourly_minimum_salary_hk": 139.8085
+  },
+  "Orange": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Claremont": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "River Forest": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Fairfield": {
+    "hourly_minimum_salary_hk": 128.3475
+  },
+  "Hempstead": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Glassboro": {
+    "hourly_minimum_salary_hk": 121.5965
+  },
+  "Vermillion": {
+    "hourly_minimum_salary_hk": 90.275
+  },
+  "Dartmouth": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Phoenix": {
+    "hourly_minimum_salary_hk": 115.395
+  },
+  "Southport": {
+    "hourly_minimum_salary_hk": 83.385
+  },
+  "Canyon": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Las Vegas": {
+    "hourly_minimum_salary_hk": 94.2
+  },
+  "Savannah": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Penryn": {
+    "hourly_minimum_salary_hk": 173.25
+  },
+  "Leura": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Valencia": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "La Jolla": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Quebec City": {
+    "hourly_minimum_salary_hk": 91.77
+  },
+  "Milton Keynes": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Bloomfield Hills": {
+    "hourly_minimum_salary_hk": 97.968
+  },
+  "Epsom": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Falmouth": {
+    "hourly_minimum_salary_hk": 157.5
+  },
+  "Williamstown": {
+    "hourly_minimum_salary_hk": 117.75
+  },
+  "Purchase": {
+    "hourly_minimum_salary_hk": 129.525
+  },
+  "Washington, D.C.": {
+    "hourly_minimum_salary_hk": 140.9075
+  },
+  "Santa Clara": {
+    "hourly_minimum_salary_hk": 142.87
+  },
+  "Cranfield": {
+    "hourly_minimum_salary_hk": 128.205
+  },
+  "Derry": {
+    "hourly_minimum_salary_hk": 76.125
+  },
+  "Akron": {
+    "hourly_minimum_salary_hk": 83.995
+  },
+  "Socorro": {
+    "hourly_minimum_salary_hk": 94.2
+  },
+  "Orono": {
+    "hourly_minimum_salary_hk": 115.0025
+  },
+  "Rockhampton": {
+    "hourly_minimum_salary_hk": 127.245
+  },
+  "Bozeman": {
+    "hourly_minimum_salary_hk": 82.8175
+  },
+  "Thunder Bay": {
+    "hourly_minimum_salary_hk": 98.04
+  },
+  "Greenville": {
+    "hourly_minimum_salary_hk": 56.9125
+  },
+  "Charlottetown": {
+    "hourly_minimum_salary_hk": 91.2
+  }
+}

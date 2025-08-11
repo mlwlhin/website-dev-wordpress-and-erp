@@ -1,0 +1,566 @@
+[
+    {
+        "form_id": 5,
+        "item_id": "dass-01"
+    },
+    {
+        "form_id": 8,
+        "item_id": "dass-02"
+    },
+    {
+        "form_id": 9,
+        "item_id": "dass-03"
+    },
+    {
+        "form_id": 10,
+        "item_id": "dass-04"
+    },
+    {
+        "form_id": 11,
+        "item_id": "dass-05"
+    },
+    {
+        "form_id": 12,
+        "item_id": "dass-06"
+    },
+    {
+        "form_id": 13,
+        "item_id": "dass-07"
+    },
+    {
+        "form_id": 14,
+        "item_id": "dass-08"
+    },
+    {
+        "form_id": 15,
+        "item_id": "dass-09"
+    },
+    {
+        "form_id": 16,
+        "item_id": "dass-10"
+    },
+    {
+        "form_id": 17,
+        "item_id": "dass-11"
+    },
+    {
+        "form_id": 18,
+        "item_id": "dass-12"
+    },
+    {
+        "form_id": 20,
+        "item_id": "dass-13"
+    },
+    {
+        "form_id": 21,
+        "item_id": "dass-14"
+    },
+    {
+        "form_id": 22,
+        "item_id": "dass-15"
+    },
+    {
+        "form_id": 23,
+        "item_id": "dass-16"
+    },
+    {
+        "form_id": 24,
+        "item_id": "dass-17"
+    },
+    {
+        "form_id": 25,
+        "item_id": "dass-18"
+    },
+    {
+        "form_id": 26,
+        "item_id": "dass-19"
+    },
+    {
+        "form_id": 27,
+        "item_id": "dass-20"
+    },
+    {
+        "form_id": 28,
+        "item_id": "dass-21"
+    },
+    {
+        "form_id": 31,
+        "item_id": "bfi-01"
+    },
+    {
+        "form_id": 32,
+        "item_id": "bfi-02"
+    },
+    {
+        "form_id": 33,
+        "item_id": "bfi-03"
+    },
+    {
+        "form_id": 34,
+        "item_id": "bfi-04"
+    },
+    {
+        "form_id": 35,
+        "item_id": "bfi-05"
+    },
+    {
+        "form_id": 36,
+        "item_id": "bfi-06"
+    },
+    {
+        "form_id": 37,
+        "item_id": "bfi-07"
+    },
+    {
+        "form_id": 38,
+        "item_id": "bfi-08"
+    },
+    {
+        "form_id": 39,
+        "item_id": "bfi-09"
+    },
+    {
+        "form_id": 40,
+        "item_id": "bfi-10"
+    },
+    {
+        "form_id": 42,
+        "item_id": "bfi-11"
+    },
+    {
+        "form_id": 43,
+        "item_id": "bfi-12"
+    },
+    {
+        "form_id": 44,
+        "item_id": "bfi-13"
+    },
+    {
+        "form_id": 45,
+        "item_id": "bfi-14"
+    },
+    {
+        "form_id": 46,
+        "item_id": "bfi-15"
+    },
+    {
+        "form_id": 47,
+        "item_id": "bfi-16"
+    },
+    {
+        "form_id": 48,
+        "item_id": "bfi-17"
+    },
+    {
+        "form_id": 49,
+        "item_id": "bfi-18"
+    },
+    {
+        "form_id": 50,
+        "item_id": "bfi-19"
+    },
+    {
+        "form_id": 51,
+        "item_id": "bfi-20"
+    },
+    {
+        "form_id": 52,
+        "item_id": "bfi-21"
+    },
+    {
+        "form_id": 54,
+        "item_id": "bfi-22"
+    },
+    {
+        "form_id": 55,
+        "item_id": "bfi-23"
+    },
+    {
+        "form_id": 56,
+        "item_id": "bfi-24"
+    },
+    {
+        "form_id": 57,
+        "item_id": "bfi-25"
+    },
+    {
+        "form_id": 58,
+        "item_id": "bfi-26"
+    },
+    {
+        "form_id": 59,
+        "item_id": "bfi-27"
+    },
+    {
+        "form_id": 60,
+        "item_id": "bfi-28"
+    },
+    {
+        "form_id": 61,
+        "item_id": "bfi-29"
+    },
+    {
+        "form_id": 62,
+        "item_id": "bfi-30"
+    },
+    {
+        "form_id": 63,
+        "item_id": "catch-01"
+    },
+    {
+        "form_id": 120,
+        "item_id": "catch-02"
+    },
+    {
+        "form_id": 121,
+        "item_id": "catch-03"
+    },
+    {
+        "form_id": 122,
+        "item_id": "catch-04"
+    },
+    {
+        "form_id": 123,
+        "item_id": "catch-05"
+    },
+    {
+        "form_id": 165,
+        "item_id": "catch-06"
+    },
+    {
+        "form_id": 166,
+        "item_id": "catch-07"
+    },
+    {
+        "form_id": 167,
+        "item_id": "catch-08"
+    },
+    {
+        "form_id": 168,
+        "item_id": "catch-09"
+    },
+    {
+        "form_id": 119,
+        "item_id": "catch-10"
+    },
+    {
+        "form_id": 65,
+        "item_id": "fses-01"
+    },
+    {
+        "form_id": 67,
+        "item_id": "fses-02"
+    },
+    {
+        "form_id": 68,
+        "item_id": "fses-03"
+    },
+    {
+        "form_id": 69,
+        "item_id": "fses-04"
+    },
+    {
+        "form_id": 70,
+        "item_id": "fses-05"
+    },
+    {
+        "form_id": 71,
+        "item_id": "fses-06"
+    },
+    {
+        "form_id": 73,
+        "item_id": "gse-01"
+    },
+    {
+        "form_id": 75,
+        "item_id": "gse-02"
+    },
+    {
+        "form_id": 76,
+        "item_id": "gse-03"
+    },
+    {
+        "form_id": 77,
+        "item_id": "gse-04"
+    },
+    {
+        "form_id": 78,
+        "item_id": "gse-05"
+    },
+    {
+        "form_id": 79,
+        "item_id": "gse-06"
+    },
+    {
+        "form_id": 80,
+        "item_id": "gse-07"
+    },
+    {
+        "form_id": 81,
+        "item_id": "gse-08"
+    },
+    {
+        "form_id": 82,
+        "item_id": "gse-09"
+    },
+    {
+        "form_id": 83,
+        "item_id": "gse-10"
+    },
+    {
+        "form_id": 86,
+        "item_id": "cfc-01"
+    },
+    {
+        "form_id": 87,
+        "item_id": "cfc-02"
+    },
+    {
+        "form_id": 88,
+        "item_id": "cfc-03"
+    },
+    {
+        "form_id": 89,
+        "item_id": "cfc-04"
+    },
+    {
+        "form_id": 90,
+        "item_id": "cfc-05"
+    },
+    {
+        "form_id": 91,
+        "item_id": "cfc-06"
+    },
+    {
+        "form_id": 92,
+        "item_id": "cfc-07"
+    },
+    {
+        "form_id": 93,
+        "item_id": "cfc-08"
+    },
+    {
+        "form_id": 94,
+        "item_id": "cfc-09"
+    },
+    {
+        "form_id": 95,
+        "item_id": "cfc-10"
+    },
+    {
+        "form_id": 98,
+        "item_id": "mlq-01"
+    },
+    {
+        "form_id": 99,
+        "item_id": "mlq-02"
+    },
+    {
+        "form_id": 100,
+        "item_id": "mlq-03"
+    },
+    {
+        "form_id": 101,
+        "item_id": "mlq-04"
+    },
+    {
+        "form_id": 102,
+        "item_id": "mlq-05"
+    },
+    {
+        "form_id": 103,
+        "item_id": "mlq-06"
+    },
+    {
+        "form_id": 104,
+        "item_id": "mlq-07"
+    },
+    {
+        "form_id": 105,
+        "item_id": "mlq-08"
+    },
+    {
+        "form_id": 106,
+        "item_id": "mlq-09"
+    },
+    {
+        "form_id": 107,
+        "item_id": "mlq-10"
+    },
+    {
+        "form_id": 108,
+        "item_id": "gms-01"
+    },
+    {
+        "form_id": 111,
+        "item_id": "gms-02"
+    },
+    {
+        "form_id": 112,
+        "item_id": "gms-03"
+    },
+    {
+        "form_id": 113,
+        "item_id": "gms-04"
+    },
+    {
+        "form_id": 115,
+        "item_id": "gms-05"
+    },
+    {
+        "form_id": 116,
+        "item_id": "gms-06"
+    },
+    {
+        "form_id": 117,
+        "item_id": "gms-07"
+    },
+    {
+        "form_id": 118,
+        "item_id": "gms-08"
+    },
+    {
+        "form_id": 126,
+        "item_id": "mas-01"
+    },
+    {
+        "form_id": 127,
+        "item_id": "mas-02"
+    },
+    {
+        "form_id": 128,
+        "item_id": "mas-03"
+    },
+    {
+        "form_id": 129,
+        "item_id": "mas-04"
+    },
+    {
+        "form_id": 130,
+        "item_id": "mas-05"
+    },
+    {
+        "form_id": 131,
+        "item_id": "mas-06"
+    },
+    {
+        "form_id": 132,
+        "item_id": "mas-07"
+    },
+    {
+        "form_id": 133,
+        "item_id": "mas-08"
+    },
+    {
+        "form_id": 134,
+        "item_id": "mas-09"
+    },
+    {
+        "form_id": 135,
+        "item_id": "mas-10"
+    },
+    {
+        "form_id": 136,
+        "item_id": "mas-11"
+    },
+    {
+        "form_id": 137,
+        "item_id": "mas-12"
+    },
+    {
+        "form_id": 138,
+        "item_id": "mas-13"
+    },
+    {
+        "form_id": 140,
+        "item_id": "mas-14"
+    },
+    {
+        "form_id": 141,
+        "item_id": "mas-15"
+    },
+    {
+        "form_id": 142,
+        "item_id": "mas-16"
+    },
+    {
+        "form_id": 143,
+        "item_id": "mas-17"
+    },
+    {
+        "form_id": 144,
+        "item_id": "mas-18"
+    },
+    {
+        "form_id": 145,
+        "item_id": "mas-19"
+    },
+    {
+        "form_id": 146,
+        "item_id": "mas-20"
+    },
+    {
+        "form_id": 147,
+        "item_id": "mas-21"
+    },
+    {
+        "form_id": 148,
+        "item_id": "mas-22"
+    },
+    {
+        "form_id": 149,
+        "item_id": "mas-23"
+    },
+    {
+        "form_id": 150,
+        "item_id": "mas-24"
+    },
+    {
+        "form_id": 151,
+        "item_id": "mas-25"
+    },
+    {
+        "form_id": 152,
+        "item_id": "mas-26"
+    },
+    {
+        "form_id": 153,
+        "item_id": "mas-27"
+    },
+    {
+        "form_id": 154,
+        "item_id": "mas-28"
+    },
+    {
+        "form_id": 155,
+        "item_id": "mas-29"
+    },
+    {
+        "form_id": 158,
+        "item_id": "bis-01"
+    },
+    {
+        "form_id": 159,
+        "item_id": "bis-02"
+    },
+    {
+        "form_id": 160,
+        "item_id": "bis-05"
+    },
+    {
+        "form_id": 161,
+        "item_id": "bis-08"
+    },
+    {
+        "form_id": 162,
+        "item_id": "bis-09"
+    },
+    {
+        "form_id": 163,
+        "item_id": "bis-14"
+    },
+    {
+        "form_id": 164,
+        "item_id": "bis-17"
+    }
+]

@@ -1,0 +1,6202 @@
+[
+  {
+    "2026 Rank": "1",
+    "Name": "Massachusetts Institute of Technology (MIT)",
+    "Country/Territory": "United States",
+    "city": "Cambridge",
+    "liv_exp_low_hkd": 15700,
+    "liv_exp_high_hkd": 27475
+  },
+  {
+    "2026 Rank": "2",
+    "Name": "Imperial College London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "3",
+    "Name": "Stanford University",
+    "Country/Territory": "United States",
+    "city": "Stanford",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "4",
+    "Name": "University of Oxford",
+    "Country/Territory": "United Kingdom",
+    "city": "Oxford",
+    "liv_exp_low_hkd": 11550.0,
+    "liv_exp_high_hkd": 18900.0
+  },
+  {
+    "2026 Rank": "5",
+    "Name": "Harvard University",
+    "Country/Territory": "United States",
+    "city": "Cambridge",
+    "liv_exp_low_hkd": 115700,
+    "liv_exp_high_hkd": 27475
+  },
+  {
+    "2026 Rank": "6",
+    "Name": "University of Cambridge",
+    "Country/Territory": "United Kingdom",
+    "city": "Cambridge",
+    "liv_exp_low_hkd": 12600.0,
+    "liv_exp_high_hkd": 21000.0
+  },
+  {
+    "2026 Rank": "8",
+    "Name": "National University of Singapore (NUS)",
+    "Country/Territory": "Singapore",
+    "city": "Singapore",
+    "liv_exp_low_hkd": 12200.0,
+    "liv_exp_high_hkd": 24400.0
+  },
+  {
+    "2026 Rank": "9",
+    "Name": "UCL (University College London)",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "10",
+    "Name": "California Institute of Technology (Caltech)",
+    "Country/Territory": "United States",
+    "city": "Pasadena",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "11",
+    "Name": "The University of Hong Kong",
+    "Country/Territory": "Hong Kong SAR, China",
+    "city": "Hong Kong SAR",
+    "liv_exp_low_hkd": 15000.0,
+    "liv_exp_high_hkd": 25000.0
+  },
+  {
+    "2026 Rank": "12",
+    "Name": "Nanyang Technological University, Singapore (NTU Singapore)",
+    "Country/Territory": "Singapore",
+    "city": "Singapore",
+    "liv_exp_low_hkd": 12200.0,
+    "liv_exp_high_hkd": 24400.0
+  },
+  {
+    "2026 Rank": "13",
+    "Name": "University of Chicago",
+    "Country/Territory": "United States",
+    "city": "Chicago",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "14",
+    "Name": "Peking University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "15",
+    "Name": "University of Pennsylvania",
+    "Country/Territory": "United States",
+    "city": "Philadelphia",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "16",
+    "Name": "Cornell University",
+    "Country/Territory": "United States",
+    "city": "Ithaca",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "17",
+    "Name": "Tsinghua University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "17",
+    "Name": "University of California, Berkeley (UCB)",
+    "Country/Territory": "United States",
+    "city": "Berkeley",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "19",
+    "Name": "The University of Melbourne",
+    "Country/Territory": "Australia",
+    "city": "Melbourne",
+    "liv_exp_low_hkd": 11220.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "20",
+    "Name": "The University of New South Wales",
+    "Country/Territory": "Australia",
+    "city": "Sydney",
+    "liv_exp_low_hkd": 12750.0,
+    "liv_exp_high_hkd": 20400.0
+  },
+  {
+    "2026 Rank": "21",
+    "Name": "Yale University",
+    "Country/Territory": "United States",
+    "city": "New Haven",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "24",
+    "Name": "Johns Hopkins University",
+    "Country/Territory": "United States",
+    "city": "Baltimore",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "25",
+    "Name": "Princeton University",
+    "Country/Territory": "United States",
+    "city": "Princeton",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "25",
+    "Name": "The University of Sydney",
+    "Country/Territory": "Australia",
+    "city": "Sydney",
+    "liv_exp_low_hkd": 12750.0,
+    "liv_exp_high_hkd": 20400.0
+  },
+  {
+    "2026 Rank": "27",
+    "Name": "McGill University",
+    "Country/Territory": "Canada",
+    "city": "Montreal",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "29",
+    "Name": "University of Toronto",
+    "Country/Territory": "Canada",
+    "city": "Toronto",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "30",
+    "Name": "Fudan University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Shanghai",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "31",
+    "Name": "King's College London (KCL)",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "32",
+    "Name": "Australian National University",
+    "Country/Territory": "Australia",
+    "city": "Canberra",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "32",
+    "Name": "The Chinese University of Hong Kong",
+    "Country/Territory": "Hong Kong SAR, China",
+    "city": "Hong Kong SAR",
+    "liv_exp_low_hkd": 15000.0,
+    "liv_exp_high_hkd": 25000.0
+  },
+  {
+    "2026 Rank": "34",
+    "Name": "University of Edinburgh",
+    "Country/Territory": "United Kingdom",
+    "city": "Edinburgh",
+    "liv_exp_low_hkd": 11550.0,
+    "liv_exp_high_hkd": 18900.0
+  },
+  {
+    "2026 Rank": "35",
+    "Name": "The University of Manchester",
+    "Country/Territory": "United Kingdom",
+    "city": "Manchester",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "36",
+    "Name": "Monash University",
+    "Country/Territory": "Australia",
+    "city": "Melbourne",
+    "liv_exp_low_hkd": 11220.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "38",
+    "Name": "Columbia University",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "40",
+    "Name": "University of British Columbia",
+    "Country/Territory": "Canada",
+    "city": "Vancouver",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "42",
+    "Name": "Northwestern University",
+    "Country/Territory": "United States",
+    "city": "Evanston",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "42",
+    "Name": "The University of Queensland",
+    "Country/Territory": "Australia",
+    "city": "Brisbane City",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "44",
+    "Name": "The Hong Kong University of Science and Technology",
+    "Country/Territory": "Hong Kong SAR, China",
+    "city": "Hong Kong",
+    "liv_exp_low_hkd": 15000.0,
+    "liv_exp_high_hkd": 25000.0
+  },
+  {
+    "2026 Rank": "45",
+    "Name": "University of Michigan-Ann Arbor",
+    "Country/Territory": "United States",
+    "city": "Ann Arbor",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "46",
+    "Name": "University of California, Los Angeles (UCLA)",
+    "Country/Territory": "United States",
+    "city": "Los Angeles",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "47",
+    "Name": "Shanghai Jiao Tong University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Shanghai",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "49",
+    "Name": "Zhejiang University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Hangzhou",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "51",
+    "Name": "University of Bristol",
+    "Country/Territory": "United Kingdom",
+    "city": "Bristol",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "52",
+    "Name": "Carnegie Mellon University",
+    "Country/Territory": "United States",
+    "city": "Pittsburgh",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "54",
+    "Name": "The Hong Kong Polytechnic University",
+    "Country/Territory": "Hong Kong SAR, China",
+    "city": "Hong Kong",
+    "liv_exp_low_hkd": 15000.0,
+    "liv_exp_high_hkd": 25000.0
+  },
+  {
+    "2026 Rank": "55",
+    "Name": "New York University (NYU)",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "56",
+    "Name": "London School of Economics and Political Science (LSE)",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "62",
+    "Name": "Duke University",
+    "Country/Territory": "United States",
+    "city": "Durham",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "63",
+    "Name": "City University of Hong Kong",
+    "Country/Territory": "Hong Kong SAR, China",
+    "city": "Kowloon",
+    "liv_exp_low_hkd": 14000.0,
+    "liv_exp_high_hkd": 24000.0
+  },
+  {
+    "2026 Rank": "66",
+    "Name": "University of California, San Diego (UCSD)",
+    "Country/Territory": "United States",
+    "city": "San Diego",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "68",
+    "Name": "University of Texas at Austin",
+    "Country/Territory": "United States",
+    "city": "Austin",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "69",
+    "Name": "Brown University",
+    "Country/Territory": "United States",
+    "city": "Providence",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "70",
+    "Name": "University of Illinois at Urbana-Champaign",
+    "Country/Territory": "United States",
+    "city": "Champaign",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "74",
+    "Name": "The University of Warwick",
+    "Country/Territory": "United Kingdom",
+    "city": "Coventry",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "76",
+    "Name": "University of Birmingham",
+    "Country/Territory": "United Kingdom",
+    "city": "Birmingham",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "77",
+    "Name": "The University of Western Australia",
+    "Country/Territory": "Australia",
+    "city": "Perth",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "79",
+    "Name": "University of Glasgow",
+    "Country/Territory": "United Kingdom",
+    "city": "Glasgow",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "81",
+    "Name": "University of Washington",
+    "Country/Territory": "United States",
+    "city": "Seattle",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "82",
+    "Name": "Adelaide University",
+    "Country/Territory": "Australia",
+    "city": "Adelaide",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "82",
+    "Name": "Pennsylvania State University",
+    "Country/Territory": "United States",
+    "city": "University Park",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "86",
+    "Name": "University of Leeds",
+    "Country/Territory": "United Kingdom",
+    "city": "Leeds",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "87",
+    "Name": "University of Southampton",
+    "Country/Territory": "United Kingdom",
+    "city": "Southampton",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "88",
+    "Name": "Boston University",
+    "Country/Territory": "United States",
+    "city": "Boston",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "88",
+    "Name": "Purdue University",
+    "Country/Territory": "United States",
+    "city": "West Lafayette,",
+    "liv_exp_low_hkd": 9420,
+    "liv_exp_high_hkd": 15700
+  },
+  {
+    "2026 Rank": "92",
+    "Name": "The University of Sheffield",
+    "Country/Territory": "United Kingdom",
+    "city": "Sheffield",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "94",
+    "Name": "Durham University",
+    "Country/Territory": "United Kingdom",
+    "city": "Durham",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "94",
+    "Name": "University of Alberta",
+    "Country/Territory": "Canada",
+    "city": "Edmonton",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "96",
+    "Name": "University of Technology Sydney",
+    "Country/Territory": "Australia",
+    "city": "Sydney",
+    "liv_exp_low_hkd": 12750.0,
+    "liv_exp_high_hkd": 20400.0
+  },
+  {
+    "2026 Rank": "97",
+    "Name": "The University of Nottingham",
+    "Country/Territory": "United Kingdom",
+    "city": "Nottingham",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "103",
+    "Name": "Nanjing University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Nanjing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "110",
+    "Name": "Queen Mary University of London (QMUL)",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "110",
+    "Name": "University of Wisconsin-Madison",
+    "Country/Territory": "United States",
+    "city": "Madison",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "113",
+    "Name": "University of St Andrews",
+    "Country/Territory": "United Kingdom",
+    "city": "St. Andrews",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "114",
+    "Name": "University of California, Davis",
+    "Country/Territory": "United States",
+    "city": "Davis",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "119",
+    "Name": "Rice University",
+    "Country/Territory": "United States",
+    "city": "Houston",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "119",
+    "Name": "University of Waterloo",
+    "Country/Territory": "Canada",
+    "city": "Waterloo",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "123",
+    "Name": "Georgia Institute of Technology",
+    "Country/Territory": "United States",
+    "city": "Atlanta",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "125",
+    "Name": "RMIT University",
+    "Country/Territory": "Australia",
+    "city": "Melbourne",
+    "liv_exp_low_hkd": 11220.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "132",
+    "Name": "University of Bath",
+    "Country/Territory": "United Kingdom",
+    "city": "Bath",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "132",
+    "Name": "University of Science and Technology of China",
+    "Country/Territory": "China (Mainland)",
+    "city": "Hefei",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "137",
+    "Name": "Newcastle University",
+    "Country/Territory": "United Kingdom",
+    "city": "Newcastle upon Tyne",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "138",
+    "Name": "Macquarie University",
+    "Country/Territory": "Australia",
+    "city": "Sydney",
+    "liv_exp_low_hkd": 12750.0,
+    "liv_exp_high_hkd": 20400.0
+  },
+  {
+    "2026 Rank": "140",
+    "Name": "University of North Carolina, Chapel Hill",
+    "Country/Territory": "United States",
+    "city": "Chapel Hill",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "144",
+    "Name": "Texas A&M University",
+    "Country/Territory": "United States",
+    "city": "College Station",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "146",
+    "Name": "University of Southern California",
+    "Country/Territory": "United States",
+    "city": "Los Angeles",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "147",
+    "Name": "University of Liverpool",
+    "Country/Territory": "United Kingdom",
+    "city": "Liverpool",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "151",
+    "Name": "Western University",
+    "Country/Territory": "Canada",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "155",
+    "Name": "University of Exeter",
+    "Country/Territory": "United Kingdom",
+    "city": "Exeter",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "157",
+    "Name": "Lancaster University",
+    "Country/Territory": "United Kingdom",
+    "city": "Lancaster",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "161",
+    "Name": "Michigan State University",
+    "Country/Territory": "United States",
+    "city": "East Lansing",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "167",
+    "Name": "Washington University in St. Louis",
+    "Country/Territory": "United States",
+    "city": "St. Louis",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "168",
+    "Name": "University of Montreal",
+    "Country/Territory": "Canada",
+    "city": "Montreal",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "169",
+    "Name": "University of York",
+    "Country/Territory": "United Kingdom",
+    "city": "York",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "173",
+    "Name": "Arizona State University",
+    "Country/Territory": "United States",
+    "city": "Tempe",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "173",
+    "Name": "McMaster University",
+    "Country/Territory": "Canada",
+    "city": "Hamilton",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "177",
+    "Name": "Tongji University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Shanghai",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "179",
+    "Name": "University of California, Santa Barbara (UCSB)",
+    "Country/Territory": "United States",
+    "city": "Santa Barbara",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "181",
+    "Name": "Cardiff University",
+    "Country/Territory": "United Kingdom",
+    "city": "Cardiff",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "182",
+    "Name": "Emory University",
+    "Country/Territory": "United States",
+    "city": "Atlanta",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "183",
+    "Name": "Curtin University",
+    "Country/Territory": "Australia",
+    "city": "Perth",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "184",
+    "Name": "University of Wollongong",
+    "Country/Territory": "Australia",
+    "city": "Wollongong",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "186",
+    "Name": "Wuhan University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Wuhan",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "190",
+    "Name": "Ohio State University",
+    "Country/Territory": "United States",
+    "city": "Columbus",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "191",
+    "Name": "Queen's University, Ontario",
+    "Country/Territory": "Canada",
+    "city": "Kingston",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "194",
+    "Name": "University of Reading",
+    "Country/Territory": "United Kingdom",
+    "city": "Reading",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "199",
+    "Name": "Queen's University Belfast",
+    "Country/Territory": "United Kingdom",
+    "city": "Belfast",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "207",
+    "Name": "Deakin University",
+    "Country/Territory": "Australia",
+    "city": "Melbourne",
+    "liv_exp_low_hkd": 11220.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "207",
+    "Name": "University of Maryland, College Park",
+    "Country/Territory": "United States",
+    "city": "College Park",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "210",
+    "Name": "University of Minnesota (System)",
+    "Country/Territory": "United States",
+    "city": "Minneapolis",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "211",
+    "Name": "University of Calgary",
+    "Country/Territory": "Canada",
+    "city": "Calgary",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "212",
+    "Name": "University of Florida",
+    "Country/Territory": "United States",
+    "city": "Gainesville",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "219",
+    "Name": "University of Ottawa",
+    "Country/Territory": "Canada",
+    "city": "Ottawa",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "225",
+    "Name": "Loughborough University",
+    "Country/Territory": "United Kingdom",
+    "city": "Loughborough",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "226",
+    "Name": "Queensland University of Technology",
+    "Country/Territory": "Australia",
+    "city": "Brisbane",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "227",
+    "Name": "The University of Newcastle",
+    "Country/Territory": "Australia",
+    "city": "Callaghan",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "233",
+    "Name": "La Trobe University",
+    "Country/Territory": "Australia",
+    "city": "Melbourne",
+    "liv_exp_low_hkd": 11220.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "236",
+    "Name": "University of Rochester",
+    "Country/Territory": "United States",
+    "city": "Rochester",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "244",
+    "Name": "Hong Kong Baptist University",
+    "Country/Territory": "Hong Kong SAR, China",
+    "city": "Hong Kong",
+    "liv_exp_low_hkd": 15000.0,
+    "liv_exp_high_hkd": 25000.0
+  },
+  {
+    "2026 Rank": "247",
+    "Name": "Beijing Normal University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "247",
+    "Name": "Dartmouth College",
+    "Country/Territory": "United States",
+    "city": "Hanover",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "247",
+    "Name": "University of Massachusetts, Amherst",
+    "Country/Territory": "United States",
+    "city": "Amherst",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "250",
+    "Name": "Vanderbilt University",
+    "Country/Territory": "United States",
+    "city": "Nashville",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "251",
+    "Name": "University of Strathclyde",
+    "Country/Territory": "United Kingdom",
+    "city": "Glasgow",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "256",
+    "Name": "Harbin Institute of Technology",
+    "Country/Territory": "China (Mainland)",
+    "city": "Harbin",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "257",
+    "Name": "Tianjin University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Tianjin",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "259",
+    "Name": "Beijing Institute of Technology",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "262",
+    "Name": "University of Aberdeen",
+    "Country/Territory": "United Kingdom",
+    "city": "Aberdeen",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "262",
+    "Name": "University of Surrey",
+    "Country/Territory": "United Kingdom",
+    "city": "Guildford",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "268",
+    "Name": "Griffith University",
+    "Country/Territory": "Australia",
+    "city": "Nathan",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "272",
+    "Name": "North Carolina State University",
+    "Country/Territory": "United States",
+    "city": "Raleigh",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "275",
+    "Name": "University of Virginia",
+    "Country/Territory": "United States",
+    "city": "Charlottesville",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "276",
+    "Name": "Sun Yat-sen University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Guangzhou",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "278",
+    "Name": "University of Sussex",
+    "Country/Territory": "United Kingdom",
+    "city": "Brighton",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "281",
+    "Name": "University of Pittsburgh",
+    "Country/Territory": "United States",
+    "city": "Pittsburgh",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "283",
+    "Name": "Dalhousie University",
+    "Country/Territory": "Canada",
+    "city": "Nova Scotia",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "285",
+    "Name": "Georgetown University",
+    "Country/Territory": "United States",
+    "city": "Washington D.C.",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "285",
+    "Name": "University of Macau",
+    "Country/Territory": "Macau SAR, China",
+    "city": "Macau",
+    "liv_exp_low_hkd": 15000,
+    "liv_exp_high_hkd": 25000
+  },
+  {
+    "2026 Rank": "287",
+    "Name": "Heriot-Watt University",
+    "Country/Territory": "United Kingdom",
+    "city": "Edinburgh",
+    "liv_exp_low_hkd": 11550.0,
+    "liv_exp_high_hkd": 18900.0
+  },
+  {
+    "2026 Rank": "287",
+    "Name": "University of Arizona",
+    "Country/Territory": "United States",
+    "city": "Tucson",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "292",
+    "Name": "Swansea University",
+    "Country/Territory": "United Kingdom",
+    "city": "Swansea",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "293",
+    "Name": "University of California, Irvine",
+    "Country/Territory": "United States",
+    "city": "Irvine",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "294",
+    "Name": "Case Western Reserve University",
+    "Country/Territory": "United States",
+    "city": "Cleveland",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "294",
+    "Name": "Swinburne University of Technology",
+    "Country/Territory": "Australia",
+    "city": "Melbourne",
+    "liv_exp_low_hkd": 11220.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "294",
+    "Name": "University of Notre Dame",
+    "Country/Territory": "United States",
+    "city": "Notre Dame",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "299",
+    "Name": "University of Colorado Boulder",
+    "Country/Territory": "United States",
+    "city": "Boulder",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "305",
+    "Name": "Xi'an Jiaotong University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Xi'an",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "306",
+    "Name": "Indiana University Bloomington",
+    "Country/Territory": "United States",
+    "city": "Bloomington",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "308",
+    "Name": "Simon Fraser University",
+    "Country/Territory": "Canada",
+    "city": "Burnaby",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "310",
+    "Name": "City St George’s, University of London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "314",
+    "Name": "University of Miami",
+    "Country/Territory": "United States",
+    "city": "Miami",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "314",
+    "Name": "University of Tasmania",
+    "Country/Territory": "Australia",
+    "city": "Hobart",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "319",
+    "Name": "Huazhong University of Science and Technology",
+    "Country/Territory": "China (Mainland)",
+    "city": "Wuhan",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "324",
+    "Name": "Sichuan University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Chengdu",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "326",
+    "Name": "University of Leicester",
+    "Country/Territory": "United Kingdom",
+    "city": "Leicester",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "328",
+    "Name": "Rutgers University – New Brunswick",
+    "Country/Territory": "United States",
+    "city": "New Brunswick",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "333",
+    "Name": "York University",
+    "Country/Territory": "Canada",
+    "city": "Toronto",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "334",
+    "Name": "Tufts University",
+    "Country/Territory": "United States",
+    "city": "Medford",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "334",
+    "Name": "University of Illinois Chicago (UIC)",
+    "Country/Territory": "United States",
+    "city": "Chicago",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "339",
+    "Name": "Shandong University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Jinan",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "341",
+    "Name": "Xiamen University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Xiamen",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "343",
+    "Name": "Southern University of Science and Technology (SUSTech)",
+    "Country/Territory": "China (Mainland)",
+    "city": "Shenzhen",
+    "liv_exp_low_hkd": 7700.0,
+    "liv_exp_high_hkd": 15400.0
+  },
+  {
+    "2026 Rank": "355",
+    "Name": "Nankai University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Tianjin",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "358",
+    "Name": "George Washington University",
+    "Country/Territory": "United States",
+    "city": "Washington D.C.",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "358",
+    "Name": "University of Victoria",
+    "Country/Territory": "Canada",
+    "city": "Victoria",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "358",
+    "Name": "Virginia Polytechnic Institute (Virginia Tech)",
+    "Country/Territory": "United States",
+    "city": "Blacksburg",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "362",
+    "Name": "University of Chinese Academy of Sciences (UCAS)",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "374",
+    "Name": "Oxford Brookes University",
+    "Country/Territory": "United Kingdom",
+    "city": "Oxford",
+    "liv_exp_low_hkd": 11550.0,
+    "liv_exp_high_hkd": 18900.0
+  },
+  {
+    "2026 Rank": "377",
+    "Name": "South China University of Technology",
+    "Country/Territory": "China (Mainland)",
+    "city": "Guangzhou",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "378",
+    "Name": "University of Saskatchewan",
+    "Country/Territory": "Canada",
+    "city": "Saskatoon",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "381",
+    "Name": "University of East Anglia (UEA)",
+    "Country/Territory": "United Kingdom",
+    "city": "Norwich",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "384",
+    "Name": "Northeastern University",
+    "Country/Territory": "United States",
+    "city": "Boston",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "385",
+    "Name": "Brunel University of London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "387",
+    "Name": "Flinders University",
+    "Country/Territory": "Australia",
+    "city": "Adelaide",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "388",
+    "Name": "Beihang University (former BUAA)",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "388",
+    "Name": "Birkbeck College, University of London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "392",
+    "Name": "Southeast University, China",
+    "Country/Territory": "China (Mainland)",
+    "city": "Nanjing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "395",
+    "Name": "Aston University",
+    "Country/Territory": "United Kingdom",
+    "city": "Birmingham",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "397",
+    "Name": "University of Kent",
+    "Country/Territory": "United Kingdom",
+    "city": "Canterbury",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "400",
+    "Name": "Western Sydney University",
+    "Country/Territory": "Australia",
+    "city": "Milperra",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "410",
+    "Name": "University at Buffalo SUNY",
+    "Country/Territory": "United States",
+    "city": "Buffalo",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "410",
+    "Name": "University of Southern Queensland",
+    "Country/Territory": "Australia",
+    "city": "Toowoomba",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "423",
+    "Name": "Murdoch University",
+    "Country/Territory": "Australia",
+    "city": "Murdoch",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "423",
+    "Name": "Washington State University",
+    "Country/Territory": "United States",
+    "city": "Pullman",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "428",
+    "Name": "University of Dundee",
+    "Country/Territory": "United Kingdom",
+    "city": "Dundee",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "433",
+    "Name": "East China Normal University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Shanghai",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "440",
+    "Name": "James Cook University",
+    "Country/Territory": "Australia",
+    "city": "Townsville",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "440",
+    "Name": "Macau University of Science and Technology",
+    "Country/Territory": "Macau SAR, China",
+    "city": "Macau",
+    "liv_exp_low_hkd": 15000,
+    "liv_exp_high_hkd": 25000
+  },
+  {
+    "2026 Rank": "440",
+    "Name": "University of California, Riverside",
+    "Country/Territory": "United States",
+    "city": "Riverside",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "449",
+    "Name": "Iowa State University",
+    "Country/Territory": "United States",
+    "city": "Ames",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "452",
+    "Name": "Shenzhen University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Shenzhen",
+    "liv_exp_low_hkd": 7700.0,
+    "liv_exp_high_hkd": 15400.0
+  },
+  {
+    "2026 Rank": "452",
+    "Name": "Stony Brook University",
+    "Country/Territory": "United States",
+    "city": "Stony Brook",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "456",
+    "Name": "University of Essex",
+    "Country/Territory": "United Kingdom",
+    "city": "Colchester",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "458",
+    "Name": "Colorado State University",
+    "Country/Territory": "United States",
+    "city": "Fort Collins",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "458",
+    "Name": "University of California, Santa Cruz",
+    "Country/Territory": "United States",
+    "city": "Santa Cruz",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "461",
+    "Name": "Royal Holloway University of London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "465",
+    "Name": "Concordia University",
+    "Country/Territory": "Canada",
+    "city": "Montreal",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "465",
+    "Name": "Shanghai University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Shanghai",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "465",
+    "Name": "University of Kansas",
+    "Country/Territory": "United States",
+    "city": "Lawrence",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "469",
+    "Name": "Laval University",
+    "Country/Territory": "Canada",
+    "city": "Québec",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "473",
+    "Name": "Jilin University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Changchun",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "480",
+    "Name": "University of Science and Technology Beijing",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "482",
+    "Name": "Dalian University of Technology",
+    "Country/Territory": "China (Mainland)",
+    "city": "Dalian",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "487",
+    "Name": "Edith Cowan University",
+    "Country/Territory": "Australia",
+    "city": "Joondalup",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "491",
+    "Name": "Central South University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Changsha",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "494",
+    "Name": "University of Canberra",
+    "Country/Territory": "Australia",
+    "city": "Bruce",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "499",
+    "Name": "Central Queensland University Australia (CQUniversity)",
+    "Country/Territory": "Australia",
+    "city": "Norman Gardens",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "499",
+    "Name": "Northwestern Polytechnical University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Xi'an",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "504",
+    "Name": "China Agricultural University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "504",
+    "Name": "Chongqing University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Chongqing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "504",
+    "Name": "Hunan University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Changsha",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "504",
+    "Name": "University of Guelph",
+    "Country/Territory": "Canada",
+    "city": "Guelph",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "511",
+    "Name": "Singapore Management University",
+    "Country/Territory": "Singapore",
+    "city": "Singapore",
+    "liv_exp_low_hkd": 12200.0,
+    "liv_exp_high_hkd": 24400.0
+  },
+  {
+    "2026 Rank": "511",
+    "Name": "SOAS University of London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "511",
+    "Name": "University of Bradford",
+    "Country/Territory": "United Kingdom",
+    "city": "Bradford",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "517",
+    "Name": "University of Stirling",
+    "Country/Territory": "United Kingdom",
+    "city": "Stirling",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "519",
+    "Name": "Singapore University of Technology and Design",
+    "Country/Territory": "Singapore",
+    "city": "Singapore",
+    "liv_exp_low_hkd": 12200.0,
+    "liv_exp_high_hkd": 24400.0
+  },
+  {
+    "2026 Rank": "519",
+    "Name": "University of Electronic Science and Technology of China",
+    "Country/Territory": "China (Mainland)",
+    "city": "Chengdu",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "524",
+    "Name": "University of Huddersfield",
+    "Country/Territory": "United Kingdom",
+    "city": "Huddersfield",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "525",
+    "Name": "The University of Georgia",
+    "Country/Territory": "United States",
+    "city": "Athens",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "526",
+    "Name": "Boston College",
+    "Country/Territory": "United States",
+    "city": "Chestnut Hill",
+    "liv_exp_low_hkd": 10205,
+    "liv_exp_high_hkd": 17270
+  },
+  {
+    "2026 Rank": "526",
+    "Name": "University of Hull",
+    "Country/Territory": "United Kingdom",
+    "city": "Hull",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "530",
+    "Name": "The Education University of Hong Kong",
+    "Country/Territory": "Hong Kong SAR, China",
+    "city": "Hong Kong",
+    "liv_exp_low_hkd": 15000.0,
+    "liv_exp_high_hkd": 25000.0
+  },
+  {
+    "2026 Rank": "530",
+    "Name": "University of Iowa",
+    "Country/Territory": "United States",
+    "city": "Iowa City",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "534",
+    "Name": "University of Connecticut",
+    "Country/Territory": "United States",
+    "city": "Storrs",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "540",
+    "Name": "Jinan University (China)",
+    "Country/Territory": "China (Mainland)",
+    "city": "Guangzhou",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "540",
+    "Name": "University of Utah",
+    "Country/Territory": "United States",
+    "city": "Salt Lake City",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "546",
+    "Name": "University of Hawaii at Mañoa",
+    "Country/Territory": "United States",
+    "city": "Honolulu",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "546",
+    "Name": "University of Windsor",
+    "Country/Territory": "Canada",
+    "city": "Windsor",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "549",
+    "Name": "Florida State University",
+    "Country/Territory": "United States",
+    "city": "Tallahassee",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "550",
+    "Name": "Northumbria University at Newcastle",
+    "Country/Territory": "United Kingdom",
+    "city": "Newcastle upon Tyne",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "553",
+    "Name": "University of Delaware",
+    "Country/Territory": "United States",
+    "city": "Newark",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "556",
+    "Name": "University of Houston",
+    "Country/Territory": "United States",
+    "city": "Houston",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "558",
+    "Name": "Coventry University",
+    "Country/Territory": "United Kingdom",
+    "city": "Coventry",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "566",
+    "Name": "Bangor University",
+    "Country/Territory": "United Kingdom",
+    "city": "Bangor",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "566",
+    "Name": "Renmin (People’s) University of China",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "571",
+    "Name": "Colorado School of Mines",
+    "Country/Territory": "United States",
+    "city": "Golden",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "582",
+    "Name": "Florida International University",
+    "Country/Territory": "United States",
+    "city": "Miami",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "584",
+    "Name": "Charles Darwin University",
+    "Country/Territory": "Australia",
+    "city": "Casuarina",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "587",
+    "Name": "American University",
+    "Country/Territory": "United States",
+    "city": "Washington D.C.",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "591",
+    "Name": "Bond University",
+    "Country/Territory": "Australia",
+    "city": "Gold Coast",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "591",
+    "Name": "Illinois Institute of Technology",
+    "Country/Territory": "United States",
+    "city": "Chicago",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "597",
+    "Name": "Tulane University",
+    "Country/Territory": "United States",
+    "city": "New Orleans",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "597",
+    "Name": "University of Texas at Dallas",
+    "Country/Territory": "United States",
+    "city": "Richardson",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "607",
+    "Name": "University of Tennessee",
+    "Country/Territory": "United States",
+    "city": "Knoxville",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "609",
+    "Name": "Nottingham Trent University",
+    "Country/Territory": "United Kingdom",
+    "city": "Nottingham",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "609",
+    "Name": "University of Ulster",
+    "Country/Territory": "United Kingdom",
+    "city": "Coleraine",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "613",
+    "Name": "City University of New York",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "613",
+    "Name": "University of Plymouth",
+    "Country/Territory": "United Kingdom",
+    "city": "Plymouth",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "618",
+    "Name": "Zhengzhou University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Zhengzhou",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "622",
+    "Name": "University of New Brunswick",
+    "Country/Territory": "Canada",
+    "city": "Fredericton",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "624",
+    "Name": "Oregon State University",
+    "Country/Territory": "United States",
+    "city": "Corvallis",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "624",
+    "Name": "Yeshiva University",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "628",
+    "Name": "Missouri University of Science and Technology",
+    "Country/Territory": "United States",
+    "city": "Rolla",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "628",
+    "Name": "University of South Carolina",
+    "Country/Territory": "United States",
+    "city": "Columbia",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "635",
+    "Name": "University of Portsmouth",
+    "Country/Territory": "United Kingdom",
+    "city": "Portsmouth",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "638",
+    "Name": "Southern Cross University",
+    "Country/Territory": "Australia",
+    "city": "Lismore",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "643",
+    "Name": "Manchester Metropolitan University",
+    "Country/Territory": "United Kingdom",
+    "city": "Manchester",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "643",
+    "Name": "University of Manitoba",
+    "Country/Territory": "Canada",
+    "city": "Winnipeg",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "654",
+    "Name": "China University of Mining and Technology",
+    "Country/Territory": "China (Mainland)",
+    "city": "Xuzhou",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "654",
+    "Name": "University of South Florida",
+    "Country/Territory": "United States",
+    "city": "Tampa",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "660",
+    "Name": "Kingston University, London",
+    "Country/Territory": "United Kingdom",
+    "city": "Kingston upon Thames",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "660",
+    "Name": "Memorial University of Newfoundland",
+    "Country/Territory": "Canada",
+    "city": "St. John's",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "664",
+    "Name": "University of Oklahoma",
+    "Country/Territory": "United States",
+    "city": "Norman",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "668",
+    "Name": "Lehigh University",
+    "Country/Territory": "United States",
+    "city": "Bethlehem",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "673",
+    "Name": "East China University of Science and Technology",
+    "Country/Territory": "China (Mainland)",
+    "city": "Shanghai",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "673",
+    "Name": "Stevens Institute of Technology",
+    "Country/Territory": "United States",
+    "city": "Hoboken",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "680",
+    "Name": "Nanjing University of Aeronautics and Astronautics",
+    "Country/Territory": "China (Mainland)",
+    "city": "Nanjing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "686",
+    "Name": "China University of Petroleum",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "695",
+    "Name": "Rensselaer Polytechnic Institute",
+    "Country/Territory": "United States",
+    "city": "Troy",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "697",
+    "Name": "Beijing University of Chemical Technology",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "697",
+    "Name": "University of Missouri, Columbia",
+    "Country/Territory": "United States",
+    "city": "Columbia",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "701-710",
+    "Name": "Lingnan University, Hong Kong",
+    "Country/Territory": "Hong Kong SAR, China",
+    "city": "Hong Kong",
+    "liv_exp_low_hkd": 15000.0,
+    "liv_exp_high_hkd": 25000.0
+  },
+  {
+    "2026 Rank": "701-710",
+    "Name": "Nanjing University of Science and Technology",
+    "Country/Territory": "China (Mainland)",
+    "city": "Nanjing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "701-710",
+    "Name": "University of Central Florida",
+    "Country/Territory": "United States",
+    "city": "Orlando",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "711-720",
+    "Name": "Drexel University",
+    "Country/Territory": "United States",
+    "city": "Philadelphia",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "711-720",
+    "Name": "Goldsmiths, University of London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "711-720",
+    "Name": "Toronto Metropolitan University (formerly Ryerson University)",
+    "Country/Territory": "Canada",
+    "city": "Toronto",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "711-720",
+    "Name": "University of Nebraska - Lincoln",
+    "Country/Territory": "United States",
+    "city": "Lincoln",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "721-730",
+    "Name": "Temple University",
+    "Country/Territory": "United States",
+    "city": "Philadelphia",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "721-730",
+    "Name": "University of Cincinnati",
+    "Country/Territory": "United States",
+    "city": "Cincinnati",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "721-730",
+    "Name": "UWE Bristol (University of the West of England)",
+    "Country/Territory": "United Kingdom",
+    "city": "Bristol",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "731-740",
+    "Name": "Texas Tech University",
+    "Country/Territory": "United States",
+    "city": "Lubbock",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "741-750",
+    "Name": "Aberystwyth University",
+    "Country/Territory": "United Kingdom",
+    "city": "Aberystwyth",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "741-750",
+    "Name": "Brandeis University",
+    "Country/Territory": "United States",
+    "city": "Waltham",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "741-750",
+    "Name": "Syracuse University",
+    "Country/Territory": "United States",
+    "city": "Syracuse",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "741-750",
+    "Name": "Victoria University",
+    "Country/Territory": "Australia",
+    "city": "Melbourne",
+    "liv_exp_low_hkd": 11220.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "751-760",
+    "Name": "University of New Mexico",
+    "Country/Territory": "United States",
+    "city": "Albuquerque",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "751-760",
+    "Name": "University of Oregon",
+    "Country/Territory": "United States",
+    "city": "Eugene",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "761-770",
+    "Name": "New Jersey Institute of Technology (NJIT)",
+    "Country/Territory": "United States",
+    "city": "Newark",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "771-780",
+    "Name": "Rutgers University - Newark",
+    "Country/Territory": "United States",
+    "city": "Newark",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "781-790",
+    "Name": "Carleton University",
+    "Country/Territory": "Canada",
+    "city": "Ottawa",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "781-790",
+    "Name": "Georgia State University",
+    "Country/Territory": "United States",
+    "city": "Atlanta",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "781-790",
+    "Name": "Hong Kong Metropolitan University",
+    "Country/Territory": "Hong Kong SAR, China",
+    "city": "Hong Kong",
+    "liv_exp_low_hkd": 15000.0,
+    "liv_exp_high_hkd": 25000.0
+  },
+  {
+    "2026 Rank": "781-790",
+    "Name": "University of Kentucky",
+    "Country/Territory": "United States",
+    "city": "Lexington",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "781-790",
+    "Name": "Wayne State University",
+    "Country/Territory": "United States",
+    "city": "Detroit",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "791-800",
+    "Name": "Beijing University of Technology",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "791-800",
+    "Name": "Lanzhou University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Lanzhou",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "791-800",
+    "Name": "Wake Forest University",
+    "Country/Territory": "United States",
+    "city": "Winston-Salem",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "Bournemouth University",
+    "Country/Territory": "United Kingdom",
+    "city": "Poole",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "De Montfort University",
+    "Country/Territory": "United Kingdom",
+    "city": "Leicester",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "Donghua University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Shanghai",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "Keele University",
+    "Country/Territory": "United Kingdom",
+    "city": "Keele",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "Middlesex University",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "Northwest Agriculture and Forestry University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Yangling",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "Ocean University of China",
+    "Country/Territory": "China (Mainland)",
+    "city": "Qingdao",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "Soochow University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Suzhou",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "The New School, New York City and Paris",
+    "Country/Territory": "United States",
+    "city": "New York",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "University of Brighton",
+    "Country/Territory": "United Kingdom",
+    "city": "Brighton",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "University of Greenwich",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "University of Lincoln",
+    "Country/Territory": "United Kingdom",
+    "city": "Lincoln",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "University of Maryland, Baltimore",
+    "Country/Territory": "United States",
+    "city": "Baltimore",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "University of Maryland, Baltimore County",
+    "Country/Territory": "United States",
+    "city": "Baltimore",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "801-850",
+    "Name": "University of Westminster",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "851-900",
+    "Name": "Auburn University",
+    "Country/Territory": "United States",
+    "city": "Auburn",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "851-900",
+    "Name": "Australian Catholic University",
+    "Country/Territory": "Australia",
+    "city": "Melbourne",
+    "liv_exp_low_hkd": 11220.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "851-900",
+    "Name": "Beijing Jiaotong University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "851-900",
+    "Name": "China University of Geosciences",
+    "Country/Territory": "China (Mainland)",
+    "city": "Wuhan",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "851-900",
+    "Name": "Edinburgh Napier University",
+    "Country/Territory": "United Kingdom",
+    "city": "Edinburgh",
+    "liv_exp_low_hkd": 11550.0,
+    "liv_exp_high_hkd": 18900.0
+  },
+  {
+    "2026 Rank": "851-900",
+    "Name": "Jiangnan University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Wuxi",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "851-900",
+    "Name": "Liverpool John Moores University",
+    "Country/Territory": "United Kingdom",
+    "city": "Liverpool",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "851-900",
+    "Name": "Louisiana State University",
+    "Country/Territory": "United States",
+    "city": "Baton Rouge",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "851-900",
+    "Name": "Oklahoma State University",
+    "Country/Territory": "United States",
+    "city": "Stillwater",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "851-900",
+    "Name": "Université du Québec",
+    "Country/Territory": "Canada",
+    "city": "Québec",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "851-900",
+    "Name": "University of Colorado, Denver",
+    "Country/Territory": "United States",
+    "city": "Denver",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "851-900",
+    "Name": "Worcester Polytechnic Institute",
+    "Country/Territory": "United States",
+    "city": "Worcester",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "Huazhong Agricultural University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Wuhan",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "Kansas State University",
+    "Country/Territory": "United States",
+    "city": "Manhattan",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "London South Bank University",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "Macao Polytechnic University",
+    "Country/Territory": "Macau SAR, China",
+    "city": "Macau",
+    "liv_exp_low_hkd": 15000,
+    "liv_exp_high_hkd": 25000
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "Michigan Technological University",
+    "Country/Territory": "United States",
+    "city": "Houghton",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "Université de Sherbrooke",
+    "Country/Territory": "Canada",
+    "city": "Sherbrooke",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "University at Albany SUNY",
+    "Country/Territory": "United States",
+    "city": "Albany",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "University of Alabama",
+    "Country/Territory": "United States",
+    "city": "Tuscaloosa",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "University of Alaska Fairbanks",
+    "Country/Territory": "United States",
+    "city": "Fairbanks",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "University of Hertfordshire",
+    "Country/Territory": "United Kingdom",
+    "city": "Hatfield",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "University of North Texas",
+    "Country/Territory": "United States",
+    "city": "Denton",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "University of Salford",
+    "Country/Territory": "United Kingdom",
+    "city": "Salford",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "901-950",
+    "Name": "Virginia Commonwealth University",
+    "Country/Territory": "United States",
+    "city": "Richmond",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "951-1000",
+    "Name": "Charles Sturt University",
+    "Country/Territory": "Australia",
+    "city": "Bathurst",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "951-1000",
+    "Name": "Clarkson University",
+    "Country/Territory": "United States",
+    "city": "Potsdam",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "951-1000",
+    "Name": "Clemson University",
+    "Country/Territory": "United States",
+    "city": "Clemson",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "951-1000",
+    "Name": "George Mason University",
+    "Country/Territory": "United States",
+    "city": "Fairfax",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "951-1000",
+    "Name": "Nanjing Agricultural University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Nanjing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "951-1000",
+    "Name": "Nanjing Normal University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Nanjing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "951-1000",
+    "Name": "Rochester Institute of Technology (RIT)",
+    "Country/Territory": "United States",
+    "city": "Rochester",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "951-1000",
+    "Name": "Saint Louis University",
+    "Country/Territory": "United States",
+    "city": "St. Louis",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "951-1000",
+    "Name": "The Robert Gordon University",
+    "Country/Territory": "United Kingdom",
+    "city": "Aberdeen",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "951-1000",
+    "Name": "University of Massachusetts - Boston",
+    "Country/Territory": "United States",
+    "city": "Boston",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "951-1000",
+    "Name": "Wuhan University of Technology",
+    "Country/Territory": "China (Mainland)",
+    "city": "Wuhan",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Baylor University",
+    "Country/Territory": "United States",
+    "city": "Waco",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Beijing University of Posts and Telecommunications",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Binghamton University SUNY",
+    "Country/Territory": "United States",
+    "city": "Binghamton",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Birmingham City University",
+    "Country/Territory": "United Kingdom",
+    "city": "Birmingham",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Brigham Young University",
+    "Country/Territory": "United States",
+    "city": "Provo",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Clark University",
+    "Country/Territory": "United States",
+    "city": "Worcester",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Florida Atlantic University - Boca Raton",
+    "Country/Territory": "United States",
+    "city": "Boca Raton",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Fordham University",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Glasgow Caledonian University",
+    "Country/Territory": "United Kingdom",
+    "city": "Glasgow",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Harbin Engineering University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Harbin",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Hohai University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Nanjing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Howard University",
+    "Country/Territory": "United States",
+    "city": "Washington D.C.",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "IU Indianapolis",
+    "Country/Territory": "United States",
+    "city": "Indianapolis",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Kent State University",
+    "Country/Territory": "United States",
+    "city": "Kent",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Leeds Beckett University",
+    "Country/Territory": "United Kingdom",
+    "city": "Leeds",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "London Metropolitan University",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Loyola University Chicago",
+    "Country/Territory": "United States",
+    "city": "Chicago",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Mississippi State University",
+    "Country/Territory": "United States",
+    "city": "Starkville",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Northern Arizona University",
+    "Country/Territory": "United States",
+    "city": "Flagstaff",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Northwest University (China)",
+    "Country/Territory": "China (Mainland)",
+    "city": "Xi'an",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Ohio University",
+    "Country/Territory": "United States",
+    "city": "Athens",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "San Diego State University",
+    "Country/Territory": "United States",
+    "city": "San Diego",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Sheffield Hallam University",
+    "Country/Territory": "United Kingdom",
+    "city": "Sheffield",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Southern Methodist University",
+    "Country/Territory": "United States",
+    "city": "Dallas",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Southwest University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Chongqing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "The City College of New York",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Alabama, Birmingham",
+    "Country/Territory": "United States",
+    "city": "Birmingham",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Arkansas Fayetteville",
+    "Country/Territory": "United States",
+    "city": "Fayetteville",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Central Lancashire",
+    "Country/Territory": "United Kingdom",
+    "city": "Preston",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Denver",
+    "Country/Territory": "United States",
+    "city": "Denver",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of East London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Idaho",
+    "Country/Territory": "United States",
+    "city": "Moscow",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Louisville",
+    "Country/Territory": "United States",
+    "city": "Louisville",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Mississippi",
+    "Country/Territory": "United States",
+    "city": "Oxford",
+    "liv_exp_low_hkd": 11550.0,
+    "liv_exp_high_hkd": 18900.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Missouri, Kansas City",
+    "Country/Territory": "United States",
+    "city": "Kansas City",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Nevada - Reno",
+    "Country/Territory": "United States",
+    "city": "Reno",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of New England",
+    "Country/Territory": "Australia",
+    "city": "Armidale",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of New Hampshire",
+    "Country/Territory": "United States",
+    "city": "Durham",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of North Carolina at Charlotte",
+    "Country/Territory": "United States",
+    "city": "Charlotte",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Regina",
+    "Country/Territory": "Canada",
+    "city": "Regina",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Rhode Island",
+    "Country/Territory": "United States",
+    "city": "Kingston",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Texas Arlington",
+    "Country/Territory": "United States",
+    "city": "Arlington",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Texas at San Antonio",
+    "Country/Territory": "United States",
+    "city": "San Antonio",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Toledo",
+    "Country/Territory": "United States",
+    "city": "Toledo",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Tulsa",
+    "Country/Territory": "United States",
+    "city": "Tulsa",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Vermont",
+    "Country/Territory": "United States",
+    "city": "Burlington",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Wolverhampton",
+    "Country/Territory": "United Kingdom",
+    "city": "Telford",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "University of Wyoming",
+    "Country/Territory": "United States",
+    "city": "Laramie",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Utah State University",
+    "Country/Territory": "United States",
+    "city": "Logan",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "West Virginia University",
+    "Country/Territory": "United States",
+    "city": "Morgantown",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "William & Mary",
+    "Country/Territory": "United States",
+    "city": "Williamsburg",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "1001-1200",
+    "Name": "Xi'an Jiaotong-Liverpool University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Suzhou",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Beijing Foreign Studies University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Beijing University of Chinese Medicine",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Brock University",
+    "Country/Territory": "Canada",
+    "city": "St. Catharines",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "California Polytechnic State University",
+    "Country/Territory": "United States",
+    "city": "San Luis Obispo",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Canterbury Christ Church University",
+    "Country/Territory": "United Kingdom",
+    "city": "Canterbury",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "China University of Political Science and Law",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Marquette University",
+    "Country/Territory": "United States",
+    "city": "Milwaukee",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Miami University",
+    "Country/Territory": "United States",
+    "city": "Miami",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "New Mexico State University",
+    "Country/Territory": "United States",
+    "city": "Las Cruces",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Portland State University",
+    "Country/Territory": "United States",
+    "city": "Portland",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Pratt Institute",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Queen Margaret University , Edinburgh",
+    "Country/Territory": "United Kingdom",
+    "city": "Musselburgh",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Seattle University",
+    "Country/Territory": "United States",
+    "city": "Seattle",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Shanghai International Studies University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Shanghai",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Shanghai University of Finance and Economics",
+    "Country/Territory": "China (Mainland)",
+    "city": "Shanghai",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "The University of Northampton",
+    "Country/Territory": "United Kingdom",
+    "city": "Northampton",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "The University of Notre Dame, Australia",
+    "Country/Territory": "Australia",
+    "city": "Sydney",
+    "liv_exp_low_hkd": 12750.0,
+    "liv_exp_high_hkd": 20400.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "University of Derby",
+    "Country/Territory": "United Kingdom",
+    "city": "Derby",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "University of International Business and Economics",
+    "Country/Territory": "China (Mainland)",
+    "city": "Beijing",
+    "liv_exp_low_hkd": 5500.0,
+    "liv_exp_high_hkd": 11000.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "University of Memphis",
+    "Country/Territory": "United States",
+    "city": "Memphis",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "University of North Carolina at Greensboro",
+    "Country/Territory": "United States",
+    "city": "Greensboro",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "University of San Diego",
+    "Country/Territory": "United States",
+    "city": "San Diego",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "University of San Francisco",
+    "Country/Territory": "United States",
+    "city": "San Francisco",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "University of South Alabama (USA)",
+    "Country/Territory": "United States",
+    "city": "Mobile",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "University of Texas El Paso",
+    "Country/Territory": "United States",
+    "city": "El Paso",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "University of Wisconsin Milwaukee",
+    "Country/Territory": "United States",
+    "city": "Milwaukee",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "1201-1400",
+    "Name": "Western Michigan University",
+    "Country/Territory": "United States",
+    "city": "Kalamazoo",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1401+",
+    "Name": "Central Michigan University",
+    "Country/Territory": "United States",
+    "city": "Mount Pleasant",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1401+",
+    "Name": "Cleveland State University",
+    "Country/Territory": "United States",
+    "city": "Cleveland",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "1401+",
+    "Name": "Harper Adams University",
+    "Country/Territory": "United Kingdom",
+    "city": "Newport",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "1401+",
+    "Name": "San Francisco State University",
+    "Country/Territory": "United States",
+    "city": "San Francisco",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "1401+",
+    "Name": "Shanghai Normal University",
+    "Country/Territory": "China (Mainland)",
+    "city": "Shanghai",
+    "liv_exp_low_hkd": 6600.0,
+    "liv_exp_high_hkd": 13200.0
+  },
+  {
+    "2026 Rank": "1401+",
+    "Name": "University of Hawaii at Hilo",
+    "Country/Territory": "United States",
+    "city": "Hilo",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "1401+",
+    "Name": "University of Missouri Saint Louis",
+    "Country/Territory": "United States",
+    "city": "St. Louis",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "1401+",
+    "Name": "University of the Pacific",
+    "Country/Territory": "United States",
+    "city": "Stockton",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Stanford Graduate School of Business",
+    "Country/Territory": "United States",
+    "city": "Stanford(CA)",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Michigan (Ross)",
+    "Country/Territory": "United States",
+    "city": "Ann Arbor (MI)",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "NUS Business School - National University of Singapore (NUS)",
+    "Country/Territory": "Singapore",
+    "city": "Singapore",
+    "liv_exp_low_hkd": 12200.0,
+    "liv_exp_high_hkd": 24400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "London Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Melbourne Business School",
+    "Country/Territory": "Australia",
+    "city": "Melbourne",
+    "liv_exp_low_hkd": 11220.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Toronto (Rotman)",
+    "Country/Territory": "Canada",
+    "city": "Toronto",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Oxford (Said)",
+    "Country/Territory": "United Kingdom",
+    "city": "Oxford",
+    "liv_exp_low_hkd": 11550.0,
+    "liv_exp_high_hkd": 18900.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "MIT (Sloan)",
+    "Country/Territory": "United States",
+    "city": "Cambridge",
+    "liv_exp_low_hkd": 12600.0,
+    "liv_exp_high_hkd": 21000.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Penn (Wharton)",
+    "Country/Territory": "United States",
+    "city": "Philadelphia (PA)",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "McGill (Desautels)",
+    "Country/Territory": "Canada",
+    "city": "Montreal",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "UCLA (Anderson)",
+    "Country/Territory": "United States",
+    "city": "Los Angeles (CA)",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "UNSW (AGSM)",
+    "Country/Territory": "Australia",
+    "city": "Sydney",
+    "liv_exp_low_hkd": 12750.0,
+    "liv_exp_high_hkd": 20400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Cambridge (Judge)",
+    "Country/Territory": "United Kingdom",
+    "city": "Cambridge",
+    "liv_exp_low_hkd": 12600.0,
+    "liv_exp_high_hkd": 21000.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Harvard Business School",
+    "Country/Territory": "United States",
+    "city": "Cambridge (MA)",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Western (Ivey)",
+    "Country/Territory": "Canada",
+    "city": "London (ON)",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Nanyang Business School, Singapore",
+    "Country/Territory": "Singapore",
+    "city": "Singapore",
+    "liv_exp_low_hkd": 12200.0,
+    "liv_exp_high_hkd": 24400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Sydney Business School",
+    "Country/Territory": "Australia",
+    "city": "Sydney",
+    "liv_exp_low_hkd": 12750.0,
+    "liv_exp_high_hkd": 20400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "UQ Business School",
+    "Country/Territory": "Australia",
+    "city": "Brisbane",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Queen's (Smith)",
+    "Country/Territory": "Canada",
+    "city": "Kingston (ON)",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "USC (Marshall)",
+    "Country/Territory": "United States",
+    "city": "Los Angeles (CA)",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Macquarie Business School, Macquarie University",
+    "Country/Territory": "Australia",
+    "city": "Sydney",
+    "liv_exp_low_hkd": 12750.0,
+    "liv_exp_high_hkd": 20400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Columbia Business School",
+    "Country/Territory": "United States",
+    "city": "New York (NY)",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "SMU (Lee Kong Chian)",
+    "Country/Territory": "Singapore",
+    "city": "Singapore",
+    "liv_exp_low_hkd": 12200.0,
+    "liv_exp_high_hkd": 24400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Western Australia Business School",
+    "Country/Territory": "Australia",
+    "city": "Perth",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Manchester (Alliance)",
+    "Country/Territory": "United Kingdom",
+    "city": "Manchester",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Imperial College Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Northwestern (Kellogg)",
+    "Country/Territory": "United States",
+    "city": "Evanston (IL)",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "UC Berkeley (Haas)",
+    "Country/Territory": "United States",
+    "city": "Berkeley (CA)",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Warwick Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Coventry",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Yale School of Management",
+    "Country/Territory": "United States",
+    "city": "New Haven (CT)",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Alberta School of Business",
+    "Country/Territory": "Canada",
+    "city": "Edmonton (AB)",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Duke (Fuqua)",
+    "Country/Territory": "United States",
+    "city": "Durham (NC)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Concordia (John Molson)",
+    "Country/Territory": "Canada",
+    "city": "Montreal",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "London School of Economics",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Chicago (Booth)",
+    "Country/Territory": "United States",
+    "city": "Chicago (IL)",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Washington (Foster)",
+    "Country/Territory": "United States",
+    "city": "Seattle (WA)",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "NYU (Stern)",
+    "Country/Territory": "United States",
+    "city": "New York (NY)",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Carnegie Mellon (Tepper)",
+    "Country/Territory": "United States",
+    "city": "Pittsburgh (PA)",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Texas (McCombs)",
+    "Country/Territory": "United States",
+    "city": "Austin (TX)",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Cranfield School of Management",
+    "Country/Territory": "United Kingdom",
+    "city": "Bedford",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Lancaster University Management School",
+    "Country/Territory": "United Kingdom",
+    "city": "Lancaster",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Cornell (Johnson)",
+    "Country/Territory": "United States",
+    "city": "Ithaca (NY)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Mitch Daniels School of Business (Purdue)",
+    "Country/Territory": "United States",
+    "city": "West Lafayette",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Boston (Questrom)",
+    "Country/Territory": "United States",
+    "city": "Boston (MA)",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Edinburgh Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Edinburgh",
+    "liv_exp_low_hkd": 11550.0,
+    "liv_exp_high_hkd": 18900.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "York (Schulich)",
+    "Country/Territory": "Canada",
+    "city": "Toronto",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Minnesota (Carlson)",
+    "Country/Territory": "United States",
+    "city": "Minneapolis (MN)",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Indiana (Kelley)",
+    "Country/Territory": "United States",
+    "city": "Bloomington (IN)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Wisconsin School of Business",
+    "Country/Territory": "United States",
+    "city": "Madison (WI)",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Georgia Tech (Scheller)",
+    "Country/Territory": "United States",
+    "city": "Atlanta (GA)",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Georgetown (McDonough)",
+    "Country/Territory": "United States",
+    "city": "Washington, D.C",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Dartmouth (Tuck)",
+    "Country/Territory": "United States",
+    "city": "Hanover (NH)",
+    "liv_exp_low_hkd": 10990,
+    "liv_exp_high_hkd": 18055
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Emory (Goizueta)",
+    "Country/Territory": "United States",
+    "city": "Atlanta (GA)",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Florida (Warrington)",
+    "Country/Territory": "United States",
+    "city": "Gainesville (FL)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "SMU (School of Computing and Information Systems)",
+    "Country/Territory": "Singapore",
+    "city": "Singapore",
+    "liv_exp_low_hkd": 12200.0,
+    "liv_exp_high_hkd": 24400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Babson College (Olin)",
+    "Country/Territory": "United States",
+    "city": "Wellesley (MA)",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Virginia (Darden)",
+    "Country/Territory": "United States",
+    "city": "Charlottesville (VA)",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Arizona State (Carey)",
+    "Country/Territory": "United States",
+    "city": "Tempe (AZ)",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Texas A&M (Mays)",
+    "Country/Territory": "United States",
+    "city": "College Station (TX),",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Maryland (Smith)",
+    "Country/Territory": "United States",
+    "city": "College Park (MD)",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Michigan State (Eli Broad)",
+    "Country/Territory": "United States",
+    "city": "East Lansing (MI)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Northeastern (D'AmoreMcKim)",
+    "Country/Territory": "United States",
+    "city": "Boston (MA)",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Technology Sydney Business School",
+    "Country/Territory": "Australia",
+    "city": "Sydney",
+    "liv_exp_low_hkd": 12750.0,
+    "liv_exp_high_hkd": 20400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "John Hopkins (Carey)",
+    "Country/Territory": "United States",
+    "city": "Baltimore",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Penn State (Smeal)",
+    "Country/Territory": "United States",
+    "city": "University Park",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "British Columbia (Sauder)",
+    "Country/Territory": "Canada",
+    "city": "Vancouver",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Newcastle University Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Newcastle upon Tyne",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Leeds University Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Leeds",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "UT Dallas (Naveen)",
+    "Country/Territory": "United States",
+    "city": "Richardson",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Colorado Boulder (Leeds)",
+    "Country/Territory": "United States",
+    "city": "Boulder",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Georgia (Terry)",
+    "Country/Territory": "United States",
+    "city": "Athens",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Bayes Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Rice (Jones)",
+    "Country/Territory": "United States",
+    "city": "Houston (TX)",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "North Carolina (Kenan-Flagler)",
+    "Country/Territory": "United States",
+    "city": "Chapel Hill (NC)",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "HEC Montréal",
+    "Country/Territory": "Canada",
+    "city": "Montreal",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "UC San Diego (Rady)",
+    "Country/Territory": "United States",
+    "city": "San Diego",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Durham University Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Durham",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Rochester (Simon)",
+    "Country/Territory": "United States",
+    "city": "Rochester",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "UC Davis",
+    "Country/Territory": "United States",
+    "city": "Davis",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Florida International University College of Business",
+    "Country/Territory": "United States",
+    "city": "Miami",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Ohio State (Fisher)",
+    "Country/Territory": "United States",
+    "city": "Columbus",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Wollongong (Sydney)",
+    "Country/Territory": "Australia",
+    "city": "Sydney",
+    "liv_exp_low_hkd": 12750.0,
+    "liv_exp_high_hkd": 20400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Pace University (Lubin)",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "George Washington",
+    "Country/Territory": "United States",
+    "city": "Washington, D.C.",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Bath School of Management",
+    "Country/Territory": "United Kingdom",
+    "city": "Bath",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Vanderbilt (Owen)",
+    "Country/Territory": "United States",
+    "city": "Nashville",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "San Diego (Knauss)",
+    "Country/Territory": "United States",
+    "city": "San Diego",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Alabama (Manderson)",
+    "Country/Territory": "United States",
+    "city": "Tuscaloosa",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Rensselaer Polytechnic (Lally)",
+    "Country/Territory": "United States",
+    "city": "Troy",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Miami (Herbert)",
+    "Country/Territory": "United States",
+    "city": "Coral Gables",
+    "liv_exp_low_hkd": 14130,
+    "liv_exp_high_hkd": 23550
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Nottingham University Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Nottingham",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Aston Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Birmingham",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Birmingham Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Birmingham",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Illinois (Gies)",
+    "Country/Territory": "United States",
+    "city": "Champaign",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Washington (Olin)",
+    "Country/Territory": "United States",
+    "city": "St. Louis",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "American (Kogod)",
+    "Country/Territory": "United States",
+    "city": "Washington, D.C.",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Henley Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Reading",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Sheffield University Management School",
+    "Country/Territory": "United Kingdom",
+    "city": "Sheffield",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Strathclyde Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Glasgow",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Boston College (Carroll)",
+    "Country/Territory": "United States",
+    "city": "Chestnut Hill",
+    "liv_exp_low_hkd": 10205,
+    "liv_exp_high_hkd": 17270
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Notre Dame (Mendoza)",
+    "Country/Territory": "United States",
+    "city": "Notre Dame (IN)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "North Carolina State (Jenkins)",
+    "Country/Territory": "United States",
+    "city": "Raleigh (NC)",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Oxford Brookes Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Oxford",
+    "liv_exp_low_hkd": 11550,
+    "liv_exp_high_hkd": 18900
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Arizona (Eller)",
+    "Country/Territory": "United States",
+    "city": "Tucson (AZ)",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Pittsburgh (Katz)",
+    "Country/Territory": "United States",
+    "city": "Pittsburg (PA)",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Rutgers Business School",
+    "Country/Territory": "United States",
+    "city": "Newark",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Southampton Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Southampton",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "UC Irvine (Merage)",
+    "Country/Territory": "United States",
+    "city": "Irvine (CA)",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Auburn (Harbert)",
+    "Country/Territory": "United States",
+    "city": "Auburn (AL)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Baylor (Hankamer)",
+    "Country/Territory": "United States",
+    "city": "Waco (TX)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Brigham Young (Marriott)",
+    "Country/Territory": "United States",
+    "city": "Provo (UT)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Brunel Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Colorado State University - College of Business",
+    "Country/Territory": "United States",
+    "city": "Fort Collins (CO)",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Fordham (Gabelli)",
+    "Country/Territory": "United States",
+    "city": "New York (NY)",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Glasgow (Adam Smith)",
+    "Country/Territory": "United Kingdom",
+    "city": "Glasgow",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Kent Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Canterbury",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Liverpool Management School",
+    "Country/Territory": "United Kingdom",
+    "city": "Liverpool",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "McMaster (DeGroote)",
+    "Country/Territory": "Canada",
+    "city": "Hamilton",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Missouri (Trulaske)",
+    "Country/Territory": "United States",
+    "city": "Columbia (MO)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Oregon (Lundquist)",
+    "Country/Territory": "United States",
+    "city": "Eugene (OR)",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "RMIT University School of Business and Law",
+    "Country/Territory": "Australia",
+    "city": "Melbourne",
+    "liv_exp_low_hkd": 11220.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "San Francisco (Masagung)",
+    "Country/Territory": "United States",
+    "city": "San Francisco (CA)",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "SMU (Cox)",
+    "Country/Territory": "United States",
+    "city": "Dallas (TX)",
+    "liv_exp_low_hkd": 11775,
+    "liv_exp_high_hkd": 19625
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Tampa (Sykes)",
+    "Country/Territory": "United States",
+    "city": "Tampa (FL)",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of Sussex Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Brighton",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "UniSA Business School",
+    "Country/Territory": "Australia",
+    "city": "Adelaide",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University at Buffalo",
+    "Country/Territory": "United States",
+    "city": "Buffalo (NY)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Brandeis International Business School",
+    "Country/Territory": "United States",
+    "city": "Waltham (MA)",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Case Western (Weatherhead)",
+    "Country/Territory": "United States",
+    "city": "Cleveland (OH)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Cincinnati (Lindner)",
+    "Country/Territory": "United States",
+    "city": "Cincinnati (OH)",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Connecticut (UCONN)",
+    "Country/Territory": "United States",
+    "city": "Mansfield (CT)",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Dalhousie (Rowe)",
+    "Country/Territory": "Canada",
+    "city": "Halifax",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Deakin Business School",
+    "Country/Territory": "Australia",
+    "city": "Melbourne",
+    "liv_exp_low_hkd": 11220.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Denver (Daniels)",
+    "Country/Territory": "United States",
+    "city": "Denver (CO)",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Edinburgh Napier University (The Business School)",
+    "Country/Territory": "United Kingdom",
+    "city": "Edinburgh",
+    "liv_exp_low_hkd": 11550.0,
+    "liv_exp_high_hkd": 18900.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Exeter Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Exeter",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Fox School of Business",
+    "Country/Territory": "United States",
+    "city": "Philadelphia",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Haskayne School of Business",
+    "Country/Territory": "Canada",
+    "city": "Calgary",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Houston (Bauer)",
+    "Country/Territory": "United States",
+    "city": "Houston",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "La Trobe Business School",
+    "Country/Territory": "Australia",
+    "city": "Melbourne",
+    "liv_exp_low_hkd": 11220.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Loughborough School of Business and Economics",
+    "Country/Territory": "United Kingdom",
+    "city": "Loughborough",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Ottawa (Telfer)",
+    "Country/Territory": "Canada",
+    "city": "Ottawa",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Pepperdine (Graziadio)",
+    "Country/Territory": "United States",
+    "city": "Malibu",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Queen's University of Belfast",
+    "Country/Territory": "United Kingdom",
+    "city": "Belfast",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Simon Fraser (Beedie)",
+    "Country/Territory": "Canada",
+    "city": "Burnaby",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "South Carolina (Moore)",
+    "Country/Territory": "United States",
+    "city": "Columbia",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Syracuse (Whitman)",
+    "Country/Territory": "United States",
+    "city": "Syracuse",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Texas Christian (Neely)",
+    "Country/Territory": "United States",
+    "city": "Fort Worth",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of California (Riverside)",
+    "Country/Territory": "United States",
+    "city": "Riverside",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Utah (Eccles)",
+    "Country/Territory": "United States",
+    "city": "Salt Lake City",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Willamette (Atkinson)",
+    "Country/Territory": "United States",
+    "city": "Salem",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Albers (Seattle)",
+    "Country/Territory": "United States",
+    "city": "Seattle",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Arkansas (Walton)",
+    "Country/Territory": "United States",
+    "city": "Fayetteville",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Baruch College (Zicklin)",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Bentley (McCallum)",
+    "Country/Territory": "United States",
+    "city": "Waltham",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Brock (Goodman)",
+    "Country/Territory": "Canada",
+    "city": "St. Catharines",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "California State Long Beach",
+    "Country/Territory": "United States",
+    "city": "Long Beach",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Carleton (Sprott)",
+    "Country/Territory": "Canada",
+    "city": "Ottawa",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Chapman (Argyros)",
+    "Country/Territory": "United States",
+    "city": "Orange",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Claremont (Drucker)",
+    "Country/Territory": "United States",
+    "city": "Claremont",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Clark University School of Business",
+    "Country/Territory": "United States",
+    "city": "Worcester",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Clemson University (Powers)",
+    "Country/Territory": "United States",
+    "city": "Clemson",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Curtin Business School",
+    "Country/Territory": "Australia",
+    "city": "Perth",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Dominican University (Brennan)",
+    "Country/Territory": "United States",
+    "city": "River Forest",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Drexel (LeBow)",
+    "Country/Territory": "United States",
+    "city": "Philadelphia",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Fairfield (Dolan)",
+    "Country/Territory": "United States",
+    "city": "Fairfield",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Hofstra (Zarb)",
+    "Country/Territory": "United States",
+    "city": "Hempstead",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Iowa State University (Ivy)",
+    "Country/Territory": "United States",
+    "city": "Ames",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Kent State University (Crawford)",
+    "Country/Territory": "United States",
+    "city": "Kent",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Kentucky (Gatton)",
+    "Country/Territory": "United States",
+    "city": "Lexington",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Louisiana State University - Baton Rouge (Ourso)",
+    "Country/Territory": "United States",
+    "city": "Baton Rouge",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Manitoba (Asper)",
+    "Country/Territory": "Canada",
+    "city": "Winnipeg",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "North Carolina, Greensboro (Bryan)",
+    "Country/Territory": "United States",
+    "city": "Greensboro",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Oregon State",
+    "Country/Territory": "United States",
+    "city": "Corvallis",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "RIT (Saunders)",
+    "Country/Territory": "United States",
+    "city": "Rochester",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Rowan University",
+    "Country/Territory": "United States",
+    "city": "Glassboro",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Saint Louis University (Chaifetz)",
+    "Country/Territory": "United States",
+    "city": "St. Louis",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Saint Mary's (Sobey)",
+    "Country/Territory": "Canada",
+    "city": "Halifax",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Saskatchewan (Edwards)",
+    "Country/Territory": "Canada",
+    "city": "Saskatoon",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "South Dakota (Beacom)",
+    "Country/Territory": "United States",
+    "city": "Vermillion",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Suffolk (Sawyer)",
+    "Country/Territory": "United States",
+    "city": "Boston",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Texas Tech (Rawls)",
+    "Country/Territory": "United States",
+    "city": "Lubbock",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "TMU (Ted Rogers)",
+    "Country/Territory": "Canada",
+    "city": "Toronto",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University at Albany",
+    "Country/Territory": "United States",
+    "city": "Albany",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Massachusetts (Dartmouth)",
+    "Country/Territory": "United States",
+    "city": "Dartmouth",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of South Florida (Muma)",
+    "Country/Territory": "United States",
+    "city": "Tampa",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Tennessee, Knoxville – Haslam College of Business",
+    "Country/Territory": "United States",
+    "city": "Knoxville",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Victoria (Gustavson)",
+    "Country/Territory": "Canada",
+    "city": "Victoria",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Wilfrid Laurier (Lazaridis)",
+    "Country/Territory": "Canada",
+    "city": "Waterloo",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "William & Mary (Mason)",
+    "Country/Territory": "United States",
+    "city": "Williamsburg",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Worcester Polytechnic Institute (Foisie)",
+    "Country/Territory": "United States",
+    "city": "Worcester",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Thunderbird School of Global Management at ASU",
+    "Country/Territory": "United States",
+    "city": "Phoenix",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Manchester Metropolitan University Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Manchester",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Georgia State (Robinson)",
+    "Country/Territory": "United States",
+    "city": "Atlanta",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Queen's Business School",
+    "Country/Territory": "United Kingdom",
+    "city": "Belfast",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of Texas at Arlington",
+    "Country/Territory": "United States",
+    "city": "Arlington",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Illinois at Chicago (UIC)",
+    "Country/Territory": "United States",
+    "city": "Chicago",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Griffith Business School",
+    "Country/Territory": "Australia",
+    "city": "Southport",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "IIT Stuart School of Business",
+    "Country/Territory": "United States",
+    "city": "Chicago",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Iowa (Tippie)",
+    "Country/Territory": "United States",
+    "city": "Iowa City",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Loyola University of Chicago  (Quinlan)",
+    "Country/Territory": "United States",
+    "city": "Chicago",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Tulsa (Collins)",
+    "Country/Territory": "United States",
+    "city": "Tulsa",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "UMass Boston",
+    "Country/Territory": "United States",
+    "city": "Boston",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "West Texas A&M University",
+    "Country/Territory": "United States",
+    "city": "Canyon",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The State University of New Jersey",
+    "Country/Territory": "United States",
+    "city": "New Brunswick",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Cal Poly (Orfalea)",
+    "Country/Territory": "United States",
+    "city": "San Luis Obispo",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Hult International Business School",
+    "Country/Territory": "United States",
+    "city": "Boston",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Oklahoma (Price)",
+    "Country/Territory": "United States",
+    "city": "Norman",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Louisville",
+    "Country/Territory": "United States",
+    "city": "Louisville",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Royal Veterinary College, University of London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "King's College London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Royal College of Art",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Royal College of Music",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "UCL Institute of Education | University College London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The Bartlett School of Architecture  | UCL",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of New South Wales (UNSW Sydney)",
+    "Country/Territory": "Australia",
+    "city": "Sydney",
+    "liv_exp_low_hkd": 12750.0,
+    "liv_exp_high_hkd": 20400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of the Arts London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Royal Academy of Music",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The London School of Economics and Political Science (LSE)",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Nanyang Technological University, Singapore (NTU)",
+    "Country/Territory": "Singapore",
+    "city": "Singapore",
+    "liv_exp_low_hkd": 12200.0,
+    "liv_exp_high_hkd": 24400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Parsons School of Design at The New School",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "UCL",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Rutgers University–New Brunswick",
+    "Country/Territory": "United States",
+    "city": "New Brunswick",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Guildhall School of Music and Drama",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Rhode Island School of Design (RISD)",
+    "Country/Territory": "United States",
+    "city": "Providence",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Nevada - Las Vegas",
+    "Country/Territory": "United States",
+    "city": "Las Vegas",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of Adelaide",
+    "Country/Territory": "Australia",
+    "city": "Adelaide",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The New School",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The Courtauld Institute of Art",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of Edinburgh",
+    "Country/Territory": "United Kingdom",
+    "city": "Edinburgh",
+    "liv_exp_low_hkd": 11550.0,
+    "liv_exp_high_hkd": 18900.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Royal Northern College of Music (RNCM)",
+    "Country/Territory": "United Kingdom",
+    "city": "Manchester",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Manchester School of Architecture",
+    "Country/Territory": "United Kingdom",
+    "city": "Manchester",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of California, San Francisco (UCSF)",
+    "Country/Territory": "United States",
+    "city": "San Francisco",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Royal Conservatoire of Scotland (Formerly Royal Scottish Academy of Music and Drama)",
+    "Country/Territory": "United Kingdom",
+    "city": "Glasgow",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Juilliard School",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The Australian National University",
+    "Country/Territory": "Australia",
+    "city": "Canberra",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Curtis Institute of Music",
+    "Country/Territory": "United States",
+    "city": "Philadelphia",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "School of the Art Institute of Chicago (SAIC)",
+    "Country/Territory": "United States",
+    "city": "Chicago",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Trinity Laban Conservatoire of Music and Dance",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Nottingham",
+    "Country/Territory": "United Kingdom",
+    "city": "Nottingham",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Glasgow School of Art (GSA)",
+    "Country/Territory": "United Kingdom",
+    "city": "Glasgow",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Savannah College of Art and Design",
+    "Country/Territory": "United States",
+    "city": "Savannah",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The Ohio State University",
+    "Country/Territory": "United States",
+    "city": "Columbus",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Massachusetts Amherst",
+    "Country/Territory": "United States",
+    "city": "Amherst",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Queen Mary University of London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Cornell University | School of Hotel Administration",
+    "Country/Territory": "United States",
+    "city": "Ithaca",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Camborne School of Mines | University of Exeter",
+    "Country/Territory": "United Kingdom",
+    "city": "Penryn",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "London School of Hygiene & Tropical Medicine",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of Arizona",
+    "Country/Territory": "United States",
+    "city": "Tucson",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Queen's University at Kingston",
+    "Country/Territory": "Canada",
+    "city": "Kingston",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "School of Visual Arts (SVA)",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Blue Mountains IRN Hotel Management School (BMIHMS)",
+    "Country/Territory": "Australia",
+    "city": "Leura",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Minnesota Twin Cities",
+    "Country/Territory": "United States",
+    "city": "Minneapolis",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Université de Montréal",
+    "Country/Territory": "Canada",
+    "city": "Montreal",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "California Institute of the Arts",
+    "Country/Territory": "United States",
+    "city": "Valencia",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Emily Carr University of Art and Design",
+    "Country/Territory": "Canada",
+    "city": "Vancouver",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of Exeter",
+    "Country/Territory": "United Kingdom",
+    "city": "Exeter",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "City, University of London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of Tennessee, Knoxville",
+    "Country/Territory": "United States",
+    "city": "Knoxville",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of Texas Southwestern Medical Center at Dallas",
+    "Country/Territory": "United States",
+    "city": "Dallas",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of Texas M. D. Anderson Cancer Center",
+    "Country/Territory": "United States",
+    "city": "Houston",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Virginia Polytechnic Institute and State University",
+    "Country/Territory": "United States",
+    "city": "Blacksburg",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The Scripps Research Institute (TSRI)",
+    "Country/Territory": "United States",
+    "city": "La Jolla",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of Newcastle, Australia (UON)",
+    "Country/Territory": "Australia",
+    "city": "Newcastle",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Oregon Health & Science University (OHSU)",
+    "Country/Territory": "United States",
+    "city": "Portland",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Manchester Metropolitan University (MMU)",
+    "Country/Territory": "United Kingdom",
+    "city": "Manchester",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Hawaiʻi at Mānoa",
+    "Country/Territory": "United States",
+    "city": "Honolulu",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Queensland University of Technology (QUT)",
+    "Country/Territory": "Australia",
+    "city": "Brisbane",
+    "liv_exp_low_hkd": 10200.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Birkbeck, University of London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of South Australia",
+    "Country/Territory": "Australia",
+    "city": "Adelaide",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Victoria (UVic)",
+    "Country/Territory": "Canada",
+    "city": "Victoria",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Essex, University of",
+    "Country/Territory": "United Kingdom",
+    "city": "Colchester",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Université Laval",
+    "Country/Territory": "Canada",
+    "city": "Quebec City",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Stony Brook University, State University of New York",
+    "Country/Territory": "United States",
+    "city": "Stony Brook",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The Open University",
+    "Country/Territory": "United Kingdom",
+    "city": "Milton Keynes",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Toronto Metropolitan University",
+    "Country/Territory": "Canada",
+    "city": "Toronto",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of New England Australia",
+    "Country/Territory": "Australia",
+    "city": "Armidale",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Art Center College of Design",
+    "Country/Territory": "United States",
+    "city": "Pasadena",
+    "liv_exp_low_hkd": 14130.0,
+    "liv_exp_high_hkd": 23550.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "California College of the Arts",
+    "Country/Territory": "United States",
+    "city": "San Francisco",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Cranbrook Academy of Art",
+    "Country/Territory": "United States",
+    "city": "Bloomfield Hills",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Maryland Institute College of Art",
+    "Country/Territory": "United States",
+    "city": "Baltimore",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Otis College of Art and Design",
+    "Country/Territory": "United States",
+    "city": "Los Angeles",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University for the Creative Arts",
+    "Country/Territory": "United Kingdom",
+    "city": "Epsom",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Falmouth College of Arts University College Falmouth",
+    "Country/Territory": "United Kingdom",
+    "city": "Falmouth",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Lasalle College of the Arts",
+    "Country/Territory": "Singapore",
+    "city": "Singapore",
+    "liv_exp_low_hkd": 12200.0,
+    "liv_exp_high_hkd": 24400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "OCAD University",
+    "Country/Territory": "Canada",
+    "city": "Toronto",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Brunel University London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Fashion Institute of Technology (FIT), SUNY",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Amherst College",
+    "Country/Territory": "United States",
+    "city": "Amherst",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Williams College",
+    "Country/Territory": "United States",
+    "city": "Williamstown",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Architectural Association School of Architecture",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Central School of Speech & Drama",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "National Institute of Dramatic Art (NIDA), Sydney",
+    "Country/Territory": "Australia",
+    "city": "Sydney",
+    "liv_exp_low_hkd": 12750.0,
+    "liv_exp_high_hkd": 20400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Purchase College SUNY",
+    "Country/Territory": "United States",
+    "city": "Purchase",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Rutgers University–Newark",
+    "Country/Territory": "United States",
+    "city": "Newark",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Catholic University",
+    "Country/Territory": "United States",
+    "city": "Washington, D.C.",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "CUNY The City College of New York",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Santa Clara University",
+    "Country/Territory": "United States",
+    "city": "Santa Clara",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Cranfield University",
+    "Country/Territory": "United Kingdom",
+    "city": "Cranfield",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Texas Dallas",
+    "Country/Territory": "United States",
+    "city": "Richardson",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of the West of England",
+    "Country/Territory": "United Kingdom",
+    "city": "Bristol",
+    "liv_exp_low_hkd": 10500.0,
+    "liv_exp_high_hkd": 17850.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "College of William and Mary",
+    "Country/Territory": "United States",
+    "city": "Williamsburg",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Ulster University",
+    "Country/Territory": "United Kingdom",
+    "city": "Derry",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of Alabama",
+    "Country/Territory": "United States",
+    "city": "Tuscaloosa",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Massachusetts Boston",
+    "Country/Territory": "United States",
+    "city": "Boston",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Akron",
+    "Country/Territory": "United States",
+    "city": "Akron",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "New Mexico Institute of Mining and Technology",
+    "Country/Territory": "United States",
+    "city": "Socorro",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Robert Gordon University",
+    "Country/Territory": "United Kingdom",
+    "city": "Aberdeen",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Baylor College of Medicine",
+    "Country/Territory": "United States",
+    "city": "Houston",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Icahn School of Medicine at Mount Sinai",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "The University of Texas Health Science Center at Houston",
+    "Country/Territory": "United States",
+    "city": "Houston",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Rockefeller University",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Mayo Medical School",
+    "Country/Territory": "United States",
+    "city": "Rochester",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Massachusetts Medical School - Worcester",
+    "Country/Territory": "United States",
+    "city": "Worcester",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Medical College of Wisconsin",
+    "Country/Territory": "United States",
+    "city": "Milwaukee",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "St. George's, University of London",
+    "Country/Territory": "United Kingdom",
+    "city": "London",
+    "liv_exp_low_hkd": 15750.0,
+    "liv_exp_high_hkd": 26250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Indiana University–Purdue University Indianapolis",
+    "Country/Territory": "United States",
+    "city": "Indianapolis",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Thomas Jefferson University",
+    "Country/Territory": "United States",
+    "city": "Philadelphia",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "St. Louis University",
+    "Country/Territory": "United States",
+    "city": "St. Louis",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Scottish Agricultural College (SAC)",
+    "Country/Territory": "United Kingdom",
+    "city": "Aberdeen",
+    "liv_exp_low_hkd": 9450.0,
+    "liv_exp_high_hkd": 15750.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Maine",
+    "Country/Territory": "United States",
+    "city": "Orono",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Central Queensland University (CQUniversity Australia)",
+    "Country/Territory": "Australia",
+    "city": "Rockhampton",
+    "liv_exp_low_hkd": 9180.0,
+    "liv_exp_high_hkd": 15300.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Montana State University - Bozeman",
+    "Country/Territory": "United States",
+    "city": "Bozeman",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Lakehead University",
+    "Country/Territory": "Canada",
+    "city": "Thunder Bay",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "SUNY - College of Environemntal Science and Forestry",
+    "Country/Territory": "United States",
+    "city": "Syracuse",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Rush University",
+    "Country/Territory": "United States",
+    "city": "Chicago",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Anglia Ruskin University",
+    "Country/Territory": "United Kingdom",
+    "city": "Cambridge",
+    "liv_exp_low_hkd": 12600.0,
+    "liv_exp_high_hkd": 21000.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Hofstra University",
+    "Country/Territory": "United States",
+    "city": "Hempstead",
+    "liv_exp_low_hkd": 10990.0,
+    "liv_exp_high_hkd": 18055.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "East Carolina University",
+    "Country/Territory": "United States",
+    "city": "Greenville",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "University of Prince Edward Island",
+    "Country/Territory": "Canada",
+    "city": "Charlottetown",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "CUNY Bernard M Baruch College",
+    "Country/Territory": "United States",
+    "city": "New York City",
+    "liv_exp_low_hkd": 19625.0,
+    "liv_exp_high_hkd": 31400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "DePaul University",
+    "Country/Territory": "United States",
+    "city": "Chicago",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Wilfrid Laurier University",
+    "Country/Territory": "Canada",
+    "city": "Waterloo",
+    "liv_exp_low_hkd": 8550.0,
+    "liv_exp_high_hkd": 14250.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Pennsylvania State University | School of Hospitality Management",
+    "Country/Territory": "United States",
+    "city": "University Park",
+    "liv_exp_low_hkd": 9420.0,
+    "liv_exp_high_hkd": 15700.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Boston University | School of Hospitality Administration",
+    "Country/Territory": "United States",
+    "city": "Boston",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Johnson & Wales University",
+    "Country/Territory": "United States",
+    "city": "Providence",
+    "liv_exp_low_hkd": 10205.0,
+    "liv_exp_high_hkd": 17270.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "SAIT Polytechnic - School of Hospitality and Tourism",
+    "Country/Territory": "Canada",
+    "city": "Calgary",
+    "liv_exp_low_hkd": 10260.0,
+    "liv_exp_high_hkd": 17100.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Asia Pacific Management Institute",
+    "Country/Territory": "Singapore",
+    "city": "Singapore",
+    "liv_exp_low_hkd": 12200.0,
+    "liv_exp_high_hkd": 24400.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Georgia State University | Cecil B. Day School of Hospitality Administration",
+    "Country/Territory": "United States",
+    "city": "Atlanta",
+    "liv_exp_low_hkd": 11775.0,
+    "liv_exp_high_hkd": 19625.0
+  },
+  {
+    "2026 Rank": "nan",
+    "Name": "Simmons University",
+    "Country/Territory": "United States",
+    "city": "Boston",
+    "liv_exp_low_hkd": 15700.0,
+    "liv_exp_high_hkd": 27475.0
+  }
+]

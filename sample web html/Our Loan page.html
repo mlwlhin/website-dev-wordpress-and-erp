@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How SocioBridge Works | Your Passage to Prominence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Corporate Blue Harmony -->
+    <!-- Application Structure Plan: The application follows a narrative structure designed to address the user's psychological journey. It begins with an aspirational "Hook" (Hero Section) to validate their ambition. It then "Informs & Reassures" with benefit-focused value propositions to reduce cognitive load. The core of the experience is to "Empower" the user with an interactive financial simulator, which serves as the emotional peak. The structure then "Clarifies" the application process, "Validates" with social proof, "De-risks" with a strategic FAQ, and finally "Converts" with a strong call-to-action. This flow was chosen to systematically transform user anxiety into confident action by fostering self-efficacy and a sense of control. -->
+    <!-- Visualization & Content Choices: Report Info: Loan features, application steps, success stories, financial illustrations. -> Goal: Reduce anxiety, build trust, foster self-efficacy. -> Viz/Presentation Method: Value propositions are chunked into a 3-column grid with icons (Unicode) to reduce cognitive load. The application process is a simplified horizontal timeline (HTML/CSS) to feel less intimidating. The core financial illustration is replaced by an interactive simulator (JS) with sliders and inputs, outputting key figures and a dynamic loan timeline visualization. -> Interaction: The simulator allows users to input their own data and see a personalized repayment plan, including a Chart.js bar chart on a Canvas element showing the interest-only vs. repayment phases. This active planning fosters ownership. -> Justification: This interactive approach is psychologically more effective than static examples, directly personalizing the information and giving users a sense of control, which is critical for this high-stakes decision. -> Library/Method: Chart.js for the dynamic chart on a Canvas. Vanilla JS for all interactivity. HTML/Tailwind for all layout and styling. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; /* white */
+            color: #333333; /* Dark grey */
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-dark-blue { background-color: #002e5d; }
+        .text-dark-blue { color: #002e5d; }
+        .bg-dark-grey { background-color: #333333; }
+        .text-dark-grey { color: #333333; }
+        .bg-light-grey { background-color: #efecee; }
+        .text-light-grey { color: #efecee; }
+        .bg-sharp-yellow { background-color: #ffd700; }
+        .text-sharp-yellow { color: #ffd700; }
+        .bg-soft-amber { background-color: #FFEFE1; }
+        .border-dark-blue { border-color: #002e5d; }
+        .ring-dark-blue:focus { --tw-ring-color: #002e5d; }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .slider-track {
+            background: #efecee; /* light grey */
+        }
+        .slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #002e5d; /* Dark blue */
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #002e5d; /* Dark blue */
+            cursor: pointer;
+            border-radius: 50%;
+            margin-top: -6px;
+        }
+        input[type=range]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: #002e5d; /* Dark blue */
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="relative w-full h-[60vh] md:h-[80vh] flex items-center justify-center text-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop" alt="Students studying together" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-20 px-4">
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold">Your Passage to Prominence, Made Possible.</h1>
+            <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto">We provide flexible, fair, and supportive funding for your international education. See how you can fund up to 100% of your tuition and living expenses.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="value-props" class="py-16 sm:py-24 bg-light-grey">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl font-serif text-dark-blue">A Loan Designed for Your Success</h2>
+                    <p class="mt-4 text-lg text-dark-grey max-w-2xl mx-auto">We've structured our funding to remove barriers, not create them. This introductory section explains how our core features are designed to give you peace of mind, flexibility, and a transparent partnership throughout your educational journey.</p>
+                </div>
+                <div class="mt-12 grid gap-8 md:grid-cols-3">
+                    <div class="text-center p-8 rounded-lg shadow-sm bg-white">
+                        <div class="text-4xl text-dark-blue mb-4">🎓</div>
+                        <h3 class="text-xl font-bold text-dark-blue">Focus on Your Studies</h3>
+                        <p class="mt-2 text-dark-grey">Alleviate financial anxiety during your program. We cover your major costs and keep payments minimal so you can dedicate yourself to what matters most: your education.</p>
+                        <ul class="mt-4 text-left space-y-2 text-dark-grey">
+                            <li class="flex items-start"><span class="text-dark-blue mr-2">✔</span>Up to 100% Tuition & Living Expenses</li>
+                            <li class="flex items-start"><span class="text-dark-blue mr-2">✔</span>Interest-Only Payments During School</li>
+                        </ul>
+                    </div>
+                    <div class="text-center p-8 rounded-lg shadow-sm bg-white">
+                        <div class="text-4xl text-dark-blue mb-4">📈</div>
+                        <h3 class="text-xl font-bold text-dark-blue">A Plan That Works With You</h3>
+                        <p class="mt-2 text-dark-grey">Your post-graduation journey should be exciting, not stressful. Our repayment plan is predictable, flexible, and free of penalties for getting ahead.</p>
+                         <ul class="mt-4 text-left space-y-2 text-dark-grey">
+                            <li class="flex items-start"><span class="text-dark-blue mr-2">✔</span>10-Year Repayment After Graduation</li>
+                            <li class="flex items-start"><span class="text-dark-blue mr-2">✔</span>Fixed Interest Rate for Predictability</li>
+                            <li class="flex items-start"><span class="text-dark-blue mr-2">✔</span>No Penalty for Early Repayment</li>
+                        </ul>
+                    </div>
+                    <div class="text-center p-8 rounded-lg shadow-sm bg-white">
+                        <div class="text-4xl text-dark-blue mb-4">🤝</div>
+                        <h3 class="text-xl font-bold text-dark-blue">Your Partner, No Surprises</h3>
+                        <p class="mt-2 text-dark-grey">We build trust through transparency. Our model is free of hidden fees and includes safety nets because we are invested in your long-term success as a partner.</p>
+                         <ul class="mt-4 text-left space-y-2 text-dark-grey">
+                            <li class="flex items-start"><span class="text-dark-blue mr-2">✔</span>No Origination or Hidden Fees</li>
+                            <li class="flex items-start"><span class="text-dark-blue mr-2">✔</span>24-Month Forbearance Safety Net</li>
+                            <li class="flex items-start"><span class="text-dark-blue mr-2">✔</span>No Guarantor for most loans</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="simulator" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl font-serif text-dark-blue">Map Your Financial Future</h2>
+                    <p class="mt-4 text-lg text-dark-grey max-w-3xl mx-auto">Move from abstract examples to a concrete plan. This interactive simulator is the heart of our "How It Works" experience, designed to empower you. By entering your own program details, you can instantly see what your personalized loan structure would look like.</p>
+                </div>
+
+                <div class="mt-12 max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <div class="space-y-6 p-8 rounded-lg bg-light-grey shadow-md">
+                        <div>
+                            <label for="country" class="block text-sm font-medium text-dark-grey">Country of Study</label>
+                            <select id="country" name="country" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-2 focus:ring-dark-blue focus:border-dark-blue sm:text-sm rounded-md">
+                                <option>United States</option>
+                                <option>United Kingdom</option>
+                                <option>Canada</option>
+                                <option>Australia</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="studyLength" class="block text-sm font-medium text-dark-grey">Length of Study (Years)</label>
+                            <input type="number" id="studyLength" value="2" class="mt-1 block w-full pl-3 pr-3 py-2 text-base border-gray-300 focus:outline-none focus:ring-2 focus:ring-dark-blue focus:border-dark-blue sm:text-sm rounded-md">
+                        </div>
+                        <div>
+                             <label for="tuition" class="block text-sm font-medium text-dark-grey">Estimated Annual Tuition (USD)</label>
+                             <div class="flex items-center space-x-4">
+                                <input type="range" id="tuition" min="5000" max="80000" value="35000" step="1000" class="w-full h-2 rounded-lg appearance-none cursor-pointer slider-track">
+                                <input type="number" id="tuitionValue" value="35000" class="w-28 text-center border-gray-300 rounded-md">
+                             </div>
+                        </div>
+                        <div>
+                             <label for="living" class="block text-sm font-medium text-dark-grey">Estimated Annual Living Expenses (USD)</label>
+                             <div class="flex items-center space-x-4">
+                                <input type="range" id="living" min="5000" max="40000" value="15000" step="1000" class="w-full h-2 rounded-lg appearance-none cursor-pointer slider-track">
+                                <input type="number" id="livingValue" value="15000" class="w-28 text-center border-gray-300 rounded-md">
+                             </div>
+                        </div>
+                        <div>
+                             <label for="contribution" class="block text-sm font-medium text-dark-grey">Your Contribution (Optional, USD)</label>
+                             <div class="flex items-center space-x-4">
+                                <input type="range" id="contribution" min="0" max="50000" value="0" step="1000" class="w-full h-2 rounded-lg appearance-none cursor-pointer slider-track">
+                                <input type="number" id="contributionValue" value="0" class="w-28 text-center border-gray-300 rounded-md">
+                             </div>
+                        </div>
+                        <button id="calculateBtn" class="w-full bg-dark-blue text-white font-bold py-3 px-4 rounded-lg hover:bg-opacity-90 transition-colors">See My Personalised Plan</button>
+                    </div>
+
+                    <div id="resultsDashboard" class="p-8 rounded-lg bg-light-grey shadow-md space-y-6 hidden">
+                        <h3 class="text-2xl font-bold text-center font-serif text-dark-blue">Your Estimated Plan</h3>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div>
+                                <p class="text-sm text-dark-grey">Monthly Payment (During Studies)</p>
+                                <p id="studyPayment" class="text-3xl font-bold text-dark-blue">$0</p>
+                                <p class="text-xs text-gray-500">Interest-only plan</p>
+                            </div>
+                            <div>
+                                <p class="text-sm text-dark-grey">Monthly Payment (After Graduation)</p>
+                                <p id="gradPayment" class="text-3xl font-bold text-dark-blue">$0</p>
+                                <p class="text-xs text-gray-500">10-year repayment</p>
+                            </div>
+                        </div>
+                        <div class="border-t pt-4">
+                            <p class="text-sm text-dark-grey text-center">Total Estimated Loan Amount</p>
+                            <p id="totalLoan" class="text-4xl font-bold text-center text-dark-blue">$0</p>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="loanTimelineChart"></canvas>
+                        </div>
+                        <p class="text-xs text-center text-gray-500 italic">This is an estimate for illustrative purposes only. Actual rates and payments may vary. A formal offer will be provided after application.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl font-serif text-dark-blue">Your Journey with Us</h2>
+                    <p class="mt-4 text-lg text-dark-grey max-w-2xl mx-auto">The application process can feel complex, so we've broken it down into a few simple, transparent steps. This visual guide shows you exactly what to expect.</p>
+                </div>
+                <div class="mt-16">
+                    <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+                        <div class="text-center">
+                            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-dark-blue text-white font-bold text-xl">1</div>
+                            <h3 class="mt-4 text-lg font-semibold text-dark-blue">Apply</h3>
+                            <p class="mt-1 text-sm text-dark-grey">Tell us your story. Fill out our straightforward online application.</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-dark-blue text-white font-bold text-xl">2</div>
+                            <h3 class="mt-4 text-lg font-semibold text-dark-blue">Simulate</h3>
+                            <p class="mt-1 text-sm text-dark-grey">Map your finances. We'll work with you to confirm your plan.</p>
+                        </div>
+                         <div class="text-center">
+                            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-dark-blue text-white font-bold text-xl">3</div>
+                            <h3 class="mt-4 text-lg font-semibold text-dark-blue">Upload</h3>
+                            <p class="mt-1 text-sm text-dark-grey">Provide your documents securely through our online portal.</p>
+                        </div>
+                         <div class="text-center">
+                            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-dark-blue text-white font-bold text-xl">4</div>
+                            <h3 class="mt-4 text-lg font-semibold text-dark-blue">Offer</h3>
+                            <p class="mt-1 text-sm text-dark-grey">Receive your conditional offer outlining your loan terms.</p>
+                        </div>
+                         <div class="text-center">
+                            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-dark-blue text-white font-bold text-xl">5</div>
+                            <h3 class="mt-4 text-lg font-semibold text-dark-blue">Sign</h3>
+                            <p class="mt-1 text-sm text-dark-grey">Accept your offer and secure the funding for your future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="social-proof" class="py-16 sm:py-24 bg-light-grey">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl font-serif text-dark-blue">Real Stories, Real Impact</h2>
+                    <p class="mt-4 text-lg text-dark-grey">Numbers and features only tell part of the story. Here, you'll find real-world examples of how our partnership has helped students achieve their academic dreams.</p>
+                </div>
+                <div class="mt-12 space-y-12">
+                    <div class="bg-white p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-8">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop" alt="Portrait of a successful student" class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover flex-shrink-0 border-4 border-soft-amber">
+                        <div class="text-center md:text-left">
+                            <p class="text-xl font-semibold italic text-dark-grey">"SocioBridge didn't just give me a loan; they gave me back my academic future."</p>
+                            <div class="mt-4 text-dark-grey">
+                                <p><strong class="text-dark-blue">Challenge:</strong> A sudden family business collapse threatened to derail his PhD and critical overseas research.</p>
+                                <p><strong class="text-dark-blue">Solution:</strong> A tailored SocioBridge loan cleared his debts and funded his academic exchanges, allowing him to successfully complete his program at Cambridge.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl font-serif text-dark-blue">Answering Your Questions</h2>
+                    <p class="mt-4 text-lg text-dark-grey">We believe in transparency. Here are answers to the most common questions we receive.</p>
+                </div>
+                <div class="mt-12 space-y-4">
+                    <div class="accordion-item bg-soft-amber rounded-lg border border-gray-200">
+                        <button class="accordion-header w-full text-left p-4 font-semibold text-dark-grey flex justify-between items-center">
+                            What if I can't find a job right after graduation?
+                            <span class="transform transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-dark-grey">This is a primary concern for many students, and we've built a solution directly into our loans. Our 24-Month Forbearance Policy provides a crucial safety net, allowing you to pause payments while you focus on your job search. It's designed to give you the breathing room you need to find the right opportunity without financial pressure.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-soft-amber rounded-lg border border-gray-200">
+                        <button class="accordion-header w-full text-left p-4 font-semibold text-dark-grey flex justify-between items-center">
+                            Is the interest rate going to change?
+                            <span class="transform transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-dark-grey">No. We provide a Fixed Interest Rate Structure to give you peace of mind. This means your monthly payment amount after you graduate will be stable and predictable for the entire 10-year repayment period. You can budget effectively without worrying about fluctuating rates.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-soft-amber rounded-lg border border-gray-200">
+                        <button class="accordion-header w-full text-left p-4 font-semibold text-dark-grey flex justify-between items-center">
+                            Why choose SocioBridge over a bank?
+                            <span class="transform transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p class="p-4 pt-0 text-dark-grey">Unlike commercial banks, we are a social enterprise. Our mission is to bridge educational inequality, not to maximize profit. We value your future potential, not just your past financial history. This means our rates are fair, our terms are flexible, and our approach is that of a supportive partner, not just a lender.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="bg-dark-blue text-white">
+            <div class="max-w-4xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold sm:text-4xl font-serif">
+                    <span class="block">Ready to Invest in Your Future?</span>
+                </h2>
+                <p class="mt-4 text-lg leading-6 text-light-grey">We believe in your potential. Every loan we make is an investment in a brighter, more equitable world. Let's build your bridge to success together.</p>
+                <a href="#" class="mt-8 w-full inline-flex items-center justify-center px-6 py-4 border border-transparent rounded-md shadow-sm text-base font-medium bg-sharp-yellow text-dark-blue hover:bg-opacity-90 sm:w-auto">
+                    Start Your Application
+                </a>
+                 <div class="mt-6">
+                    <a href="#" class="text-base font-medium text-white hover:text-gray-200"> Read More Success Stories &rarr; </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tuitionSlider = document.getElementById('tuition');
+            const tuitionValue = document.getElementById('tuitionValue');
+            const livingSlider = document.getElementById('living');
+            const livingValue = document.getElementById('livingValue');
+            const contributionSlider = document.getElementById('contribution');
+            const contributionValue = document.getElementById('contributionValue');
+            const calculateBtn = document.getElementById('calculateBtn');
+            const resultsDashboard = document.getElementById('resultsDashboard');
+            let loanChart = null;
+
+            function syncSliderValue(slider, valueInput) {
+                slider.addEventListener('input', (event) => {
+                    valueInput.value = event.target.value;
+                });
+                valueInput.addEventListener('input', (event) => {
+                    slider.value = event.target.value;
+                });
+            }
+
+            syncSliderValue(tuitionSlider, tuitionValue);
+            syncSliderValue(livingSlider, livingValue);
+            syncSliderValue(contributionSlider, contributionValue);
+            
+            calculateBtn.addEventListener('click', function() {
+                const studyLength = parseFloat(document.getElementById('studyLength').value) || 0;
+                const annualTuition = parseFloat(tuitionValue.value) || 0;
+                const annualLiving = parseFloat(livingValue.value) || 0;
+                const contribution = parseFloat(contributionValue.value) || 0;
+
+                const totalCost = (annualTuition + annualLiving) * studyLength;
+                const totalLoanAmount = Math.max(0, totalCost - contribution);
+
+                const INTEREST_RATE = 0.1498; // From pitch deck
+                const REPAYMENT_YEARS = 10;
+
+                const studyPayment = (totalLoanAmount * INTEREST_RATE) / 12;
+
+                const monthlyRate = INTEREST_RATE / 12;
+                const numPayments = REPAYMENT_YEARS * 12;
+                const gradPayment = totalLoanAmount > 0 ? (totalLoanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numPayments))) / (Math.pow(1 + monthlyRate, numPayments) - 1) : 0;
+
+                document.getElementById('totalLoan').textContent = `$${totalLoanAmount.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+                document.getElementById('studyPayment').textContent = `$${studyPayment.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+                document.getElementById('gradPayment').textContent = `$${gradPayment.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+
+                resultsDashboard.classList.remove('hidden');
+                
+                const ctx = document.getElementById('loanTimelineChart').getContext('2d');
+                if(loanChart) {
+                    loanChart.destroy();
+                }
+                loanChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Loan Timeline'],
+                        datasets: [
+                            {
+                                label: 'Study Period (Interest-Only)',
+                                data: [studyLength],
+                                backgroundColor: 'rgba(0, 46, 93, 0.5)', // Dark Blue transparent
+                                borderWidth: 1,
+                                barPercentage: 0.5,
+                            },
+                            {
+                                label: 'Repayment Period',
+                                data: [REPAYMENT_YEARS],
+                                backgroundColor: 'rgba(51, 51, 51, 0.7)', // Dark Grey transparent
+                                borderWidth: 1,
+                                barPercentage: 0.5,
+                            }
+                        ]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        maintainAspectRatio: false,
+                        responsive: true,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Loan Phases (Years)'
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        let label = context.dataset.label || '';
+                                        if (label) {
+                                            label += ': ';
+                                        }
+                                        if (context.parsed.x !== null) {
+                                            label += context.parsed.x + ' years';
+                                        }
+                                        return label;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                stacked: true,
+                                title: {
+                                    display: true,
+                                    text: 'Years'
+                                }
+                            },
+                            y: {
+                                stacked: true,
+                                display: false
+                            }
+                        }
+                    }
+                });
+            });
+
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                const content = item.querySelector('.accordion-content');
+                const icon = header.querySelector('span');
+
+                header.addEventListener('click', () => {
+                    const isOpened = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+                    // Close all accordions
+                    accordionItems.forEach(i => {
+                        i.querySelector('.accordion-content').style.maxHeight = '0px';
+                        i.querySelector('.accordion-header span').style.transform = 'rotate(0deg)';
+                    });
+
+                    // Open the clicked one if it was closed
+                    if (!isOpened) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the button and the result section
+        var checkButton = document.querySelector('.check-my-eligibility-button'); // You might need to change this selector
+        var resultSection = document.querySelector('.eligibility-result');
+
+        // Add a click event listener to the button
+        if (checkButton && resultSection) {
+            checkButton.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevents default button behavior
+                resultSection.style.display = 'block'; // Shows the result section
+            });
+        }
+    });
+</script>

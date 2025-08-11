@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>貸款計算機</title>
+	<link rel="stylesheet" href="calculator.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<div class="calculator-container">
+	<div class="calculator-grid">
+		<div>
+			<div class="slider-group">
+				<label for="loan-amount" class="slider-label">貸款金額 (港幣): <span id="loan-amount-value" class="slider-value">HK$500,000</span></label>
+				<input id="loan-amount" type="range" min="100000" max="1500000" step="100000" class="range-slider">
+			</div>
+			<div class="slider-group mb-8">
+				<label for="study-period" class="slider-label">修讀年期: <span id="study-period-value" class="slider-value">3 年</span></label>
+				<input id="study-period" type="range" min="1" max="6" step="1" class="range-slider">
+			</div>
+			<div class="payment-display-card">
+				<p class="payment-label">每月預計還款額</p>
+				<p class="payment-sub-label">修讀期間: <span id="monthly-payment-sp" class="payment-amount-small">HK$0</span></p>
+				<p class="payment-sub-label">畢業後一年: <span id="monthly-payment-rp" class="payment-amount-small">HK$0</span></p>
+				<p class="disclaimer-text">以固定 14.98% APR 計算。此為估算，僅供參考。</p>
+			</div>
+		</div>
+		<div class="chart-container">
+			<canvas id="repaymentChart"></canvas>
+		</div>
+	</div>
+</div>
+</html>

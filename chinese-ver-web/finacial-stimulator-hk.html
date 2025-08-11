@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>財務模擬計算機</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Note: Using the original CSS file is recommended. */
+        body { font-family: 'Inter', sans-serif; }
+        .bg-light-grey { background-color: #f8f9fa; }
+        .bg-soft-amber { background-color: #fffbeb; }
+        .text-dark-blue { color: #002e5d; }
+        .bg-dark-blue { background-color: #002e5d; }
+        .text-dark-grey { color: #4f4f4f; }
+        .text-vivid-orange { color: #ff6700; }
+        .bg-sharp-yellow { background-color: #ffd700; }
+        .dsr-gauge-bg { background-color: #e9ecef; }
+        .dsr-gauge-fill { transition: width 0.5s ease-in-out; }
+        .refi-section {
+            overflow: hidden;
+            transition: max-height 0.7s ease-in-out, padding 0.7s ease-in-out, margin 0.7s ease-in-out;
+            max-height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 0;
+        }
+        .custom-dropdown-list {
+            border: 1px solid #e2e8f0;
+            border-top: none;
+            max-height: 200px;
+            overflow-y: auto;
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            z-index: 10;
+        }
+        .custom-dropdown-item {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        .custom-dropdown-item:hover {
+            background-color: #f1f5f9;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="bg-light-grey p-4 sm:p-8 rounded-2xl shadow-xl">
+        <div class="max-w-7xl mx-auto">
+            <header class="text-center mb-10">
+                <h1 class="text-4xl md:text-5xl font-bold font-serif text-dark-blue">財務模擬計算機</h1>
+                <p class="mt-2 text-lg text-dark-grey">規劃您的成功之路。所有金額均以港元為單位。</p>
+            </header>
+
+            <div id="main-container" class="grid grid-cols-1 gap-8">
+                <div id="input-column-container" class="lg:grid lg:grid-cols-2 lg:gap-8 bg-white p-6 rounded-lg shadow-md">
+                    <div>
+                        <h2 class="text-2xl font-bold font-serif text-dark-blue border-b pb-2 mb-4">1. 您的目標</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <label for="studyDestination" class="block text-sm font-medium">留學目的地</label>
+                                <select id="studyDestination" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm focus:ring-dark-blue focus:border-dark-blue"></select>
+                            </div>
+                            <div class="custom-dropdown relative">
+                                <label for="university" class="block text-sm font-medium">大學</label>
+                                <input type="text" id="university" placeholder="搜尋大學..." class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm focus:ring-dark-blue focus:border-dark-blue">
+                                <div id="university-list" class="custom-dropdown-list hidden"></div>
+                            </div>
+                            <div>
+                                <label for="tuition" class="block text-sm font-medium">年度學費 (HKD)</label>
+                                <input type="number" id="tuition" value="350000" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                            <div>
+                                <label for="living" class="block text-sm font-medium">每月生活費 (HKD)</label>
+                                <input type="number" id="living" value="12000" readonly style="border:none; background-color:transparent; box-shadow:none; outline:none; padding-left:0.5rem;" class="mt-1 block w-full p-2">
+                            </div>
+                            <div>
+                                <label for="studyPeriod" class="block text-sm font-medium">學習年期或畢業後年數 (年)</label>
+                                <input type="range" id="studyPeriod" min="0.5" max="4" value="3" step="0.5" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer mt-2">
+                                <div class="text-center font-semibold text-dark-blue mt-1" id="studyPeriodValue">3 年</div>
+                            </div>
+                            <div>
+                                <label for="expectedSalary" class="block text-sm font-medium">畢業後預期月薪 (HKD)</label>
+                                <input type="range" id="expectedSalary" min="15000" max="80000" value="35000" step="1000" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer mt-2">
+                                <div class="text-center font-semibold text-dark-blue mt-1" id="expectedSalaryValue">HK$35,000</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-bold font-serif text-dark-blue border-b pb-2 mb-4">2. 您的資源</h2>
+                        <div class="space-y-4">
+                            <div>
+                                <label for="householdSavings" class="block text-sm font-medium">可用於教育的家庭儲蓄</label>
+                                <input type="number" id="householdSavings" value="100000" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                            <div>
+                                <label for="householdSupport" class="block text-sm font-medium">家庭每月可用於教育的收入</label>
+                                <input type="number" id="householdSupport" value="3000" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                            <div>
+                                <label for="dadSalary" class="block text-sm font-medium">父親的月薪</label>
+                                <input type="number" id="dadSalary" value="40000" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                            <div>
+                                <label for="mumSalary" class="block text-sm font-medium">母親的月薪</label>
+                                <input type="number" id="mumSalary" value="30000" class="mt-1 block w-full p-2 border-gray-300 rounded-md shadow-sm">
+                            </div>
+                            <div>
+                                <label for="partTimeHours" class="block text-sm font-medium">每週兼職時數 (最多20小時)</label>
+                                <input type="range" id="partTimeHours" min="0" max="20" value="10" step="1" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer mt-2">
+                                <div class="text-center font-semibold text-dark-blue mt-1" id="partTimeHoursValue">10 小時</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="calculateBtn" class="w-full bg-dark-blue text-white font-bold py-4 px-4 rounded-lg shadow-lg hover:bg-opacity-90 transition-transform transform hover:scale-105">計算我的財務計劃</button>
+                
+                <div id="ineligibleMessagePanel" class="bg-orange-50 border-l-4 border-orange-400 p-6 rounded-lg shadow-md hidden">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <svg class="h-6 w-6 text-orange-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.21 3.03-1.742 3.03H4.42c-1.532 0-2.492-1.696-1.742-3.03l5.58-9.92zM10 13a1 1 0 110-2 1 1 0 010 2zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-orange-800">讓我們微調您的計劃！</h3>
+                            <div class="mt-2 text-sm text-orange-700 space-y-3">
+                                <p>根據您輸入的資料，所需的貸款金額似乎高於您的總教育成本。我們的主要目標是幫助您成功，同時避免承擔不必要的債務，因此我們在此暫停。</p>
+                                <div>
+                                    <p class="font-semibold">快速檢查事項：</p>
+                                    <ul class="mt-2 list-disc list-outside ml-5 space-y-2">
+                                        <li><strong>家庭貢獻：</strong> 與您的父母聊聊！或許只需對家庭收入或儲蓄數字進行微調。</li>
+                                        <li><strong>兼職工作：</strong> 您能否在計劃中增加一些兼職時數？</li>
+                                        <li><strong>借款時間：</strong> 您不必從第一天就借款。嘗試將貸款設置為僅在最後一兩年開始。這將大大減少您需要借款的金額，並可能使您的計劃可行！</li>
+                                    </ul>
+                                </div>
+                                <p class="font-semibold">繼續探索您的選擇！我們隨時幫助您找到最佳的前進道路。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="resultsPanel" class="bg-white p-6 rounded-lg shadow-md hidden">
+                    <h2 class="text-2xl font-bold font-serif text-dark-blue border-b pb-2 mb-4">3. 您的貸款計劃</h2>
+                    
+                    <div id="resultsContent">
+                        <div class="text-center bg-light-grey p-4 rounded-lg">
+                            <p class="text-sm text-dark-grey">所需貸款金額</p>
+                            <p id="loanAmount" class="text-4xl font-bold text-dark-blue">HK$0</p>
+                        </div>
+                        <div class="mt-6">
+                            <p class="text-center font-semibold mb-2">還款時間表</p>
+                            <div class="h-64"><canvas id="repaymentChart"></canvas></div>
+                        </div>
+                        <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                            <div class="bg-light-grey p-3 rounded">
+                                <p class="text-sm">還款 (學習期間)</p>
+                                <p id="studyPayment" class="font-bold text-lg text-dark-blue">HK$0/月</p>
+                            </div>
+                            <div class="bg-light-grey p-3 rounded">
+                                <p class="text-sm">還款 (畢業後)</p>
+                                <p id="gradPayment" class="font-bold text-lg text-dark-blue">HK$0/月</p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <div class="flex items-center justify-center mb-2">
+                                <span class="text-center font-semibold mr-2 uppercase">償債比率 (還款期)</span>
+                                <button class="bg-dark-blue text-white rounded-full h-6 w-6 flex items-center justify-center text-sm font-bold popmake-1310" aria-label="了解更多關於償債比率 (DSR)">?</button>
+                            </div>
+                            <div class="space-y-3">
+                                <div>
+                                    <div class="flex justify-between text-sm mb-1"><span>學生</span><span id="studentDSRValue">0%</span></div>
+                                    <div class="w-full dsr-gauge-bg rounded-full h-2.5"><div id="studentDSRFill" class="h-2.5 rounded-full dsr-gauge-fill"></div></div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between text-sm mb-1"><span>家庭</span><span id="householdDSRValue">0%</span></div>
+                                    <div class="w-full dsr-gauge-bg rounded-full h-2.5"><div id="householdDSRFill" class="h-2.5 rounded-full dsr-gauge-fill"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div id="resultsError" class="hidden text-center text-red-500 py-8">
+                        由於發生意外錯誤，無法計算貸款計劃。請調整您的輸入並重試。
+                    </div>
+                </div>
+
+                <button id="showRefiBtn" class="mt-8 w-full bg-sharp-yellow text-dark-blue font-bold py-3 px-4 rounded-lg shadow-lg hover:bg-opacity-90 transition-transform transform hover:scale-105 hidden">
+                    透過再融資解鎖超過30%的利息節省！
+                </button>
+
+                <div id="refi-section" class="bg-white rounded-lg shadow-md refi-section">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold font-serif text-dark-blue border-b pb-2 mb-4">4. 再融資優勢</h2>
+                        <p id="refiDescription" class="text-sm text-dark-grey mb-4">畢業後，您將成為銀行的優質客戶。透過將您的SocioBridge部分貸款進行再融資，您可以節省大量資金。調整潛在的銀行利率以查看效果。</p>
+                        <div>
+                            <label for="bankRate" class="block text-sm font-medium">銀行利率</label>
+                            <input type="range" id="bankRate" min="1" max="9" value="4" step="0.1" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer mt-2">
+                            <div class="text-center font-semibold text-dark-blue mt-1" id="bankRateValue">6.0%</div>
+                        </div>
+                        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
+                            <div class="bg-light-grey p-4 rounded-lg">
+                                <p class="font-bold">您的兩種未來</p>
+                                <p class="text-xs mb-2">(畢業後每月還款)</p>
+                                <div class="h-40 relative"><canvas id="refiChart"></canvas></div>
+                            </div>
+                            <div class="bg-soft-amber p-4 rounded-lg flex flex-col items-center justify-center">
+                                <p class="text-lg font-semibold text-dark-grey">潛在利息節省</p>
+                                <p id="interestSaved" class="text-5xl font-bold text-dark-blue">0%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

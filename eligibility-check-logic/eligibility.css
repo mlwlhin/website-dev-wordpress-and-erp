@@ -1,0 +1,10 @@
+/* Initially hide the eligibility messages */
+.eligible-message, .ineligible-message {
+    display: none;
+}
+
+/* Style for disabled check eligibility button */
+.check-eligibility-btn.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

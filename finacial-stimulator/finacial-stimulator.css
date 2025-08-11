@@ -1,0 +1,75 @@
+/* These styles should be placed directly in your custom CSS snippet in WordPress. */
+
+/* Chosen Palette: Corporate Blue Harmony */
+/* Application Structure Plan: A multi-step narrative calculator. 1. Goals (Education/Career): User defines their ambition. 2. Resources: User inputs their financial reality. 3. Loan Plan: The application calculates and visualizes the loan obligations (timeline, DSR), establishing a clear baseline. 4. Optimization: A revealable section shows the power of refinancing, transforming the user from a passive borrower to an active financial planner by demonstrating significant potential savings. This structure is designed to build confidence by moving from the abstract (dream) to the concrete (plan) and finally to the optimized (smarter plan). */
+/* Visualization & Content Choices: The application uses multiple, targeted visualizations. A dynamic bar chart shows the full repayment timeline, making the 10-year journey understandable. Color-coded DSR gauges provide an instant 'health check' on affordability. The refinancing section uses a side-by-side comparison to visually contrast the two repayment paths, culminating in a large, clear display of the percentage of interest saved—the key psychological reward for the user's engagement. */
+/* CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+.font-serif {
+    font-family: 'Inter', sans-serif !important; /* This line is the key fix */
+    /* Keep any other properties you might have here, e.g., font-weight, color etc. */
+}
+.bg-dark-blue {
+    background-color: #002e5d;
+}
+.text-dark-blue {
+    color: #002e5d;
+}
+.bg-dark-grey {
+    background-color: #333333;
+}
+.text-dark-grey {
+    color: #333333;
+}
+.bg-light-grey {
+    background-color: #f8fafc;
+}
+.bg-sharp-yellow {
+    background-color: #ffd700;
+}
+.bg-soft-amber {
+    background-color: #FFEFE1;
+}
+.border-dark-blue {
+    border-color: #002e5d;
+}
+.ring-dark-blue:focus {
+    --tw-ring-color: #002e5d;
+}
+.dsr-gauge-bg {
+    background-color: #e0e0e0;
+}
+.dsr-gauge-fill {
+    transition: width 0.5s ease-in-out;
+}
+.custom-dropdown {
+    position: relative;
+}
+.custom-dropdown-list {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 10;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Added shadow for better visibility */
+}
+.custom-dropdown-item {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.custom-dropdown-item:hover {
+    background-color: #efecee;
+}
+.refi-section {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out, padding 0.7s ease-in-out, margin 0.7s ease-in-out;
+}

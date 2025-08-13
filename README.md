@@ -5,7 +5,8 @@ All code file are covered by MIT LICENSE
 
 This repo contain all custom code file I wrote for company website(built by wordpress)
 For reference of the website: https://sociobridge.world
-###Preview
+
+# Preview
 /chinese-ver-web, this contain same code of fiancial-stimulator and loan-calculator but in chinese.
 
 /eligibility-check-logic, this contain the code I wrote for the eligibilty check session on home page, including logic and appearance of that session
@@ -25,7 +26,8 @@ For reference of the website: https://sociobridge.world
 /style-animation, some animation and style of the page
 
 /wpforms-auto-save,custom automatic saving function for wpforms
-###ERP system
+
+# ERP system
 /erp , File of the erp system
 **pd** the interactive risk dashboard
 **psyc** psychometric test result -visualize the test result and process the data to the relation of TU grade

@@ -25,3 +25,7 @@ For reference of the website: https://sociobridge.world
 /style-animation, some animation and style of the page
 
 /wpforms-auto-save,custom automatic saving function for wpforms
+
+/erp , File of the er system
+
+log file inlcuding implmentation of creating new port in Google Cloud

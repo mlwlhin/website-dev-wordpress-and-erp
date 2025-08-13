@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Credit Risk Model</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
+    <!-- Chosen Palette: Corporate Palette -->
+    <!-- Application Structure Plan: A dashboard layout with a persistent left sidebar for all user-controlled assumptions. The main panel presents the key output (Overall PD) at the top, followed by four tabbed sections for deeper analysis: 1) Attribution Analysis (bar chart), 2) Top Risk Scenarios (table), 3) an interactive DSR vs. PD Curve Simulator, and 4) Sensitivity Analysis. This structure allows users to see high-level results instantly, then dive into the 'why' and 'how' of the model. The flow is: adjust an assumption -> see the immediate impact on PD -> explore the detailed charts to understand the change. This is more intuitive than a linear report format. -->
+    <!-- Visualization & Content Choices: 1) Overall PD: Goal=Inform, Method=Large Metric Card (HTML/Tailwind), Interaction=Dynamic update. 2) Assumptions: Goal=Input, Method=HTML Sliders/Inputs, Interaction=Triggers JS recalculation. 3) Attribution: Goal=Compare, Method=Bar Chart (Chart.js), Interaction=Dynamic update, shows which macro-event (dropout, unemployment) contributes most to risk. 4) Top Scenarios: Goal=Organize/Inform, Method=Sortable Table (HTML), Interaction=Shows specific high-risk paths. 5) DSR Curve: Goal=Relationship/Change, Method=Line Chart (Chart.js), Interaction=Sliders for logistic parameters (L, k, DSR_0) update the curve and recalculate the entire model, allowing for policy simulation. 6) Probability Tree: Goal=Organize/Relationships, Method=Sankey Diagram (Plotly.js), Interaction=Hover tooltips, visualizes flow of probabilities. 7) Sensitivity: Goal=Compare/Relationships, Method=Horizontal Bar Chart (Tornado, Chart.js), Interaction=Shows % change in PD for a % change in each input. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; /* white */
+            color: #333333; /* Dark grey */
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        .main-content {
+            background-color: #ffffff;
+        }
+        .sidebar {
+            background-color: #efecee; /* light grey */
+        }
+        .main-heading, .card-heading {
+             color: #002e5d; /* Dark blue */
+        }
+        .sidebar-heading {
+             color: #002e5d; /* Dark blue */
+        }
+        .sidebar-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #333333; /* Dark grey */
+        }
+        .sidebar-input {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 0.375rem;
+            border: 1px solid #d1d5db; 
+            background-color: #ffffff; 
+            margin-top: 0.25rem;
+        }
+        .sidebar-slider {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+        .metric-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            text-align: center;
+        }
+        .metric-card .metric-value {
+             color: #002e5d; /* Dark blue */
+        }
+        .main-card {
+             background-color: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .table-header {
+            background-color: #efecee; /* light grey */
+            color: #333333; /* Dark Grey */
+        }
+        .contribution-cell {
+            color: #002e5d; /* Dark blue */
+            font-weight: 600;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        .sankey-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+        }
+        /* Toggle Switch CSS */
+        .toggle-label {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .toggle-input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .toggle-slider {
+            width: 40px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 20px;
+            transition: 0.4s;
+            position: relative;
+        }
+        .toggle-slider:before {
+            content: "";
+            position: absolute;
+            height: 12px;
+            width: 12px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+        .toggle-input:checked + .toggle-slider {
+            background-color: #002e5d;
+        }
+        .toggle-input:checked + .toggle-slider:before {
+            transform: translateX(20px);
+        }
+        .pd-green { color: #16a34a; }
+        .pd-red { color: #ef4444; }
+    </style>
+</head>
+<body>
+
+    <div class="flex flex-col lg:flex-row min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-full lg:w-80 sidebar shadow-lg p-6 lg:h-screen lg:sticky top-0 overflow-y-auto">
+            <h2 class="text-xl font-bold sidebar-heading mb-6">Credit Model Assumptions</h2>
+
+            <div id="assumptions-form">
+                <h3 class="font-semibold text-lg sidebar-heading border-b border-gray-300 pb-2 mb-4">Loan & Salaries</h3>
+                <div class="sidebar-item">
+                    <label class="sidebar-label" for="p">Principal (p)</label>
+                    <input type="number" id="p" class="sidebar-input" value="500000">
+                </div>
+                <div class="sidebar-item">
+                    <label class="sidebar-label" for="i">Annual Interest Rate (i %)</label>
+                    <input type="number" id="i" class="sidebar-input" value="14.98" step="0.01">
+                </div>
+                <div class="sidebar-item">
+                    <label class="sidebar-label" for="tr">Repayment Period (tr years)</label>
+                    <input type="number" id="tr" class="sidebar-input" value="10">
+                </div>
+                 <div class="sidebar-item">
+                    <label class="sidebar-label" for="ts">Study Period (ts years)</label>
+                    <input type="number" id="ts" class="sidebar-input" value="2">
+                </div>
+                <div class="sidebar-item">
+                    <label class="sidebar-label" for="sal_dad">Dad's Salary</label>
+                    <input type="number" id="sal_dad" class="sidebar-input" value="8000">
+                </div>
+                 <div class="sidebar-item">
+                    <label class="sidebar-label" for="sal_mum">Mum's Salary</label>
+                    <input type="number" id="sal_mum" class="sidebar-input" value="0">
+                </div>
+                <div class="sidebar-item">
+                    <label class="sidebar-label" for="sal_stud_dest">Student Salary (Destination)</label>
+                    <input type="number" id="sal_stud_dest" class="sidebar-input" value="16500">
+                </div>
+                <div class="sidebar-item">
+                    <label class="sidebar-label" for="sal_stud_home">Student Salary (Home)</label>
+                    <input type="number" id="sal_stud_home" class="sidebar-input" value="4000">
+                </div>
+
+                <h3 class="font-semibold text-lg sidebar-heading border-b border-gray-300 pb-2 my-4">Probabilities</h3>
+                 <div class="sidebar-item">
+                    <label class="sidebar-label" for="psy_grd">Psychometric Test Score (psy_grd)</label>
+                    <select id="psy_grd" class="sidebar-input">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G" selected>G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                    </select>
+                </div>
+                <div class="sidebar-item">
+                    <label class="sidebar-label" for="p_drop">Student Dropout PA (p_drop %)</label>
+                    <input type="number" id="p_drop" class="sidebar-input" value="2.0" step="0.1">
+                </div>
+                <div class="sidebar-item">
+                    <label class="sidebar-label" for="p_unemp">Student Unemployment Post-Grad (p_unemp %)</label>
+                    <input type="number" id="p_unemp" class="sidebar-input" value="10.0" step="0.1">
+                </div>
+                 <div class="sidebar-item">
+                    <label class="sidebar-label" for="p_dest_emp">Employment in Destination (p_dest_emp %)</label>
+                    <input type="number" id="p_dest_emp" class="sidebar-input" value="50.0" step="0.1">
+                </div>
+                <div class="sidebar-item">
+                    <label class="sidebar-label" for="p_unemp_drop">Unemployment after Dropout (p_unemp_drop %)</label>
+                    <input type="number" id="p_unemp_drop" class="sidebar-input" value="20.0" step="0.1">
+                </div>
+                <div class="sidebar-item">
+                    <label class="sidebar-label" for="p_parent_unemp">Base Parental Unemployment %</label>
+                    <input type="number" id="p_parent_unemp" class="sidebar-input" value="4.75" step="0.01">
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="flex-1 p-6 lg:p-10 main-content">
+            <h1 class="text-3xl font-bold main-heading mb-2">Interactive Credit Risk Dashboard</h1>
+            <p class="mb-8">Analyze the probability of default by adjusting model assumptions in real-time.</p>
+
+            <div class="metric-card mb-8">
+                <h2 class="text-lg font-medium">Overall Probability of Default (PD)</h2>
+                <p id="overall-pd" class="text-5xl font-bold metric-value mt-2">0.00%</p>
+                 <div class="flex justify-center space-x-8 mt-4 pt-4 border-t">
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-500">PD (Ability)</h3>
+                        <p id="pd-ra-metric" class="text-2xl font-semibold">0.00%</p>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-500">PD (Willingness)</h3>
+                        <p id="pd-rw-metric" class="text-2xl font-semibold">0.00%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+                 <div class="main-card">
+                    <h2 class="text-2xl font-bold card-heading mb-1">Sensitivity Analysis (Tornado Chart)</h2>
+                    <p class="mb-4">This chart shows the percentage change in the overall PD resulting from a +10% change in each major assumption. It ranks the variables by impact, revealing the most sensitive drivers of risk in the model.</p>
+                    <div class="chart-container h-96">
+                        <canvas id="sensitivityChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="main-card">
+                    <h2 class="text-2xl font-bold card-heading mb-1">Interactive Probability Tree</h2>
+                    <p class="mb-4">This diagram visualizes the flow of probabilities through the model's key stages. The width of each path is proportional to its probability, showing the most likely outcomes. The final stage illustrates how each branch contributes to the total risk of Default vs. No Default.</p>
+                    <div id="sankey-container" class="sankey-container"></div>
+                </div>
+
+                <div class="main-card">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h2 class="text-2xl font-bold card-heading">Top Risk Scenario Explorer</h2>
+                            <p>The table below lists the scenarios that contribute most to the total risk.</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sm font-medium">Aggregate by Student Outcome</span>
+                             <label class="toggle-label">
+                                <input type="checkbox" id="aggregate-toggle" class="toggle-input">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-sm">
+                            <thead class="table-header">
+                                <tr>
+                                    <th class="p-3 font-semibold uppercase">Rank</th>
+                                    <th class="p-3 font-semibold uppercase">Scenario Description</th>
+                                    <th class="p-3 font-semibold uppercase cursor-pointer" onclick="sortTable(2)">Path Prob. ↓</th>
+                                    <th class="p-3 font-semibold uppercase cursor-pointer" onclick="sortTable(3)">Conditional PD ↓</th>
+                                    <th class="p-3 font-semibold uppercase cursor-pointer" onclick="sortTable(4)">Contribution to Total PD ↓</th>
+                                </tr>
+                            </thead>
+                            <tbody id="scenarios-table" class="divide-y divide-gray-200">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="main-card">
+                    <h2 class="text-2xl font-bold card-heading mb-1">Risk Attribution Analysis</h2>
+                    <p class="mb-4">This chart breaks down the total Probability of Default by the student's primary outcome. It shows which macro-level event contributes most to the overall risk.</p>
+                    <div class="chart-container">
+                        <canvas id="attributionChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="main-card">
+                    <h2 class="text-2xl font-bold card-heading mb-1">Interactive DSR vs. PD Curve Simulator</h2>
+                    <p class="mb-4">This section models the core risk function that converts a household's Debt-Servicing-Ratio (DSR) into a Probability of Default (PD). Adjust the parameters of the logistic function to simulate different risk policies and see the immediate impact on the curve and the overall PD.</p>
+                    <div class="chart-container mb-6">
+                        <canvas id="dsrPdChart"></canvas>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div>
+                            <label for="L" class="sidebar-label">L (Max PD): <span id="L_val">1.0</span></label>
+                            <input type="range" id="L" min="0.5" max="1" step="0.01" value="1" class="sidebar-slider">
+                        </div>
+                        <div>
+                            <label for="k" class="sidebar-label">k (Steepness): <span id="k_val">19.21</span></label>
+                            <input type="range" id="k" min="5" max="30" step="0.1" value="19.206" class="sidebar-slider">
+                        </div>
+                        <div>
+                            <label for="DSR_0" class="sidebar-label">DSR_0 (Inflection Point): <span id="DSR_0_val">0.80</span></label>
+                            <input type="range" id="DSR_0" min="0.3" max="1.0" step="0.01" value="0.8" class="sidebar-slider">
+                        </div>
+                        <div>
+                            <label for="psy_grd_slider" class="sidebar-label">Psychometric Grade: <span id="psy_grd_slider_val">G</span></label>
+                            <input type="range" id="psy_grd_slider" min="0" max="9" step="1" value="6" class="sidebar-slider">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // --- CHART & APP STATE ---
+        let attributionChart, dsrPdChart, sensitivityChart;
+        let scenariosResult = [];
+        let sortDirection = { column: 4, asc: false };
+        let isAggregatedView = false;
+
+        const psyGrades = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
+        const pdRwMap = {
+            'A': 0.0013, 'B': 0.0028, 'C': 0.0098, 'D': 0.0117, 'E': 0.0191,
+            'F': 0.0277, 'G': 0.0531, 'H': 0.1154, 'I': 0.9946, 'J': 1.0
+        };
+
+        // --- CORE CALCULATION ENGINE ---
+        function getInputs() {
+            const p_unemp = parseFloat(document.getElementById('p_unemp').value) / 100;
+            const p_unemp_drop = parseFloat(document.getElementById('p_unemp_drop').value) / 100;
+            const p_parent_unemp = parseFloat(document.getElementById('p_parent_unemp').value) / 100;
+
+            return {
+                p: parseFloat(document.getElementById('p').value),
+                i: parseFloat(document.getElementById('i').value) / 100,
+                tr: parseFloat(document.getElementById('tr').value),
+                ts: parseInt(document.getElementById('ts').value),
+                sal_dad: parseFloat(document.getElementById('sal_dad').value),
+                sal_mum: parseFloat(document.getElementById('sal_mum').value),
+                sal_stud_dest: parseFloat(document.getElementById('sal_stud_dest').value),
+                sal_stud_home: parseFloat(document.getElementById('sal_stud_home').value),
+                psy_grd: document.getElementById('psy_grd').value,
+                p_drop: parseFloat(document.getElementById('p_drop').value) / 100,
+                p_emp: 1 - p_unemp,
+                p_dest_emp: parseFloat(document.getElementById('p_dest_emp').value) / 100,
+                p_emp_drop: 1 - p_unemp_drop,
+                p_dad_unemp: p_parent_unemp,
+                p_mum_unemp: p_parent_unemp,
+                L: parseFloat(document.getElementById('L').value),
+                k: parseFloat(document.getElementById('k').value),
+                DSR_0: parseFloat(document.getElementById('DSR_0').value),
+            };
+        }
+        
+        function calculatePmt(p, i, tr) {
+            if (tr <= 0) return p;
+            const monthly_i = i / 12;
+            const n = tr * 12;
+            if (monthly_i === 0) return p / n;
+            return p * (monthly_i * Math.pow(1 + monthly_i, n)) / (Math.pow(1 + monthly_i, n) - 1);
+        }
+
+        function logisticFunction(dsr, L, k, DSR_0) {
+            if (dsr >= 1000) return L;
+            return L / (1 + Math.exp(-k * (dsr - DSR_0)));
+        }
+
+        function runFullModel(currentInputs) {
+            const pmt = calculatePmt(currentInputs.p, currentInputs.i, currentInputs.tr);
+            const pd_rw = pdRwMap[currentInputs.psy_grd];
+            
+            let allScenarios = [];
+            const studentOutcomes = [
+                { major: "Graduate, Employed", sub: "Destination", path: ["grad", "emp", "dest"] },
+                { major: "Graduate, Employed", sub: "Home", path: ["grad", "emp", "home"] },
+                { major: "Graduate, Unemployed", sub: "Unemployed", path: ["grad", "unemp", "na"] },
+                { major: "Dropout, Employed", sub: "Employed", path: ["drop", "emp_drop", "na"] },
+                { major: "Dropout, Unemployed", sub: "Unemployed", path: ["drop", "unemp_drop", "na"] },
+            ];
+            const parentOutcomes = ["both_emp", "dad_unemp", "mum_unemp", "both_unemp"];
+
+            studentOutcomes.forEach(studentOutcome => {
+                parentOutcomes.forEach(parentStatus => {
+                    let currentPath = [...studentOutcome.path];
+                    let desc = "";
+                    if(studentOutcome.major.startsWith("Dropout")) desc += "Drop, "; else desc += "Grad, ";
+                    if(studentOutcome.sub === "Destination") desc += "Emp Dest, ";
+                    else if (studentOutcome.sub === "Home") desc += "Emp Home, ";
+                    else if (studentOutcome.sub === "Employed") desc += "Emp, ";
+                    else if (studentOutcome.sub === "Unemployed") desc += "Unemp, ";
+
+                    if (parentStatus === "both_emp") { currentPath.push("dad_emp", "mum_emp"); desc += "Both Emp"; }
+                    if (parentStatus === "dad_unemp") { currentPath.push("dad_unemp", "mum_emp"); desc += "Dad Unemp"; }
+                    if (parentStatus === "mum_unemp") { currentPath.push("dad_emp", "mum_unemp"); desc += "Mum Unemp"; }
+                    if (parentStatus === "both_unemp") { currentPath.push("dad_unemp", "mum_unemp"); desc += "Both Unemp"; }
+                    allScenarios.push({ desc: desc, path: currentPath, majorOutcome: studentOutcome.major });
+                });
+            });
+            
+            const p_cont = 1 - currentInputs.p_drop;
+            const p_unemp_val = 1 - currentInputs.p_emp;
+            const p_home_emp = 1 - currentInputs.p_dest_emp;
+            const p_unemp_drop_val = 1 - currentInputs.p_emp_drop;
+            const p_dad_emp = 1 - currentInputs.p_dad_unemp;
+            const p_mum_emp = 1 - currentInputs.p_mum_unemp;
+
+            const calculatedScenarios = allScenarios.map(scen => {
+                let pathWeight = 1.0;
+                let studentSalary = 0;
+
+                if (scen.path.includes("grad")) {
+                    pathWeight *= Math.pow(p_cont, currentInputs.ts);
+                    if (scen.path.includes("emp")) {
+                        pathWeight *= currentInputs.p_emp;
+                        if (scen.path.includes("dest")) {
+                            pathWeight *= currentInputs.p_dest_emp;
+                            studentSalary = currentInputs.sal_stud_dest;
+                        } else {
+                            pathWeight *= p_home_emp;
+                            studentSalary = currentInputs.sal_stud_home;
+                        }
+                    } else { pathWeight *= p_unemp_val; studentSalary = 0; }
+                } else {
+                    pathWeight *= (1 - Math.pow(p_cont, currentInputs.ts));
+                    if (scen.path.includes("emp_drop")) {
+                        pathWeight *= currentInputs.p_emp_drop;
+                        studentSalary = currentInputs.sal_stud_home;
+                    } else { pathWeight *= p_unemp_drop_val; studentSalary = 0; }
+                }
+
+                let dadSalary = currentInputs.sal_dad;
+                let mumSalary = currentInputs.sal_mum;
+
+                if (scen.path.includes("dad_unemp")) { pathWeight *= currentInputs.p_dad_unemp; dadSalary = 0; } else { pathWeight *= p_dad_emp; }
+                if (scen.path.includes("mum_unemp")) { pathWeight *= currentInputs.p_mum_unemp; mumSalary = 0; } else { pathWeight *= p_mum_emp; }
+
+                const householdSalary = studentSalary + dadSalary + mumSalary;
+                const dsr = householdSalary > 0 ? pmt / householdSalary : 1000;
+                const pd_ra = logisticFunction(dsr, currentInputs.L, currentInputs.k, currentInputs.DSR_0);
+                const conditionalPD = 1 - ((1 - pd_ra) * (1 - pd_rw));
+                const weightedPD = conditionalPD * pathWeight;
+
+                return { ...scen, pathWeight, conditionalPD, pd_ra, weightedPD };
+            });
+
+            return {
+                scenarios: calculatedScenarios,
+                totalPD: calculatedScenarios.reduce((sum, scen) => sum + scen.weightedPD, 0)
+            };
+        }
+        
+        function calculateModel() {
+            const inputs = getInputs();
+            const result = runFullModel(inputs);
+            scenariosResult = result.scenarios;
+            updateUI(result.totalPD);
+        }
+
+        function runSensitivityAnalysis() {
+            const baseInputs = getInputs();
+            const basePD = runFullModel(baseInputs).totalPD;
+            
+            if (basePD === 0) {
+                sensitivityChart.data.labels = [];
+                sensitivityChart.data.datasets[0].data = [];
+                sensitivityChart.update();
+                return;
+            }
+
+            const sensitivityResults = [];
+            const shock = 0.10;
+
+            const shockableVars = {
+                'p': (inputs, val) => ({ ...inputs, p: val }),
+                'i': (inputs, val) => ({ ...inputs, i: val / 100 }),
+                'tr': (inputs, val) => ({ ...inputs, tr: val }),
+                'ts': (inputs, val) => ({ ...inputs, ts: val }),
+                'sal_dad': (inputs, val) => ({ ...inputs, sal_dad: val }),
+                'sal_mum': (inputs, val) => ({ ...inputs, sal_mum: val }),
+                'sal_stud_dest': (inputs, val) => ({ ...inputs, sal_stud_dest: val }),
+                'sal_stud_home': (inputs, val) => ({ ...inputs, sal_stud_home: val }),
+                'p_drop': (inputs, val) => ({ ...inputs, p_drop: val / 100 }),
+                'p_unemp': (inputs, val) => ({ ...inputs, p_emp: 1 - (val / 100) }),
+                'p_dest_emp': (inputs, val) => ({ ...inputs, p_dest_emp: val / 100 }),
+                'p_unemp_drop': (inputs, val) => ({ ...inputs, p_emp_drop: 1 - (val / 100) }),
+                'p_parent_unemp': (inputs, val) => {
+                    const rate = val / 100;
+                    return { ...inputs, p_dad_unemp: rate, p_mum_unemp: rate };
+                }
+            };
+            
+            const varsToTest = [
+                { id: 'p', label: 'Principal' }, { id: 'i', label: 'Interest Rate' },
+                { id: 'tr', label: 'Repayment Period'}, { id: 'ts', label: 'Study Period'},
+                { id: 'sal_dad', label: `Dad's Salary` }, { id: 'sal_stud_dest', label: 'Student Salary (Dest)' },
+                { id: 'sal_stud_home', label: 'Student Salary (Home)' }, { id: 'p_drop', label: 'Dropout Rate' },
+                { id: 'p_unemp', label: 'Post-Grad Unemp.' }, { id: 'p_dest_emp', label: 'Dest. Employment' },
+                { id: 'p_unemp_drop', label: 'Dropout Unemp.' }, { id: 'p_parent_unemp', label: 'Parental Unemp.' },
+            ];
+
+            varsToTest.forEach(v => {
+                const originalValue = parseFloat(document.getElementById(v.id).value);
+                const shockedValue = originalValue * (1 + shock);
+                const shockerFunction = shockableVars[v.id];
+                const shockedInputs = shockerFunction(getInputs(), shockedValue);
+                const shockedPD = runFullModel(shockedInputs).totalPD;
+                const delta = ((shockedPD - basePD) / basePD) * 100;
+                sensitivityResults.push({ label: v.label, delta: delta });
+            });
+            
+            sensitivityResults.sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta));
+            
+            sensitivityChart.data.labels = sensitivityResults.map(r => r.label);
+            sensitivityChart.data.datasets[0].data = sensitivityResults.map(r => r.delta);
+            sensitivityChart.update();
+        }
+        
+        function getPdColorClass(pd) {
+            return pd > 0.06 ? 'pd-red' : 'pd-green';
+        }
+
+        function updateUI(totalPD) {
+            const pdRw = pdRwMap[document.getElementById('psy_grd').value];
+            const totalPathWeight = scenariosResult.reduce((sum, s) => sum + s.pathWeight, 0);
+            const weightedPdRa = scenariosResult.reduce((sum, s) => sum + s.pd_ra * s.pathWeight, 0);
+            const avgPdRa = totalPathWeight > 0 ? weightedPdRa / totalPathWeight : 0;
+            
+            const overallPdEl = document.getElementById('overall-pd');
+            const pdRaEl = document.getElementById('pd-ra-metric');
+            const pdRwEl = document.getElementById('pd-rw-metric');
+
+            overallPdEl.textContent = `${(totalPD * 100).toFixed(2)}%`;
+            pdRaEl.textContent = `${(avgPdRa * 100).toFixed(2)}%`;
+            pdRwEl.textContent = `${(pdRw * 100).toFixed(2)}%`;
+            
+            overallPdEl.className = `text-5xl font-bold metric-value mt-2 ${getPdColorClass(totalPD)}`;
+            pdRaEl.className = `text-2xl font-semibold ${getPdColorClass(avgPdRa)}`;
+            pdRwEl.className = `text-2xl font-semibold ${getPdColorClass(pdRw)}`;
+
+            let attributionData;
+            if (isAggregatedView) {
+                attributionData = scenariosResult.reduce((acc, scen) => {
+                    const key = scen.majorOutcome;
+                    if (!acc[key]) acc[key] = 0;
+                    acc[key] += scen.weightedPD;
+                    return acc;
+                }, {});
+            } else {
+                attributionData = scenariosResult.reduce((acc, scen) => {
+                    let parentStatus = "Both Emp";
+                    const dadUnemp = scen.path.includes('dad_unemp');
+                    const mumUnemp = scen.path.includes('mum_unemp');
+                    if (dadUnemp && mumUnemp) parentStatus = "Both Unemp";
+                    else if (dadUnemp) parentStatus = "Dad Unemp";
+                    else if (mumUnemp) parentStatus = "Mum Unemp";
+                    const key = `${scen.majorOutcome} (${parentStatus})`;
+                    if (!acc[key]) acc[key] = 0;
+                    acc[key] += scen.weightedPD;
+                    return acc;
+                }, {});
+            }
+
+            attributionChart.data.labels = Object.keys(attributionData);
+            const totalAttribution = Object.values(attributionData).reduce((s, v) => s + v, 0);
+            attributionChart.data.datasets[0].data = Object.values(attributionData).map(v => (totalAttribution > 0 ? (v / totalAttribution) * 100 : 0));
+            attributionChart.update();
+
+            updateDsrPdChart(totalPD);
+            updateSankeyDiagram();
+            runSensitivityAnalysis();
+            renderTable();
+        }
+
+        function updateDsrPdChart(totalPD) {
+            const inputs = getInputs();
+            const pd_rw = pdRwMap[inputs.psy_grd];
+            const dsrValues = Array.from({ length: 101 }, (_, i) => i * 0.015);
+            
+            const pdRaValues = dsrValues.map(dsr => logisticFunction(dsr, inputs.L, inputs.k, inputs.DSR_0));
+            const pdOverallValues = pdRaValues.map(pd_ra => 1 - ((1 - pd_ra) * (1 - pd_rw)));
+
+            dsrPdChart.data.labels = dsrValues;
+            dsrPdChart.data.datasets[0].data = pdRaValues;
+            dsrPdChart.data.datasets[1].data = pdOverallValues;
+            
+            if(dsrPdChart.options.plugins.annotation) {
+                dsrPdChart.options.plugins.annotation.annotations.line1.yMin = totalPD;
+                dsrPdChart.options.plugins.annotation.annotations.line1.yMax = totalPD;
+            }
+            
+            dsrPdChart.update();
+        }
+
+        function updateSankeyDiagram() {
+            const inputs = getInputs();
+            const p_cont = 1 - inputs.p_drop;
+            
+            let labels = ['Cohort'];
+            let sources = [];
+            let targets = [];
+            let values = [];
+            
+            let lastContinueNode = 0;
+            let dropoutPoolNode = -1;
+
+            for (let y = 1; y <= inputs.ts; y++) {
+                const continueNode = labels.length; labels.push(`Y${y} Continue`);
+                const dropoutNode = labels.length; labels.push(`Y${y} Dropout`);
+                if (dropoutPoolNode === -1) { dropoutPoolNode = labels.length; labels.push('Dropout Pool'); }
+                const probContinue = Math.pow(p_cont, y);
+                const probDropoutThisYear = Math.pow(p_cont, y - 1) * inputs.p_drop;
+                sources.push(lastContinueNode, lastContinueNode, dropoutNode);
+                targets.push(continueNode, dropoutNode, dropoutPoolNode);
+                values.push(probContinue, probDropoutThisYear, probDropoutThisYear);
+                lastContinueNode = continueNode;
+            }
+
+            const graduateNode = lastContinueNode;
+            labels[graduateNode] = 'Graduate';
+
+            const gradEmpNode = labels.length; labels.push('Grad-Employed');
+            const gradUnempNode = labels.length; labels.push('Grad-Unemployed');
+            const dropEmpNode = labels.length; labels.push('Drop-Employed');
+            const dropUnempNode = labels.length; labels.push('Drop-Unemployed');
+
+            const p_grad = Math.pow(p_cont, inputs.ts);
+            const p_drop_total = 1 - p_grad;
+            
+            sources.push(graduateNode, graduateNode, dropoutPoolNode, dropoutPoolNode);
+            targets.push(gradEmpNode, gradUnempNode, dropEmpNode, dropUnempNode);
+            values.push(p_grad * inputs.p_emp, p_grad * (1 - inputs.p_emp), p_drop_total * inputs.p_emp_drop, p_drop_total * (1 - inputs.p_emp_drop));
+
+            const studentNodes = [
+                { base: gradEmpNode, type: 'grad_emp' }, { base: gradUnempNode, type: 'grad_unemp' },
+                { base: dropEmpNode, type: 'drop_emp' }, { base: dropUnempNode, type: 'drop_unemp' }
+            ];
+            const parentLabels = ['Both Emp', 'Dad Unemp', 'Mum Unemp', 'Both Unemp'];
+            const defaultNode = labels.length; labels.push('Default');
+            const noDefaultNode = labels.length; labels.push('No Default');
+
+            studentNodes.forEach(sNode => {
+                parentLabels.forEach(pLabel => {
+                    const parentNode = labels.length; labels.push(`${sNode.type.substring(0,5)}-${pLabel}`);
+                    const relevantScenarios = scenariosResult.filter(scen => {
+                        const isGrad = scen.majorOutcome.startsWith('Graduate');
+                        const isEmp = scen.majorOutcome.includes('Employed');
+                        if (sNode.type !== `${isGrad ? 'grad' : 'drop'}_${isEmp ? 'emp' : 'unemp'}`) return false;
+                        const dadUnemp = scen.path.includes('dad_unemp');
+                        const mumUnemp = scen.path.includes('mum_unemp');
+                        if (pLabel === 'Both Emp' && !dadUnemp && !mumUnemp) return true;
+                        if (pLabel === 'Dad Unemp' && dadUnemp && !mumUnemp) return true;
+                        if (pLabel === 'Mum Unemp' && !dadUnemp && mumUnemp) return true;
+                        if (pLabel === 'Both Unemp' && dadUnemp && mumUnemp) return true;
+                        return false;
+                    });
+                    const totalPathWeight = relevantScenarios.reduce((sum, scen) => sum + scen.pathWeight, 0);
+                    const totalWeightedPD = relevantScenarios.reduce((sum, scen) => sum + scen.weightedPD, 0);
+                    if (totalPathWeight > 1e-9) {
+                        sources.push(sNode.base, parentNode, parentNode);
+                        targets.push(parentNode, defaultNode, noDefaultNode);
+                        values.push(totalPathWeight, totalWeightedPD, totalPathWeight - totalWeightedPD);
+                    }
+                });
+            });
+            
+            const nodeColors = labels.map(label => {
+                if (label === 'Default') return '#ffd700'; // Sharp Yellow
+                if (label.includes('No Default')) return '#002e5d'; // Dark Blue
+                if (label.includes('Grad') || label.includes('Continue') || label.includes('Emp')) return '#002e5d'; // Dark Blue
+                if (label.includes('Drop') || label.includes('Unemp')) return '#FFEFE1'; // Soft Amber
+                if (label.includes('Cohort')) return '#333333'; // Dark Grey
+                if (label.startsWith('Grad-')) return '#002e5d';
+                if (label.startsWith('Drop-')) return '#FFEFE1';
+                return '#333333';
+            });
+
+            const data = { type: "sankey", orientation: "h", node: { pad: 15, thickness: 20, line: { color: "black", width: 0.5 }, label: labels, color: nodeColors }, link: { source: sources, target: targets, value: values, color: "#d9d9d9" } };
+            const layout = { title: { text: 'Probability Flow to Default', font: { color: '#002e5d' } }, font: { size: 10, family: 'Inter', color: '#333333' }, margin: { t: 50, b: 20, l:20, r:20 }, paper_bgcolor: 'rgba(0,0,0,0)' };
+            Plotly.newPlot('sankey-container', [data], layout, {responsive: true});
+        }
+
+        function aggregateScenarios(scenarios) {
+            const grouped = scenarios.reduce((acc, scen) => {
+                const key = scen.majorOutcome;
+                if (!acc[key]) {
+                    acc[key] = { desc: key, pathWeight: 0, weightedPD: 0, count: 0 };
+                }
+                acc[key].pathWeight += scen.pathWeight;
+                acc[key].weightedPD += scen.weightedPD;
+                acc[key].count++;
+                return acc;
+            }, {});
+
+            return Object.values(grouped).map(group => ({
+                ...group,
+                conditionalPD: group.pathWeight > 0 ? group.weightedPD / group.pathWeight : 0
+            }));
+        }
+
+        function renderTable() {
+            const tableBody = document.getElementById('scenarios-table');
+            let dataToRender = isAggregatedView ? aggregateScenarios(scenariosResult) : scenariosResult;
+            const totalPD = scenariosResult.reduce((sum, scen) => sum + scen.weightedPD, 0);
+            dataToRender.sort((a, b) => {
+                let valA, valB;
+                if (sortDirection.column === 2) { valA = a.pathWeight; } else if (sortDirection.column === 3) { valA = a.conditionalPD; } else { valA = a.weightedPD; }
+                if (sortDirection.column === 2) { valB = b.pathWeight; } else if (sortDirection.column === 3) { valB = b.conditionalPD; } else { valB = b.weightedPD; }
+                return sortDirection.asc ? valA - valB : valB - valA;
+            });
+            tableBody.innerHTML = dataToRender.slice(0, 10).map((scen, index) => {
+                const contribution = totalPD > 0 ? (scen.weightedPD / totalPD) * 100 : 0;
+                return `<tr class="hover:bg-gray-100"><td class="p-3 font-medium">${index + 1}</td><td class="p-3">${scen.desc}</td><td class="p-3">${(scen.pathWeight * 100).toFixed(2)}%</td><td class="p-3">${(scen.conditionalPD * 100).toFixed(2)}%</td><td class="p-3 contribution-cell">${contribution.toFixed(2)}%</td></tr>`;
+            }).join('');
+        }
+
+        function sortTable(columnIndex) {
+            if (sortDirection.column === columnIndex) sortDirection.asc = !sortDirection.asc;
+            else { sortDirection.column = columnIndex; sortDirection.asc = false; }
+            document.querySelectorAll('th[onclick]').forEach((th, i) => {
+                let text = th.innerText.replace(/ [↓↑]/, '');
+                if (i + 2 === columnIndex) text += sortDirection.asc ? ' ↑' : ' ↓';
+                th.innerText = text;
+            });
+            renderTable();
+        }
+
+        // --- INITIALIZATION ---
+        window.onload = () => {
+             const sensCtx = document.getElementById('sensitivityChart').getContext('2d');
+            sensitivityChart = new Chart(sensCtx, {
+                type: 'bar',
+                data: { labels: [], datasets: [{ label: '% Change in PD from +10% Input Change', data: [], 
+                    backgroundColor: (ctx) => ctx.raw >= 0 ? '#ffd700' : '#002e5d', 
+                    borderColor: (ctx) => ctx.raw >= 0 ? '#ffd700' : '#002e5d', 
+                    borderWidth: 1 }] },
+                options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, scales: { x: { title: { display: true, text: '% Change in Overall PD', color: '#333333' }, ticks:{color: '#333333'}}, y:{ticks:{color: '#333333'}} }, plugins: { legend: { display: false } } }
+            });
+
+            const attrCtx = document.getElementById('attributionChart').getContext('2d');
+            attributionChart = new Chart(attrCtx, {
+                type: 'bar',
+                data: { labels: [], datasets: [{ label: 'Contribution to Total PD (%)', data: [], 
+                    backgroundColor: (ctx) => {
+                        if (!ctx.chart.data.labels || ctx.dataIndex === undefined || !ctx.chart.data.labels[ctx.dataIndex]) { return '#333333'; }
+                        const label = ctx.chart.data.labels[ctx.dataIndex];
+                        if (label.includes('Employed')) return '#002e5d';
+                        if (label.includes('Unemployed')) return '#FFEFE1';
+                        if (label.includes('Dropout')) return '#333333';
+                        return '#333333';
+                    }, 
+                    borderColor: '#ffffff', borderWidth: 1 }] },
+                options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true, title: { display: true, text: 'Attribution to Total PD (%)', color: '#333333' }, ticks:{color: '#333333'} }, x:{ticks:{color: '#333333'}} }, plugins: { legend: { display: false } } }
+            });
+
+            const dsrPdCtx = document.getElementById('dsrPdChart').getContext('2d');
+            dsrPdChart = new Chart(dsrPdCtx, {
+                type: 'line',
+                data: { labels: [], datasets: [
+                    { label: 'PD (Ability)', data: [], fill: false, borderColor: '#002e5d', tension: 0.1, pointRadius: 0 },
+                    { label: 'Overall PD', data: [], fill: false, borderColor: '#ffd700', tension: 0.1, pointRadius: 0 }
+                ] },
+                options: { 
+                    responsive: true, maintainAspectRatio: false, 
+                    scales: { x: { title: { display: true, text: 'Debt-Servicing-Ratio (DSR)', color: '#333333' }, ticks:{color: '#333333'} }, y: { title: { display: true, text: 'Probability of Default (PD)', color: '#333333' }, min: 0, max: 1, ticks:{color: '#333333'} } },
+                    plugins: {
+                        annotation: {
+                            annotations: {
+                                line1: {
+                                    type: 'line',
+                                    yMin: 0.15,
+                                    yMax: 0.15,
+                                    borderColor: 'rgb(239, 68, 68, 0.7)',
+                                    borderWidth: 2,
+                                    borderDash: [6, 6],
+                                    label: {
+                                        content: 'Overall PD',
+                                        enabled: true,
+                                        position: 'end'
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            document.getElementById('assumptions-form').addEventListener('input', calculateModel);
+            document.getElementById('aggregate-toggle').addEventListener('change', (e) => {
+                isAggregatedView = e.target.checked;
+                calculateModel();
+            });
+            document.getElementById('psy_grd_slider').addEventListener('input', (e) => {
+                const grade = psyGrades[e.target.value];
+                document.getElementById('psy_grd_slider_val').textContent = grade;
+                document.getElementById('psy_grd').value = grade;
+                calculateModel();
+            });
+            ['L', 'k', 'DSR_0'].forEach(id => {
+                document.getElementById(id).addEventListener('input', (e) => {
+                    document.getElementById(`${id}_val`).textContent = parseFloat(e.target.value).toFixed(2);
+                    calculateModel();
+                });
+            });
+
+            calculateModel();
+        };
+    </script>
+</body>
+</html>

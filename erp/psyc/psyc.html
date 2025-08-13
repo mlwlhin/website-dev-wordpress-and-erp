@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Psychometric Risk Assessment Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.4.0/chartjs-plugin-annotation.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="psyc.css">
+</head>
+<body class="text-[#333333]">
+
+    <div class="min-h-screen p-4 sm:p-6 lg:p-8">
+        <div class="max-w-7xl mx-auto">
+            
+            <header class="mb-8">
+                <h1 class="text-3xl font-bold text-[#002e5d]">Psychometric Risk Assessment Dashboard</h1>
+                <p class="mt-1 text-lg text-gray-600">Interactively analyze and explore psychometric test results to understand credit risk.</p>
+            </header>
+
+            <main class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <div class="lg:col-span-1 space-y-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-semibold text-[#002e5d] mb-4">Key Risk Indicators</h2>
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-lg bg-[#FFEFE1]">
+                                <p class="text-sm font-medium text-gray-600">TU Grade</p>
+                                <p id="tu-grade" class="text-4xl font-bold text-[#002e5d]">C</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-[#FFEFE1]">
+                                <p class="text-sm font-medium text-gray-600">Probability of Default (PD)</p>
+                                <p id="pd" class="text-4xl font-bold text-[#002e5d]">0.00%</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-[#FFEFE1]">
+                                <p class="text-sm font-medium text-gray-600">Normalized Psychometric Score</p>
+                                <p id="norm-score" class="text-4xl font-bold text-[#002e5d]">0.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h2 class="text-xl font-semibold text-[#002e5d] mb-4">Score Adjustment</h2>
+                        <p class="text-sm text-gray-600 mb-4">Use the sliders to perform a "what-if" analysis by adjusting individual test scores.</p>
+                        <div id="sliders-container" class="space-y-4 max-h-[40vh] overflow-y-auto pr-2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold text-[#002e5d] mb-2">Risk Grade Meter</h2>
+                    <p class="text-sm text-gray-600 mb-4">This chart shows where the applicant's score falls within the risk grade brackets. The yellow line indicates the current score.</p>
+                    <div class="chart-container">
+                        <canvas id="overallDistributionChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 bg-white p-6 rounded-lg shadow-md">
+                    <div>
+                        <div class="border-b border-gray-200">
+                            <nav class="-mb-px flex space-x-6" aria-label="Tabs">
+                                <button id="tab-summary" onclick="switchTab('summary')" class="tab-active whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">Performance Summary</button>
+                                <button id="tab-analysis" onclick="switchTab('analysis')" class="tab-inactive whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">Distribution Analysis</button>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="content-summary" class="mt-6">
+                        <h2 class="text-xl font-semibold text-[#002e5d] mb-2">Sub-Test Performance Table</h2>
+                        <p class="text-sm text-gray-600 mb-4">This table provides a detailed breakdown of each sub-test, comparing the applicant's score to the required threshold.</p>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full divide-y divide-gray-200">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Test Name</th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Your Score</th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Threshold</th>
+                                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="results-table-body" class="bg-white divide-y divide-gray-200">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="content-analysis" class="hidden mt-6">
+                        <h2 class="text-xl font-semibold text-[#002e5d] mb-2">Individual Sub-Test Distributions</h2>
+                         <p class="text-sm text-gray-600 mb-4">Each chart shows the distribution for a single test. The solid black line is the passing threshold, and the colored vertical line is the applicant's score (yellow for pass, red for fail).</p>
+                        <div id="sub-charts-container" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="psyc.js"></script>
+</body>
+</html>

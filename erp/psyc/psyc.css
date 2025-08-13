@@ -1,0 +1,60 @@
+/* Psychometric Risk Assessment Dashboard Styles */
+/* Professional Finance Theme (Corporate Palette + Semantic Colors) */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #efecee;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    max-height: 25vh;
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 200px;
+    }
+}
+
+.sub-chart-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    max-height: 30vh;
+}
+
+.slider-thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #002e5d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider-thumb::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #002e5d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.tab-active {
+    border-color: #002e5d;
+    background-color: #ffffff;
+    color: #002e5d;
+    font-weight: 600;
+}
+
+.tab-inactive {
+    background-color: transparent;
+    color: #333333;
+}

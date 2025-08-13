@@ -1,7 +1,7 @@
 # website-dev-wordpress-and-erp
 company website development by wordpress and erp automation
 
-All code file are covered by MIT LICENSE
+**All code file are covered by MIT LICENSE
 
 This repo contain all custom code file I wrote for company website(built by wordpress)
 For reference of the website: https://sociobridge.world

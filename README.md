@@ -7,7 +7,7 @@ This repo contain all custom code file I wrote for company website(built by word
 For reference of the website: https://sociobridge.world
 
 # Wordpress-development code
-* chinese-ver-web, this contain same code of fiancial-stimulator and loan-calculator but in chinese.
+* **chinese-ver-web**, this contain same code of fiancial-stimulator and loan-calculator but in chinese.
 
 * eligibility-check-logic, this contain the code I wrote for the eligibilty check session on home page, including logic and appearance of that session
 

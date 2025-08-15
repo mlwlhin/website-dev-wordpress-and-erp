@@ -29,7 +29,7 @@ For reference of the website: https://sociobridge.world
 * **chinese-ver-web** this contain same code of fiancial-stimulator and loan-calculator but in chinese.
   
 # ERP system
-/erp , File of the erp system
+**erp** File of the erp system
 * **pd** the interactive risk dashboard
 * **psyc** psychometric test result -visualize the test result and process the data to the relation of TU grade
 

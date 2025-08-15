@@ -26,7 +26,7 @@ class Psychometric_Assessment_Processor {
     private $assessment_scoring_rules = null;
 
     // Define the conversion factor as a class constant
-    const CONVERSION_FACTOR = 64/70;
+    const CONVERSION_FACTOR = 1;
 
     // Define the TU Lookup Table data as a class constant
     // Format: [Cum. Pop (Upper Bound), TU Grade, High PD]
@@ -120,14 +120,18 @@ class Psychometric_Assessment_Processor {
                         if ($sub_category === 'NaN') {
                             $sub_category = 'N/A'; // Consistent with DB storage
                         }
+                        // *** MODIFICATION START ***
+                        // Added '3rd_order_category' to be loaded from the JSON file.
                         $details[$item_id] = [
                             'scale' => $data['scale'] ?? 'N/A',
                             'sub_category' => $sub_category,
+                            '3rd_order_category' => $data['3rd-order-category'] ?? 'N/A',
                             'reversal' => $data['reversal'] ?? false,
                             'min_score' => $data['min_val'] ?? 1,
                             'max_score' => $data['max_val'] ?? 5,
                             'is_catch' => $data['is_catch'] ?? false,
                         ];
+                        // *** MODIFICATION END ***
                     }
                 } else {
                     error_log("Psychometric Assessment: Error decoding question_list_data.json: " . json_last_error_msg());
@@ -162,7 +166,20 @@ class Psychometric_Assessment_Processor {
                         if ($sub_category === 'NaN') {
                             $sub_category = 'N/A'; // Consistent with DB storage
                         }
-                        $rule_key = $assessment_name . '_' . $sub_category;
+                        
+                        // *** MODIFICATION START ***
+                        // Check for a 3rd-order-category to create a more specific rule key.
+                        $third_order_category = $rule_entry['3rd-order-category'] ?? '';
+                        $rule_key = '';
+
+                        if (!empty($third_order_category) && $third_order_category !== 'NaN') {
+                            // Create a key for 3rd-order categories, e.g., "BFI-2-S_Conscientiousness_Productiveness"
+                            $rule_key = $assessment_name . '_' . $sub_category . '_' . $third_order_category;
+                        } else {
+                            // Use the existing key format for main sub-categories.
+                            $rule_key = $assessment_name . '_' . $sub_category;
+                        }
+                        // *** MODIFICATION END ***
 
                         $rules[$rule_key] = [
                             'method' => $rule_entry['Score Cal Method'] ?? 'SUM',
@@ -183,6 +200,7 @@ class Psychometric_Assessment_Processor {
         }
         return $this->assessment_scoring_rules;
     }
+
 
     /**
      * Creates the custom database table to store psychometric results.
@@ -344,6 +362,12 @@ class Psychometric_Assessment_Processor {
         $user_id = get_current_user_id(); // Get the ID of the logged-in user. 0 if not logged in.
         $submitted_answers_raw = []; // Stores raw user input mapped by item_id
         $scores_by_category = []; // Stores aggregated scores by scale and sub-category for final calculation
+        
+        // *** MODIFICATION START ***
+        // Add a new array to aggregate scores for 3rd-order categories.
+        $scores_by_3rd_order_category = [];
+        // *** MODIFICATION END ***
+
         $catch_item_answers = []; // To check for suspicious patterns
 
         // 1. Map WPForms field IDs to item_ids and store raw and processed answers.
@@ -363,6 +387,12 @@ class Psychometric_Assessment_Processor {
                 $scale = $details['scale'];
                 // Use 'N/A' if sub_category is empty in question_details, for consistency in database.
                 $sub_category = empty($details['sub_category']) ? 'N/A' : $details['sub_category'];
+                
+                // *** MODIFICATION START ***
+                // Get the 3rd-order category from the details.
+                $third_order_category = $details['3rd_order_category'] ?? 'N/A';
+                // *** MODIFICATION END ***
+
                 $min_score = $details['min_score'];
                 $max_score = $details['max_score'];
                 $is_reversal = $details['reversal'];
@@ -382,6 +412,22 @@ class Psychometric_Assessment_Processor {
                     $scores_by_category[ $scale ][ $sub_category ] = [];
                 }
                 $scores_by_category[ $scale ][ $sub_category ][] = $actual_score;
+
+                // *** MODIFICATION START ***
+                // If a 3rd-order category exists, aggregate its score in the new array.
+                if ($third_order_category !== 'N/A') {
+                    if (!isset($scores_by_3rd_order_category[$scale])) {
+                        $scores_by_3rd_order_category[$scale] = [];
+                    }
+                    if (!isset($scores_by_3rd_order_category[$scale][$sub_category])) {
+                        $scores_by_3rd_order_category[$scale][$sub_category] = [];
+                    }
+                    if (!isset($scores_by_3rd_order_category[$scale][$sub_category][$third_order_category])) {
+                        $scores_by_3rd_order_category[$scale][$sub_category][$third_order_category] = [];
+                    }
+                    $scores_by_3rd_order_category[$scale][$sub_category][$third_order_category][] = $actual_score;
+                }
+                // *** MODIFICATION END ***
 
                 // Store catch item answers for validation.
                 if ( $is_catch_item ) {
@@ -461,6 +507,41 @@ class Psychometric_Assessment_Processor {
             }
         }
 
+         // *** MODIFICATION START ***
+        // 3a. Calculate scores for 3rd-order categories.
+        // This loop is separate to ensure it does NOT affect the $overall_score_contributions.
+        foreach ($scores_by_3rd_order_category as $scale => $sub_categories) {
+            foreach ($sub_categories as $sub_category => $third_order_categories) {
+                foreach ($third_order_categories as $third_order_category => $scores_array) {
+                    // Construct the unique rule key for the 3rd-order category.
+                    $rule_key_for_lookup = $scale . '_' . $sub_category . '_' . $third_order_category;
+                    $rule = $assessment_scoring_rules[$rule_key_for_lookup] ?? null;
+
+                    if ($rule) {
+                        $calculated_value = 0;
+                        switch ($rule['method']) {
+                            case 'SUM':
+                                $calculated_value = array_sum($scores_array);
+                                break;
+                            case 'AVG':
+                                $calculated_value = count($scores_array) > 0 ? array_sum($scores_array) / count($scores_array) : 0;
+                                break;
+                            default:
+                                $calculated_value = array_sum($scores_array); // Fallback
+                                break;
+                        }
+
+                        // Create the display key as "subCategory_3rdOrderCategory" and add to the results array.
+                        $display_key = "{$sub_category}_{$third_order_category}";
+                        $all_scores_data[$display_key] = round($calculated_value, 2);
+                    } else {
+                        error_log("Psychometric Assessment: Skipping 3rd-order category '{$rule_key_for_lookup}' from storage due to no defined rule.");
+                    }
+                }
+            }
+        }
+        // *** MODIFICATION END ***
+
         // 4. Calculate the overall score using percentiles
         $overall_score = array_sum($overall_score_contributions);
 
@@ -538,43 +619,6 @@ class Psychometric_Assessment_Processor {
         if ($wpdb->last_error) {
             error_log("Psychometric Assessment: Database Operation Error: " . $wpdb->last_error);
             error_log("Psychometric Assessment: Last Query: " . $wpdb->last_query);
-        }
-    }
-
-    /**
-     * Optional: Implement "only once answer" feature.
-     * This function would be hooked to 'wpforms_process_before_save'.
-     * It checks if the current user (if logged in) has already submitted this form.
-     * If they have, it adds an error to WPForms, preventing the submission.
-     *
-     * @param array $fields    List of form fields.
-     * @param array $form_data Form data and settings.
-     */
-    public function check_single_submission($fields, $form_data) {
-        // Only apply to the specific psychometric test form.
-        if ( (int) $form_data['id'] !== (int) $this->psychometric_form_id ) {
-            return;
-        }
-
-        $user_id = get_current_user_id();
-
-        // Only apply this logic for logged-in users.
-        if ( $user_id === 0 ) {
-            // Optionally, you can add a WPForms error here if you want to force login for the test.
-            wpforms()->process->add_error( $form_data['id'], 'Please log in to take this test.' );
-            return;
-        }
-
-        global $wpdb;
-        $existing_submission = $wpdb->get_var( $wpdb->prepare(
-            "SELECT COUNT(*) FROM {$this->db_table_name} WHERE user_id = %d",
-            $user_id
-        ) );
-
-        if ( $existing_submission > 0 ) {
-            // User has already submitted, add an error to prevent this submission.
-            // The error message will be displayed to the user on the form.
-            wpforms()->process->add_error( $form_data['id'], 'You have already completed this psychometric test. Submissions are limited to once per user.' );
         }
     }
 

@@ -1,172 +1,5 @@
 {
-    "dass-01": {
-        "scale": "DASS-21",
-        "sub_category": "Stress",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-02": {
-        "scale": "DASS-21",
-        "sub_category": "Anxiety",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-03": {
-        "scale": "DASS-21",
-        "sub_category": "Depression",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-04": {
-        "scale": "DASS-21",
-        "sub_category": "Anxiety",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-05": {
-        "scale": "DASS-21",
-        "sub_category": "Depression",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-06": {
-        "scale": "DASS-21",
-        "sub_category": "Stress",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-07": {
-        "scale": "DASS-21",
-        "sub_category": "Anxiety",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-08": {
-        "scale": "DASS-21",
-        "sub_category": "Stress",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-09": {
-        "scale": "DASS-21",
-        "sub_category": "Anxiety",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-10": {
-        "scale": "DASS-21",
-        "sub_category": "Depression",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-11": {
-        "scale": "DASS-21",
-        "sub_category": "Stress",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-12": {
-        "scale": "DASS-21",
-        "sub_category": "Stress",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-13": {
-        "scale": "DASS-21",
-        "sub_category": "Depression",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-14": {
-        "scale": "DASS-21",
-        "sub_category": "Stress",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-15": {
-        "scale": "DASS-21",
-        "sub_category": "Anxiety",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-16": {
-        "scale": "DASS-21",
-        "sub_category": "Depression",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-17": {
-        "scale": "DASS-21",
-        "sub_category": "Depression",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-18": {
-        "scale": "DASS-21",
-        "sub_category": "Stress",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-19": {
-        "scale": "DASS-21",
-        "sub_category": "Anxiety",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-20": {
-        "scale": "DASS-21",
-        "sub_category": "Anxiety",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
-    "dass-21": {
-        "scale": "DASS-21",
-        "sub_category": "Depression",
-        "reversal": false,
-        "min_val": 0,
-        "max_val": 3,
-        "is_catch": false
-    },
+   
     "bfi-01": {
         "scale": "BFI-2-S",
         "sub_category": "Extraversion",
@@ -416,54 +249,6 @@
         "is_catch": true,
         "expected_value": 5
     },
-    "fses-01": {
-        "scale": "FSES",
-        "sub_category": "NaN",
-        "reversal": true,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "fses-02": {
-        "scale": "FSES",
-        "sub_category": "NaN",
-        "reversal": true,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "fses-03": {
-        "scale": "FSES",
-        "sub_category": "NaN",
-        "reversal": true,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "fses-04": {
-        "scale": "FSES",
-        "sub_category": "NaN",
-        "reversal": true,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "fses-05": {
-        "scale": "FSES",
-        "sub_category": "NaN",
-        "reversal": true,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "fses-06": {
-        "scale": "FSES",
-        "sub_category": "NaN",
-        "reversal": true,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
     "gse-01": {
         "scale": "GSE",
         "sub_category": "NaN",
@@ -624,6 +409,22 @@
         "max_val": 5,
         "is_catch": false
     },
+    "cfc-11": {
+        "scale": "CFC",
+        "sub_category": "NaN",
+        "reversal": true,
+        "min_val": 1,
+        "max_val": 5,
+        "is_catch": false
+    },
+    "cfc-12": {
+        "scale": "CFC",
+        "sub_category": "NaN",
+        "reversal": true,
+        "min_val": 1,
+        "max_val": 5,
+        "is_catch": false
+    },
     "mlq-01": {
         "scale": "MLQ",
         "sub_category": "Presence of Meaning",
@@ -768,238 +569,6 @@
         "max_val": 5,
         "is_catch": false
     },
-    "mas-01": {
-        "scale": "MAS",
-        "sub_category": "Power-Prestige",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-02": {
-        "scale": "MAS",
-        "sub_category": "Power-Prestige",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-03": {
-        "scale": "MAS",
-        "sub_category": "Power-Prestige",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-04": {
-        "scale": "MAS",
-        "sub_category": "Power-Prestige",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-05": {
-        "scale": "MAS",
-        "sub_category": "Power-Prestige",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-06": {
-        "scale": "MAS",
-        "sub_category": "Power-Prestige",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-07": {
-        "scale": "MAS",
-        "sub_category": "Power-Prestige",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-08": {
-        "scale": "MAS",
-        "sub_category": "Power-Prestige",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-09": {
-        "scale": "MAS",
-        "sub_category": "Power-Prestige",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-10": {
-        "scale": "MAS",
-        "sub_category": "Retention-Time",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-11": {
-        "scale": "MAS",
-        "sub_category": "Retention-Time",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-12": {
-        "scale": "MAS",
-        "sub_category": "Retention-Time",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-13": {
-        "scale": "MAS",
-        "sub_category": "Retention-Time",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-14": {
-        "scale": "MAS",
-        "sub_category": "Retention-Time",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-15": {
-        "scale": "MAS",
-        "sub_category": "Retention-Time",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-16": {
-        "scale": "MAS",
-        "sub_category": "Retention-Time",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-17": {
-        "scale": "MAS",
-        "sub_category": "Retention-Time",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-18": {
-        "scale": "MAS",
-        "sub_category": "NaN",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-19": {
-        "scale": "MAS",
-        "sub_category": "NaN",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-20": {
-        "scale": "MAS",
-        "sub_category": "NaN",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-21": {
-        "scale": "MAS",
-        "sub_category": "NaN",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-22": {
-        "scale": "MAS",
-        "sub_category": "NaN",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-23": {
-        "scale": "MAS",
-        "sub_category": "NaN",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-24": {
-        "scale": "MAS",
-        "sub_category": "NaN",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-25": {
-        "scale": "MAS",
-        "sub_category": "NaN",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-26": {
-        "scale": "MAS",
-        "sub_category": "NaN",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-27": {
-        "scale": "MAS",
-        "sub_category": "NaN",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-28": {
-        "scale": "MAS",
-        "sub_category": "NaN",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
-    "mas-29": {
-        "scale": "MAS",
-        "sub_category": "NaN",
-        "reversal": false,
-        "min_val": 1,
-        "max_val": 5,
-        "is_catch": false
-    },
     "bis-01": {
         "scale": "BIS-11",
         "sub_category": "NaN",
@@ -1033,6 +602,14 @@
         "is_catch": false
     },
     "bis-09": {
+        "scale": "BIS-11",
+        "sub_category": "NaN",
+        "reversal": true,
+        "min_val": 1,
+        "max_val": 5,
+        "is_catch": false
+    },
+    "bis-12": {
         "scale": "BIS-11",
         "sub_category": "NaN",
         "reversal": true,

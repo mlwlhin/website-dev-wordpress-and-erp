@@ -26,7 +26,7 @@ class Psychometric_Assessment_Processor {
     private $assessment_scoring_rules = null;
 
     // Define the conversion factor as a class constant
-    const CONVERSION_FACTOR = 84.65 / 64;
+    const CONVERSION_FACTOR = 64/70;
 
     // Define the TU Lookup Table data as a class constant
     // Format: [Cum. Pop (Upper Bound), TU Grade, High PD]

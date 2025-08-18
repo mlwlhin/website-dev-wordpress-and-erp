@@ -1,0 +1,19 @@
+<?php require_once 'db_connect.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocioBridge ERP Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center">
+    <div class="bg-white rounded-xl shadow-lg p-10 max-w-md w-full text-center">
+        <h1 class="text-3xl font-bold text-[#002e5d] mb-6">Welcome to SocioBridge ERP</h1>
+        <p class="mb-8 text-gray-600">Choose a module to begin:</p>
+        <div class="space-y-4">
+            <a href="./pd.html" class="block w-full py-3 px-6 rounded-lg bg-blue-600 text-white font-semibold text-lg hover:bg-blue-700 transition">Credit Risk Model</a>
+            <a href="./psyc.html" class="block w-full py-3 px-6 rounded-lg bg-green-600 text-white font-semibold text-lg hover:bg-green-700 transition">Psychometric Risk Assessment</a>
+            <a href="./sync.php" class="block w-full py-3 px-6 rounded-lg bg-yellow-500 text-white font-semibold text-lg hover:bg-yellow-600 transition">Database Synchronization</a>
+            <a href="./view_database.php" class="block w-full py-3 px-6 rounded-lg bg-red-500 text-white font-semibold text-lg hover:bg-red-600 transition">Database Viewer</a>
+        </div>

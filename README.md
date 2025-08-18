@@ -32,5 +32,8 @@ For reference of the website: https://sociobridge.world
 **erp** File of the erp system
 * **pd** the interactive risk dashboard
 * **psyc** psychometric test result -visualize the test result and process the data to the relation of TU grade
+* **sync** is the page which can run the database synchronize script automatically
+* **view_database** is the page to view the MySql dataabse directly instead of opening myphphadmin
+**database_sync** contain the script for automatically sync database from wordpress to admin page
 
 log file inlcuding implmentation of creating new port in Google Cloud
